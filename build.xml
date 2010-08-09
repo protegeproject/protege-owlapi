@@ -101,7 +101,8 @@
 
 
    <target name="build.manifest">
-     <manifest file="${manifest}">
+     <copy file="./META-INF/MANIFEST.MF" tofile="${manifest}"/>
+     <manifest file="${manifest}" mode="update">
         <attribute name="Built-By" value = "${user.name}"/>
         <attribute name="Build-Date" value = "${build.time}"/>
      </manifest>
