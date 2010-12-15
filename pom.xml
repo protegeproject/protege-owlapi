@@ -48,11 +48,10 @@
           <version>1.2.16</version>
         </dependency>
         <dependency>
-            <groupId>owlapi</groupId>
-            <artifactId>owlapi</artifactId>
-            <version>3.1.0.protege-patch-01</version>
-            <type>jar</type>
-        </dependency>        
+          <groupId>owlapi</groupId>
+          <artifactId>owlapi</artifactId>
+          <version>3.1.0.svn1639-patched</version>
+        </dependency>
 	</dependencies>
 
 	<description>Extensions to the OWL API for Protege</description>
