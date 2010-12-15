@@ -1280,4 +1280,34 @@ public class WriteSafeOWLOntologyImpl implements OWLMutableOntology, WriteSafeOW
         }
     }
     
+    public Set<OWLAxiom> getABoxAxioms(boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getABoxAxioms(includeImportsClosure);
+        }
+        finally {
+            readLock.unlock();
+        }
+    }
+    
+    public Set<OWLAxiom> getRBoxAxioms(boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getRBoxAxioms(includeImportsClosure);
+        }
+        finally {
+            readLock.unlock();
+        }
+    }    
+
+    public Set<OWLAxiom> getTBoxAxioms(boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getTBoxAxioms(includeImportsClosure);
+        }
+        finally {
+            readLock.unlock();
+        }
+    } 
+    
 }
