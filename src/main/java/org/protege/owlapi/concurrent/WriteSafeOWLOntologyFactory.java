@@ -84,7 +84,6 @@ public class WriteSafeOWLOntologyFactory implements OWLOntologyFactory {
         delegate.setOWLOntologyManager(owlOntologyManager);
     }
 
-@Override
     public OWLOntology loadOWLOntology(OWLOntologyDocumentSource documentSource,
     		                           OWLOntologyCreationHandler handler,
     		                           OWLOntologyLoaderConfiguration configuration)
