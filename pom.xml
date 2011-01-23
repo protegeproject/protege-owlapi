@@ -6,8 +6,8 @@
 	<artifactId>protege-owlapi-extensions</artifactId>
 	<packaging>bundle</packaging>
 	<name>Protege OWL API Extensions</name>
-	<version>3.1.0.SNAPSHOT</version>
-    <!-- <version>3.1.0.2010_12_15_1149</version> -->
+	<!-- <version>3.2.0.SNAPSHOT</version> -->
+    <version>3.2.0.2011_01_23_0425</version> -->
 	<properties>
 		<maven.compiler.source>1.5</maven.compiler.source>
 		<maven.compiler.target>1.5</maven.compiler.target>
@@ -46,9 +46,9 @@
           <version>1.2.16</version>
         </dependency>
         <dependency>
-          <groupId>owlapi</groupId>
-          <artifactId>owlapi</artifactId>
-          <version>3.1.0.svn1639-patched</version>
+            <groupId>owlapi</groupId>
+            <artifactId>owlapi</artifactId>
+            <version>3.2.0.svn1729</version>
         </dependency>
 	</dependencies>
 
