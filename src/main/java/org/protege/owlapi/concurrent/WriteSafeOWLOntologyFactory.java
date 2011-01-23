@@ -8,6 +8,7 @@ import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyFactory;
 import org.semanticweb.owlapi.model.OWLOntologyFormat;
 import org.semanticweb.owlapi.model.OWLOntologyID;
+import org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 
 public class WriteSafeOWLOntologyFactory implements OWLOntologyFactory {
@@ -83,5 +84,14 @@ public class WriteSafeOWLOntologyFactory implements OWLOntologyFactory {
         delegate.setOWLOntologyManager(owlOntologyManager);
     }
 
+@Override
+    public OWLOntology loadOWLOntology(OWLOntologyDocumentSource documentSource,
+    		                           OWLOntologyCreationHandler handler,
+    		                           OWLOntologyLoaderConfiguration configuration)
+						throws OWLOntologyCreationException {
+	   return wrapOntology(delegate.loadOWLOntology(documentSource, 
+			                                        new WrappedOntologyCreationHandler(handler),
+			                                        configuration));
+    }
     
 }
