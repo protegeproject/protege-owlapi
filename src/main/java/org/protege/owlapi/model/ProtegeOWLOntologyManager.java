@@ -25,7 +25,7 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
     private boolean useWriteSafety = false;
     private boolean useSwingThread = false;
     private List<OWLOntologyFactory> ontologyFactories = new ArrayList<OWLOntologyFactory>();
-    private ReentrantReadWriteLock lock;
+    private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 
     
     public ProtegeOWLOntologyManager(OWLDataFactory factory) {
