@@ -107,12 +107,12 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
         ChangeApplier run = new ChangeApplier() {
 
             public void run() {
-                lock.readLock().lock();
+                lock.writeLock().lock();
                 try {
                     setChanges(addAxiomsSuper(ont, axioms));
                 }
                 finally {
-                    lock.readLock().unlock();
+                    lock.writeLock().unlock();
                 }
             }
         };
@@ -128,12 +128,12 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
         ChangeApplier run = new ChangeApplier() {
 
             public void run() {
-                lock.readLock().lock();
+                lock.writeLock().lock();
                 try {
                     setChanges(removeAxiomsSuper(ont, axioms));
                 }
                 finally {
-                    lock.readLock().unlock();
+                    lock.writeLock().unlock();
                 }
             }
         };
@@ -149,12 +149,12 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
         ChangeApplier run = new ChangeApplier() {
 
             public void run() {
-                lock.readLock().lock();
+                lock.writeLock().lock();
                 try {
                     setChanges(applyChangeSuper(change));
                 }
                 finally {
-                    lock.readLock().unlock();
+                    lock.writeLock().unlock();
                 }
             }
         };
@@ -169,12 +169,12 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
         ChangeApplier run = new ChangeApplier() {
 
             public void run() {
-                lock.readLock().lock();
+                lock.writeLock().lock();
                 try {
                     setChanges(applyChangesSuper(changes));
                 }
                 finally {
-                    lock.readLock().unlock();
+                    lock.writeLock().unlock();
                 }
             }
         };
