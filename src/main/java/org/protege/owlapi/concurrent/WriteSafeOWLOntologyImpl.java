@@ -80,22 +80,17 @@ import org.semanticweb.owlapi.model.UnknownOWLOntologyException;
 
 public class WriteSafeOWLOntologyImpl implements OWLMutableOntology, WriteSafeOWLOntology {
     private OWLMutableOntology delegate;
-    private final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
-    private final ReadLock  readLock = lock.readLock();
-    private final WriteLock writeLock = lock.writeLock();
-    private static int counter = 0;
-    private int lockId = allocateLockId();
-    
-    public static int allocateLockId() {
-        return counter++;
-    }
-    
-    public int getLockId() {
-        return lockId;
-    }
+    private ReadLock  readLock;
+    private WriteLock writeLock;
+
 
     public WriteSafeOWLOntologyImpl(OWLMutableOntology delegate) {
         this.delegate = delegate;
+    }
+    
+    public void setLocks(ReentrantReadWriteLock locks) {
+        readLock = locks.readLock();
+        writeLock = locks.writeLock();
     }
     
     public ReadLock getReadLock() {

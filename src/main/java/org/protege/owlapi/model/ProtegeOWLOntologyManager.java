@@ -4,10 +4,12 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
 
 import javax.swing.SwingUtilities;
 
-import org.protege.owlapi.concurrent.ChangesLock;
 import org.protege.owlapi.concurrent.WriteSafeOWLOntologyFactory;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLDataFactory;
@@ -23,6 +25,7 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
     private boolean useWriteSafety = false;
     private boolean useSwingThread = false;
     private List<OWLOntologyFactory> ontologyFactories = new ArrayList<OWLOntologyFactory>();
+    private ReentrantReadWriteLock lock;
 
     
     public ProtegeOWLOntologyManager(OWLDataFactory factory) {
@@ -44,7 +47,19 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
     public void setUseSwingThread(boolean useSwingThread) {
         this.useSwingThread = useSwingThread;
     }
+    
+    public ReentrantReadWriteLock getReadWriteLock() {
+        return lock;
+    }
+    
+    public ReadLock getReadLock() {
+        return lock.readLock();
+    }
 
+    public WriteLock getWriteLock() {
+        return lock.writeLock();
+    }
+    
     /*
      * Factory stuff...
      */
@@ -68,7 +83,7 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
     
     private OWLOntologyFactory wrapFactory(OWLOntologyFactory factory) {
         if (useWriteSafety && !(factory instanceof WriteSafeOWLOntologyFactory)) {
-            factory = new WriteSafeOWLOntologyFactory(factory);
+            factory = new WriteSafeOWLOntologyFactory(factory, lock);
         }
         return factory;
     }
@@ -92,13 +107,12 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
         ChangeApplier run = new ChangeApplier() {
 
             public void run() {
-                ChangesLock lock = new ChangesLock(ont);
-                lock.lock();
+                lock.readLock().lock();
                 try {
                     setChanges(addAxiomsSuper(ont, axioms));
                 }
                 finally {
-                    lock.unlock();
+                    lock.readLock().unlock();
                 }
             }
         };
@@ -114,13 +128,12 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
         ChangeApplier run = new ChangeApplier() {
 
             public void run() {
-                ChangesLock lock = new ChangesLock(ont);
-                lock.lock();
+                lock.readLock().lock();
                 try {
                     setChanges(removeAxiomsSuper(ont, axioms));
                 }
                 finally {
-                    lock.unlock();
+                    lock.readLock().unlock();
                 }
             }
         };
@@ -136,13 +149,12 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
         ChangeApplier run = new ChangeApplier() {
 
             public void run() {
-                ChangesLock lock = new ChangesLock(change.getOntology());
-                lock.lock();
+                lock.readLock().lock();
                 try {
                     setChanges(applyChangeSuper(change));
                 }
                 finally {
-                    lock.unlock();
+                    lock.readLock().unlock();
                 }
             }
         };
@@ -157,13 +169,12 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
         ChangeApplier run = new ChangeApplier() {
 
             public void run() {
-                ChangesLock lock = new ChangesLock(changes);
-                lock.lock();
+                lock.readLock().lock();
                 try {
                     setChanges(applyChangesSuper(changes));
                 }
                 finally {
-                    lock.unlock();
+                    lock.readLock().unlock();
                 }
             }
         };

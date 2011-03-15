@@ -1,5 +1,7 @@
 package org.protege.owlapi.concurrent;
 
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+
 import org.semanticweb.owlapi.io.OWLOntologyDocumentSource;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLMutableOntology;
@@ -13,9 +15,11 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 
 public class WriteSafeOWLOntologyFactory implements OWLOntologyFactory {
     private OWLOntologyFactory delegate;
+    private ReentrantReadWriteLock lock;
     
-    public WriteSafeOWLOntologyFactory(OWLOntologyFactory delegate) {
+    public WriteSafeOWLOntologyFactory(OWLOntologyFactory delegate, ReentrantReadWriteLock lock) {
         this.delegate = delegate;
+        this.lock = lock;
     }
     
     private class WrappedOntologyCreationHandler implements OWLOntologyCreationHandler {
@@ -37,7 +41,9 @@ public class WriteSafeOWLOntologyFactory implements OWLOntologyFactory {
     
     private OWLOntology wrapOntology(OWLOntology ontology) {
         if (ontology instanceof OWLMutableOntology &&  !(ontology instanceof WriteSafeOWLOntology)) {
-            return new WriteSafeOWLOntologyImpl((OWLMutableOntology) ontology);
+            WriteSafeOWLOntology wrappedOntology = new WriteSafeOWLOntologyImpl((OWLMutableOntology) ontology);
+            wrappedOntology.setLocks(lock);
+            return wrappedOntology;
         }
         else {
             return ontology;
