@@ -4,6 +4,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.Callable;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock.ReadLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
@@ -181,10 +182,20 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
         return runChangeApplier(run);
     }
     
-    private List<OWLOntologyChange> runChangeApplier(ChangeApplier run) {
+    public void runWithWriteLock(final Runnable run) {
         if (useSwingThread && !SwingUtilities.isEventDispatchThread()) {
             try {
-                SwingUtilities.invokeAndWait(run);
+                SwingUtilities.invokeAndWait(new Runnable() {
+                    public void run() {
+                        lock.writeLock().lock();
+                        try {
+                            run.run();
+                        }
+                        finally {
+                            lock.writeLock().unlock();
+                        }
+                    }
+                });
             }
             catch (InterruptedException e) {
                 throw new RuntimeException("Unexpected exception writing changes", e);
@@ -194,8 +205,19 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
             }
         }
         else {
-            run.run();
+            lock.writeLock().lock();
+            try {
+                run.run();
+            }
+            finally {
+                lock.writeLock().unlock();
+            }
         }
+    }
+    
+    
+    private List<OWLOntologyChange> runChangeApplier(ChangeApplier run) {
+        runWithWriteLock(run);
         return run.getChanges();
     }
     
@@ -211,4 +233,5 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
         }
 
     }
+
 }
