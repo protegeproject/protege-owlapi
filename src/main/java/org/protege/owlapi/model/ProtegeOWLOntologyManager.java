@@ -12,6 +12,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock;
 import javax.swing.SwingUtilities;
 
 import org.protege.owlapi.concurrent.WriteSafeOWLOntologyFactory;
+import org.protege.owlapi.util.SaveResultsRunnable;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -105,19 +106,12 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
     
     @Override
     public List<OWLOntologyChange> addAxioms(final OWLOntology ont, final Set<? extends OWLAxiom> axioms) {
-        ChangeApplier run = new ChangeApplier() {
-
-            public void run() {
-                lock.writeLock().lock();
-                try {
-                    setChanges(addAxiomsSuper(ont, axioms));
+        return callWithWriteLockUnchecked(new Callable<List<OWLOntologyChange>>() {
+                    
+                public List<OWLOntologyChange> call() {
+                    return addAxiomsSuper(ont, axioms);
                 }
-                finally {
-                    lock.writeLock().unlock();
-                }
-            }
-        };
-        return runChangeApplier(run);
+            });
     }
     
     private List<OWLOntologyChange> removeAxiomsSuper(OWLOntology ont, Set<? extends OWLAxiom> axioms) {
@@ -126,19 +120,12 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
     
     @Override
     public List<OWLOntologyChange> removeAxioms(final OWLOntology ont, final Set<? extends OWLAxiom> axioms) {
-        ChangeApplier run = new ChangeApplier() {
-
-            public void run() {
-                lock.writeLock().lock();
-                try {
-                    setChanges(removeAxiomsSuper(ont, axioms));
+        return callWithWriteLockUnchecked(new Callable<List<OWLOntologyChange>>() {
+                    
+                public List<OWLOntologyChange> call() {
+                    return removeAxiomsSuper(ont, axioms);
                 }
-                finally {
-                    lock.writeLock().unlock();
-                }
-            }
-        };
-        return runChangeApplier(run);
+            });
     }
     
     private List<OWLOntologyChange> applyChangeSuper(OWLOntologyChange change) {
@@ -147,19 +134,12 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
     
     @Override
     public List<OWLOntologyChange> applyChange(final OWLOntologyChange change) {
-        ChangeApplier run = new ChangeApplier() {
-
-            public void run() {
-                lock.writeLock().lock();
-                try {
-                    setChanges(applyChangeSuper(change));
+        return callWithWriteLockUnchecked(new Callable<List<OWLOntologyChange>>() {
+                    
+                public List<OWLOntologyChange> call() {
+                    return applyChangeSuper(change);
                 }
-                finally {
-                    lock.writeLock().unlock();
-                }
-            }
-        };
-        return runChangeApplier(run);
+            });
     }
     
     private List<OWLOntologyChange> applyChangesSuper(List<? extends OWLOntologyChange> changes) {
@@ -167,71 +147,51 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
     }
     
     public List<OWLOntologyChange> applyChanges(final List<? extends OWLOntologyChange> changes) {
-        ChangeApplier run = new ChangeApplier() {
-
-            public void run() {
-                lock.writeLock().lock();
-                try {
-                    setChanges(applyChangesSuper(changes));
+        return callWithWriteLockUnchecked(new Callable<List<OWLOntologyChange>>() {
+                    
+                public List<OWLOntologyChange> call() {
+                    return applyChangesSuper(changes);
                 }
-                finally {
-                    lock.writeLock().unlock();
-                }
-            }
-        };
-        return runChangeApplier(run);
+            });
     }
     
-    public void runWithWriteLock(final Runnable run) {
+    public <X> X callWithWriteLock(final Callable<X> call) throws Exception {
         if (useSwingThread && !SwingUtilities.isEventDispatchThread()) {
-            try {
-                SwingUtilities.invokeAndWait(new Runnable() {
-                    public void run() {
-                        lock.writeLock().lock();
-                        try {
-                            run.run();
-                        }
-                        finally {
-                            lock.writeLock().unlock();
-                        }
+            final SaveResultsRunnable<X> run = new SaveResultsRunnable<X>(call);
+            SwingUtilities.invokeAndWait(new Runnable() {
+                public void run() {
+                    lock.writeLock().lock();
+                    try {
+                        run.run();
                     }
-                });
+                    finally {
+                        lock.writeLock().unlock();
+                    }
+                }
+            });
+            if (run.getException() != null) {
+                throw run.getException();
             }
-            catch (InterruptedException e) {
-                throw new RuntimeException("Unexpected exception writing changes", e);
-            }
-            catch (InvocationTargetException e) {
-                throw new RuntimeException("Unexpected exception writing chasnges", e);
-            }
+            return run.getResult();
         }
         else {
             lock.writeLock().lock();
             try {
-                run.run();
+                return call.call();
             }
             finally {
                 lock.writeLock().unlock();
             }
         }
     }
-    
-    
-    private List<OWLOntologyChange> runChangeApplier(ChangeApplier run) {
-        runWithWriteLock(run);
-        return run.getChanges();
-    }
-    
-    private static abstract class ChangeApplier implements Runnable {
-        private List<OWLOntologyChange> changes;
-        
-        public List<OWLOntologyChange> getChanges() {
-            return changes;
-        }
-        
-        public void setChanges(List<OWLOntologyChange> changes) {
-            this.changes = changes;
-        }
 
+    public <X> X callWithWriteLockUnchecked(final Callable<X> call) {
+        try {
+            return callWithWriteLock(call);
+        }
+        catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 
 }
