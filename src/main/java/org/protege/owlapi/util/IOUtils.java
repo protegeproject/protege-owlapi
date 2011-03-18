@@ -15,6 +15,11 @@ import java.util.zip.ZipInputStream;
 import org.apache.log4j.Logger;
 import org.semanticweb.owlapi.io.IOProperties;
 
+
+/**
+ * This code was taken liberally from Matthews AbstractOWLParser java code (the owlapi v3 svn revision 1786).
+ */
+
 public class IOUtils {
     private static Logger LOGGER = Logger.getLogger(IOUtils.class);
 
