@@ -13,7 +13,6 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataHasValue;
 import org.semanticweb.owlapi.model.OWLDataMaxCardinality;
 import org.semanticweb.owlapi.model.OWLDataMinCardinality;
-import org.semanticweb.owlapi.model.OWLDataPropertyExpression;
 import org.semanticweb.owlapi.model.OWLDataSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLObjectAllValuesFrom;
@@ -25,48 +24,14 @@ import org.semanticweb.owlapi.model.OWLObjectIntersectionOf;
 import org.semanticweb.owlapi.model.OWLObjectMaxCardinality;
 import org.semanticweb.owlapi.model.OWLObjectMinCardinality;
 import org.semanticweb.owlapi.model.OWLObjectOneOf;
-import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLObjectSomeValuesFrom;
 import org.semanticweb.owlapi.model.OWLObjectUnionOf;
 
-/*
- * TODO - need to fix the top object and data property cases
- */
 public class ClassExpressionInterpreter implements OWLClassExpressionVisitorEx<Set<OWLIndividual>> {
 	private TrivialModel model;
-	private OWLDataFactory factory;
 	
 	public ClassExpressionInterpreter(TrivialModel model) {
 		this.model = model;
-		factory = model.getOntology().getOWLOntologyManager().getOWLDataFactory();
-	}
-	
-	private boolean isTopProperty(OWLObjectPropertyExpression pe) {
-		return pe.getNamedProperty().equals(factory.getOWLTopObjectProperty());
-	}
-	
-	private boolean isTopProperty(OWLDataPropertyExpression pe) {
-		return pe.equals(factory.getOWLTopDataProperty());
-	}
-	
-	/*
-	 * It simplifies things greatly to ignore the top object and data property when they appear
-	 * in restrictions.   What real ontology uses these properties in this way anyway?
-	 * 
-	 * This can be put back with little trouble especially if we use a reasoner to answer the stupid
-	 * questions about the data types.
-	 */
-	
-	private void checkProperty(OWLObjectPropertyExpression p) {
-		if (p.getNamedProperty().equals(factory.getOWLTopObjectProperty())) {
-			throw new UnsupportedOperationException("top object property is not handled in this context");
-		}
-	}
-	
-	private void checkProperty(OWLDataPropertyExpression p) {
-		if (p.equals(factory.getOWLTopDataProperty())) {
-			throw new UnsupportedOperationException("top data property is not handled in this context");
-		}
 	}
 
 	
@@ -76,7 +41,7 @@ public class ClassExpressionInterpreter implements OWLClassExpressionVisitorEx<S
 
 	
 	public Set<OWLIndividual> visit(OWLClass ce) {
-		if (ce.equals(factory.getOWLThing())) {
+		if (model.isTopClass(ce)) {
 			return model.getAllIndividuals();
 		}
 		else {
@@ -96,7 +61,7 @@ public class ClassExpressionInterpreter implements OWLClassExpressionVisitorEx<S
 			}
 		}
 		if (interpretation == null) {
-			interpretation = Collections.emptySet();
+			interpretation = model.getAllIndividuals();
 		}
 		return interpretation;
 	}
@@ -119,7 +84,7 @@ public class ClassExpressionInterpreter implements OWLClassExpressionVisitorEx<S
 
 	
 	public Set<OWLIndividual> visit(OWLObjectSomeValuesFrom ce) {
-		if (ce.getProperty().equals(factory.getOWLTopObjectProperty())) {
+		if (model.isTopProperty(ce.getProperty())) {
 			Set<OWLIndividual> interpretation = ce.getFiller().accept(this);
 			if (interpretation.isEmpty()) {
 				return Collections.emptySet();
@@ -133,7 +98,7 @@ public class ClassExpressionInterpreter implements OWLClassExpressionVisitorEx<S
 
 	
 	public Set<OWLIndividual> visit(OWLObjectAllValuesFrom ce) {
-		if (ce.getProperty().equals(factory.getOWLTopObjectProperty())) {
+		if (model.isTopProperty(ce.getProperty())) {
 			Set<OWLIndividual> interpretation = ce.getFiller().accept(this);
 			if (interpretation.equals(model.getAllIndividuals())) {
 				return model.getAllIndividuals();
@@ -142,12 +107,12 @@ public class ClassExpressionInterpreter implements OWLClassExpressionVisitorEx<S
 				return Collections.emptySet();
 			}
 		}
-		return Collections.emptySet();
+		return model.getAllIndividuals();
 	}
 
 	
 	public Set<OWLIndividual> visit(OWLObjectHasValue ce) {
-		if (ce.getProperty().equals(factory.getOWLTopObjectProperty())) {
+		if (model.isTopProperty(ce.getProperty())) {
 			return model.getAllIndividuals();
 		}
 		return Collections.emptySet();
@@ -155,25 +120,38 @@ public class ClassExpressionInterpreter implements OWLClassExpressionVisitorEx<S
 
 	
 	public Set<OWLIndividual> visit(OWLObjectMinCardinality ce) {
-		checkProperty(ce.getProperty());
-		return Collections.emptySet();
+		if (model.isTopProperty(ce.getProperty()) && ce.getFiller().accept(this).size() >= ce.getCardinality()) {
+			return model.getAllIndividuals();
+		}
+		else if (ce.getCardinality() == 0) {
+			return model.getAllIndividuals();
+		}
+		else {
+			return Collections.emptySet();
+		}
 	}
 
 	
 	public Set<OWLIndividual> visit(OWLObjectExactCardinality ce) {
-		checkProperty(ce.getProperty());
+		if (model.isTopProperty(ce.getProperty()) && ce.getCardinality() == ce.getFiller().accept(this).size()) {
+			return model.getAllIndividuals();
+		}
 		return Collections.emptySet();
 	}
 
 	
 	public Set<OWLIndividual> visit(OWLObjectMaxCardinality ce) {
-		checkProperty(ce.getProperty());
-		return Collections.emptySet();
+		if (model.isTopProperty(ce.getProperty()) && ce.getFiller().accept(this).size() > ce.getCardinality()) {
+			return Collections.emptySet();
+		}
+		return model.getAllIndividuals();
 	}
 
 	
 	public Set<OWLIndividual> visit(OWLObjectHasSelf ce) {
-		checkProperty(ce.getProperty());
+		if (model.isTopProperty(ce.getProperty())) {
+			return model.getAllIndividuals();
+		}
 		return Collections.emptySet();
 	}
 
@@ -184,37 +162,66 @@ public class ClassExpressionInterpreter implements OWLClassExpressionVisitorEx<S
 
 	
 	public Set<OWLIndividual> visit(OWLDataSomeValuesFrom ce) {
-		checkProperty(ce.getProperty());
+		if (model.isTopProperty(ce.getProperty()) && model.isConsistent(ce.getFiller())) {
+			return model.getAllIndividuals();
+		}
 		return Collections.emptySet();
 	}
 
 	
 	public Set<OWLIndividual> visit(OWLDataAllValuesFrom ce) {
-		checkProperty(ce.getProperty());
-		return Collections.emptySet();
+		if (model.isTopProperty(ce.getProperty()) && model.isTopDataRange(ce.getFiller())) {
+			return model.getAllIndividuals();
+		}
+		else if (model.isTopProperty(ce.getProperty())) {
+			return Collections.emptySet();
+		}
+		else {
+			return model.getAllIndividuals();
+		}
 	}
 
 	
 	public Set<OWLIndividual> visit(OWLDataHasValue ce) {
-		checkProperty(ce.getProperty());
+		if (model.isTopProperty(ce.getProperty())) {
+			return model.getAllIndividuals();
+		}
 		return Collections.emptySet();
 	}
 
 	
 	public Set<OWLIndividual> visit(OWLDataMinCardinality ce) {
-		checkProperty(ce.getProperty());
-		return Collections.emptySet();
+		if (model.isTopProperty(ce.getProperty()) && model.hasAtLeast(ce.getFiller(), ce.getCardinality())) {
+			return model.getAllIndividuals();
+		}
+		else if (!model.isTopProperty(ce.getProperty()) && ce.getCardinality() == 0){
+			return model.getAllIndividuals();
+		}
+		else {
+			return Collections.emptySet();
+		}
 	}
 
 	
 	public Set<OWLIndividual> visit(OWLDataExactCardinality ce) {
-		checkProperty(ce.getProperty());
-		return Collections.emptySet();
+		if (model.isTopProperty(ce.getProperty()) && model.hasExactly(ce.getFiller(), ce.getCardinality())) {
+			return model.getAllIndividuals();
+		}
+		else if (!model.isTopProperty(ce.getProperty()) && ce.getCardinality() == 0){
+			return model.getAllIndividuals();
+		}
+		else {
+			return Collections.emptySet();
+		}
 	}
 
 	
 	public Set<OWLIndividual> visit(OWLDataMaxCardinality ce) {
-		checkProperty(ce.getProperty());
-		return Collections.emptySet();
+		if (model.isTopProperty(ce.getProperty()) && model.hasNoMoreThan(ce.getFiller(), ce.getCardinality())) {
+			return model.getAllIndividuals();
+		}
+		else {
+			return model.getAllIndividuals();
+		}
 	}
 }

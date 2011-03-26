@@ -7,10 +7,13 @@ import java.util.Set;
 import org.protege.owlapi.inconsistent.Util;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.EntityType;
+import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
+import org.semanticweb.owlapi.model.OWLDataPropertyExpression;
 import org.semanticweb.owlapi.model.OWLDataRange;
 import org.semanticweb.owlapi.model.OWLIndividual;
+import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
@@ -67,11 +70,35 @@ public class TrivialModel {
 		return Collections.unmodifiableSet(allIndividuals);
 	}
 	
+	public boolean isTopClass(OWLClass c) {
+		return c.equals(factory.getOWLThing());
+	}
+	
+	public boolean isTopProperty(OWLObjectPropertyExpression pe) {
+		return pe.getNamedProperty().equals(factory.getOWLTopObjectProperty());
+	}
+
+	public boolean isTopProperty(OWLDataPropertyExpression pe) {
+		return pe.equals(factory.getOWLTopDataProperty());
+	}
+	
+	public boolean isTopDataRange(OWLDataRange range) {
+		return !reasoner.isSatisfiable(factory.getOWLObjectComplementOf(factory.getOWLDataAllValuesFrom(dp, range)));
+	}
+
 	public boolean isConsistent(OWLDataRange range) {
 		return reasoner.isSatisfiable(factory.getOWLDataSomeValuesFrom(dp, range));
 	}
 
-	public boolean isTop(OWLDataRange range) {
-		return !reasoner.isSatisfiable(factory.getOWLObjectComplementOf(factory.getOWLDataAllValuesFrom(dp, range)));
+	public boolean hasAtLeast(OWLDataRange range, int cardinality) {
+		return reasoner.isSatisfiable(factory.getOWLDataMinCardinality(cardinality, dp, range));
+	}
+	
+	public boolean hasNoMoreThan(OWLDataRange range, int cardinality) {
+		return reasoner.isSatisfiable(factory.getOWLDataMaxCardinality(cardinality, dp, range));
+	}
+	
+	public boolean hasExactly(OWLDataRange range, int cardinality) {
+		return reasoner.isSatisfiable(factory.getOWLDataExactCardinality(cardinality, dp, range));
 	}
 }

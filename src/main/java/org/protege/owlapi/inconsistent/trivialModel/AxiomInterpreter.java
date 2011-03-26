@@ -49,9 +49,7 @@ import org.semanticweb.owlapi.model.OWLSymmetricObjectPropertyAxiom;
 import org.semanticweb.owlapi.model.OWLTransitiveObjectPropertyAxiom;
 import org.semanticweb.owlapi.model.SWRLRule;
 
-/*
- * TODO - need to fix the top object and data property cases
- */
+
 public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 	private ClassExpressionInterpreter interpreter;
 	private TrivialModel model;
@@ -61,14 +59,6 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 		this.model = model;
 		interpreter = new ClassExpressionInterpreter(model);
 		factory = model.getOntology().getOWLOntologyManager().getOWLDataFactory();
-	}
-	
-	private boolean isTopProperty(OWLObjectPropertyExpression pe) {
-		return pe.getNamedProperty().equals(factory.getOWLTopObjectProperty());
-	}
-	
-	private boolean isTopProperty(OWLDataPropertyExpression pe) {
-		return pe.equals(factory.getOWLTopDataProperty());
 	}
 
 	
@@ -93,17 +83,17 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLNegativeObjectPropertyAssertionAxiom axiom) {
-		return !isTopProperty(axiom.getProperty());
+		return !model.isTopProperty(axiom.getProperty());
 	}
 
 	
 	public Boolean visit(OWLAsymmetricObjectPropertyAxiom axiom) {
-		return !isTopProperty(axiom.getProperty());
+		return !model.isTopProperty(axiom.getProperty());
 	}
 
 	
 	public Boolean visit(OWLReflexiveObjectPropertyAxiom axiom) {
-		return isTopProperty(axiom.getProperty());
+		return model.isTopProperty(axiom.getProperty());
 	}
 
 	
@@ -125,7 +115,7 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 	
 	public Boolean visit(OWLDataPropertyDomainAxiom axiom) {
 		Set<OWLIndividual> interpretation = axiom.getDomain().accept(interpreter);
-		if (isTopProperty(axiom.getProperty())) {
+		if (model.isTopProperty(axiom.getProperty())) {
 			return interpretation.equals(model.getAllIndividuals());
 		}
 		else {
@@ -136,7 +126,7 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 	
 	public Boolean visit(OWLObjectPropertyDomainAxiom axiom) {
 		Set<OWLIndividual> interpretation = axiom.getDomain().accept(interpreter);
-		if (isTopProperty(axiom.getProperty())) {
+		if (model.isTopProperty(axiom.getProperty())) {
 			return interpretation.equals(model.getAllIndividuals());
 		}
 		else {
@@ -146,12 +136,22 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLEquivalentObjectPropertiesAxiom axiom) {
-		return true;
+		boolean hasBottomProperty = false;
+		boolean hasTopProperty = false;
+		for (OWLObjectPropertyExpression p : axiom.getProperties()) {
+			if (model.isTopProperty(p)) {
+				hasTopProperty = true;
+			}
+			else {
+				hasBottomProperty = true;
+			}
+		}
+		return !(hasTopProperty && hasBottomProperty);
 	}
 
 	
 	public Boolean visit(OWLNegativeDataPropertyAssertionAxiom axiom) {
-		return true;
+		return !model.isTopProperty(axiom.getProperty());
 	}
 
 	
@@ -161,32 +161,50 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLDisjointDataPropertiesAxiom axiom) {
-		return true;
+		int topPropertiesCount = 0;
+		for (OWLDataPropertyExpression p : axiom.getProperties()) {
+			if (model.isTopProperty(p)) {
+				topPropertiesCount++;
+			}
+		}
+		return topPropertiesCount <=1;
 	}
 
 	
 	public Boolean visit(OWLDisjointObjectPropertiesAxiom axiom) {
-		return true;
+		int topPropertiesCount = 0;
+		for (OWLObjectPropertyExpression p : axiom.getProperties()) {
+			if (model.isTopProperty(p)) {
+				topPropertiesCount++;
+			}
+		}
+		return topPropertiesCount <=1;
 	}
 
 	
 	public Boolean visit(OWLObjectPropertyRangeAxiom axiom) {
+		if (model.isTopProperty(axiom.getProperty())) {
+			return axiom.getRange().accept(interpreter).equals(model.getAllIndividuals());
+		}
 		return true;
 	}
 
 	
 	public Boolean visit(OWLObjectPropertyAssertionAxiom axiom) {
-		return false;
+		return !model.isTopProperty(axiom.getProperty());
 	}
 
 	
 	public Boolean visit(OWLFunctionalObjectPropertyAxiom axiom) {
+		if (model.isTopProperty(axiom.getProperty())) {
+			return model.getAllIndividuals().size() == 1;
+		}
 		return true;
 	}
 
 	
 	public Boolean visit(OWLSubObjectPropertyOfAxiom axiom) {
-		return true;
+		return !(model.isTopProperty(axiom.getSubProperty()) && !model.isTopProperty(axiom.getSuperProperty()));
 	}
 
 	
@@ -216,22 +234,35 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLDataPropertyRangeAxiom axiom) {
+		if (model.isTopProperty(axiom.getProperty())) {
+			return model.isTopDataRange(axiom.getRange());
+		}
 		return true;
 	}
 
 	
 	public Boolean visit(OWLFunctionalDataPropertyAxiom axiom) {
-		return true;
+		return !model.isTopProperty(axiom.getProperty());
 	}
 
 	
 	public Boolean visit(OWLEquivalentDataPropertiesAxiom axiom) {
-		return true;
+		boolean hasBottomProperty = false;
+		boolean hasTopProperty = false;
+		for (OWLDataPropertyExpression p :axiom.getProperties()) {
+			if (model.isTopProperty(p)) {
+				hasTopProperty = true;
+			}
+			else {
+				hasBottomProperty = true;
+			}
+		}
+		return hasBottomProperty ? !hasTopProperty : true;
 	}
 
 	
 	public Boolean visit(OWLClassAssertionAxiom axiom) {
-		return false;
+		return axiom.getClassExpression().accept(interpreter).contains(axiom.getIndividual());
 	}
 
 	
@@ -250,7 +281,7 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLDataPropertyAssertionAxiom axiom) {
-		return false;
+		return model.isTopProperty(axiom.getProperty());
 	}
 
 	
@@ -265,7 +296,7 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLSubDataPropertyOfAxiom axiom) {
-		return true;
+		return !(model.isTopProperty(axiom.getSubProperty()) && !model.isTopProperty(axiom.getSuperProperty()));
 	}
 
 	
@@ -280,17 +311,26 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLSubPropertyChainOfAxiom axiom) {
-		return true;
+		if (model.isTopProperty(axiom.getSuperProperty())) {
+			return true;
+		}
+		for (OWLObjectPropertyExpression p : axiom.getPropertyChain()) {
+			if (!model.isTopProperty(p)) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	
 	public Boolean visit(OWLInverseObjectPropertiesAxiom axiom) {
-		return true;
+		return model.isTopProperty(axiom.getFirstProperty()) ? model.isTopProperty(axiom.getSecondProperty())
+														     : !model.isTopProperty(axiom.getSecondProperty());
 	}
 
 	
 	public Boolean visit(OWLHasKeyAxiom axiom) {
-		return true;
+		return model.getAllIndividuals().size() < 2;
 	}
 
 	
