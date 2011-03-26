@@ -3,7 +3,6 @@ package org.protege.owlapi.inconsistent;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLAnnotationAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLAnnotationPropertyDomainAxiom;
 import org.semanticweb.owlapi.model.OWLAnnotationPropertyRangeAxiom;
@@ -28,6 +27,7 @@ import org.semanticweb.owlapi.model.OWLEquivalentObjectPropertiesAxiom;
 import org.semanticweb.owlapi.model.OWLFunctionalDataPropertyAxiom;
 import org.semanticweb.owlapi.model.OWLFunctionalObjectPropertyAxiom;
 import org.semanticweb.owlapi.model.OWLHasKeyAxiom;
+import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLInverseFunctionalObjectPropertyAxiom;
 import org.semanticweb.owlapi.model.OWLInverseObjectPropertiesAxiom;
 import org.semanticweb.owlapi.model.OWLIrreflexiveObjectPropertyAxiom;
@@ -50,12 +50,14 @@ import org.semanticweb.owlapi.model.SWRLRule;
 public class TypeCollector implements OWLAxiomVisitor {
 	private Set<OWLClassExpression> types = new HashSet<OWLClassExpression>();
 	private OWLDataFactory factory;
+	private OWLIndividual i;
 	
-	public TypeCollector(OWLDataFactory factory) {
+	public TypeCollector(OWLDataFactory factory, OWLIndividual i) {
 		this.factory = factory;
+		this.i = i;
 	}
 	
-	private void reset() {
+	public void reset() {
 		types.clear();
 	}
 
