@@ -10,6 +10,12 @@ import org.semanticweb.owlapi.model.OWLEntity;
 public class Util {
 	public final static String RANDOM_URN_PREFIX = "urn:protege:";
 	
+	private Util() { }
+	
+	public static IRI generateRandomIRI(String fragment) {
+		return IRI.create(RANDOM_URN_PREFIX + UUID.randomUUID().toString() + "#" + fragment);
+	}	
+	
 	public static IRI generateRandomIRI() {
 		return IRI.create(RANDOM_URN_PREFIX + UUID.randomUUID().toString());
 	}
