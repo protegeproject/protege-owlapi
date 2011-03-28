@@ -3,6 +3,7 @@ package org.protege.owlapi.inconsistent.trivialModel;
 import java.util.Set;
 import java.util.TreeSet;
 
+import org.apache.log4j.Logger;
 import org.semanticweb.owlapi.model.OWLAnnotationAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLAnnotationPropertyDomainAxiom;
 import org.semanticweb.owlapi.model.OWLAnnotationPropertyRangeAxiom;
@@ -51,6 +52,8 @@ import org.semanticweb.owlapi.model.SWRLRule;
 
 
 public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
+	public static final Logger LOGGER = Logger.getLogger(AxiomInterpreter.class);
+	
 	private ClassExpressionInterpreter interpreter;
 	private TrivialModel model;
 	private OWLDataFactory factory;
@@ -78,7 +81,15 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLSubClassOfAxiom axiom) {
-		return axiom.getSuperClass().accept(interpreter).containsAll(axiom.getSubClass().accept(interpreter));
+		Set<OWLIndividual> superInterpretation = axiom.getSuperClass().accept(interpreter);
+		Set<OWLIndividual> subInterpretation = axiom.getSubClass().accept(interpreter);
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("For the axiom " + axiom + " the trivial model super class interpretation was ");
+			LOGGER.debug(superInterpretation.toString());
+			LOGGER.debug(" and the sub class interpretation was ");
+			LOGGER.debug(subInterpretation.toString());
+		}
+		return superInterpretation.containsAll(subInterpretation);
 	}
 
 	
@@ -98,12 +109,18 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLDisjointClassesAxiom axiom) {
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("Calculating the trivial model interpretation of " + axiom);
+		}
 		OWLClassExpression[] ces = axiom.getClassExpressions().toArray(new OWLClassExpression[0]);
 		for (int i = 0; i < ces.length; i++) {
 			for (int j = i+1; j < ces.length; j++) {
-				Set<OWLIndividual> interpretation = ces[i].accept(interpreter);
+				Set<OWLIndividual> interpretation1 = ces[i].accept(interpreter);
+				if (LOGGER.isDebugEnabled()) {
+					LOGGER.debug("Trivial Model interpretation of " + ces[i] + " was " + interpretation1);
+				}
 				for (OWLIndividual individual : ces[j].accept(interpreter)) {
-					if (interpretation.contains(individual)) {
+					if (interpretation1.contains(individual)) {
 						return false;
 					}
 				}
@@ -114,7 +131,13 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLDataPropertyDomainAxiom axiom) {
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("Calculating the trivial model interpretation of " + axiom);
+		}
 		Set<OWLIndividual> interpretation = axiom.getDomain().accept(interpreter);
+        if (LOGGER.isDebugEnabled()) {
+            LOGGER.debug("The interpretation of " + axiom.getDomain() + " is " + interpretation);
+        }
 		if (model.isTopProperty(axiom.getProperty())) {
 			return interpretation.equals(model.getAllIndividuals());
 		}
@@ -125,7 +148,13 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLObjectPropertyDomainAxiom axiom) {
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("Calculating the trivial model interpretation of " + axiom);
+		}
 		Set<OWLIndividual> interpretation = axiom.getDomain().accept(interpreter);
+        if (LOGGER.isDebugEnabled()) {
+            LOGGER.debug("The interpretation of " + axiom.getDomain() + " is " + interpretation);
+        }
 		if (model.isTopProperty(axiom.getProperty())) {
 			return interpretation.equals(model.getAllIndividuals());
 		}
@@ -183,8 +212,15 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLObjectPropertyRangeAxiom axiom) {
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("Calculating the trivial model interpretation of " + axiom);
+		}
 		if (model.isTopProperty(axiom.getProperty())) {
-			return axiom.getRange().accept(interpreter).equals(model.getAllIndividuals());
+            Set<OWLIndividual> interpretation = axiom.getRange().accept(interpreter);
+            if (LOGGER.isDebugEnabled()) {
+                LOGGER.debug("The interpretation of " + axiom.getRange() + " is " + interpretation);
+            }
+			return interpretation.equals(model.getAllIndividuals());
 		}
 		return true;
 	}
@@ -209,10 +245,20 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLDisjointUnionAxiom axiom) {
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("Calculating the trivial model interpretation of " + axiom);
+		}
 		Set<OWLIndividual> projectedUnion = axiom.getOWLClass().accept(interpreter);
+        if (LOGGER.isDebugEnabled()) {
+            LOGGER.debug("The interpretation of " + axiom.getOWLClass() + " is " + projectedUnion);
+        }
 		Set<OWLIndividual> realUnion = new TreeSet<OWLIndividual>();
 		for (OWLClassExpression ce : axiom.getClassExpressions()) {
-			realUnion.addAll(ce.accept(interpreter));
+            Set<OWLIndividual> interpretation = ce.accept(interpreter);
+            if (LOGGER.isDebugEnabled()) {
+                LOGGER.debug("The interpretation of " + ce + " is " + interpretation);
+            }
+			realUnion.addAll(interpretation);
 		}
 		return projectedUnion.equals(realUnion);
 	}
@@ -262,17 +308,28 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLClassAssertionAxiom axiom) {
-		return axiom.getClassExpression().accept(interpreter).contains(axiom.getIndividual());
+		if (LOGGER.isDebugEnabled()) {
+			LOGGER.debug("Calculating the trivial model interpretation of " + axiom);
+		}
+        Set<OWLIndividual> interpretation = axiom.getClassExpression().accept(interpreter);
+        if (LOGGER.isDebugEnabled()) {
+            LOGGER.debug("The interpretation of " + axiom.getClassExpression() + " is " + interpretation);
+        }
+		return interpretation.contains(axiom.getIndividual());
 	}
 
 	
 	public Boolean visit(OWLEquivalentClassesAxiom axiom) {
 		Set<OWLIndividual> individuals = null;
 		for (OWLClassExpression ce : axiom.getClassExpressions()) {
+            Set<OWLIndividual> interpretation = ce.accept(interpreter);
+            if (LOGGER.isDebugEnabled()) {
+                LOGGER.debug("The interpretation of " + ce + " is " + interpretation);
+            }
 			if (individuals == null) {
-				individuals = ce.accept(interpreter);
+				individuals = interpretation;
 			}
-			else if (!individuals.equals(ce.accept(interpreter))) {
+			else if (!individuals.equals(interpretation)) {
 				return false;
 			}
 		}

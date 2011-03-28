@@ -9,17 +9,17 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
-import org.semanticweb.owlapi.reasoner.InferenceType;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 
 import com.clarkparsia.owlapi.explanation.BlackBoxExplanation;
 
-public class Heuristics {
+public class Phase01 {
 	private OWLOntology ontology;
 	private OWLReasonerFactory reasonerFactory;
 	private OntologySplitter splitter;
 	private OWLOntology consistentOntology;
+	private OWLOntology otherPartOntology;
 	private OWLOntology surrogateTypeOntology;
 	private OWLReasoner reasoner;
 	private Set<OWLClass> inconsistentClasses;
@@ -31,6 +31,14 @@ public class Heuristics {
 	
 	public OWLOntology getConsistentOntology() {
 		return consistentOntology;
+	}
+	
+	public OWLOntology getOtherPartOntology() {
+		return otherPartOntology;
+	}
+	
+	public OWLOntology getSurrogateTypeOntology() {
+		return surrogateTypeOntology;
 	}
 	
 	public Set<OWLClass> getInconsistentClasses() {
@@ -54,6 +62,7 @@ public class Heuristics {
 		splitter = new OntologySplitter();
 		splitter.split(ontology, reasonerFactory);
 		consistentOntology = splitter.getConsistentPart();
+		otherPartOntology = splitter.getOtherPart();
 		surrogateTypeOntology = splitter.getSurrogateTypePart();
 		reasoner = reasonerFactory.createReasoner(surrogateTypeOntology);
 		
@@ -81,7 +90,7 @@ public class Heuristics {
 	}
 	
 	public Set<OWLAxiom> explain(OWLIndividual i) {
-		BlackBoxExplanation teacher = new BlackBoxExplanation(consistentOntology, reasonerFactory, reasoner);
+		BlackBoxExplanation teacher = new BlackBoxExplanation(surrogateTypeOntology, reasonerFactory, reasoner);
 		Set<OWLAxiom> axioms = new HashSet<OWLAxiom>();
 		OWLClass type = splitter.getTypeCollector().getSurrogateType(i);
 		for (OWLAxiom axiom : teacher.getExplanation(type)) {

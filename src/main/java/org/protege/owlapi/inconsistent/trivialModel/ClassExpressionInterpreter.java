@@ -78,7 +78,7 @@ public class ClassExpressionInterpreter implements OWLClassExpressionVisitorEx<S
 	
 	public Set<OWLIndividual> visit(OWLObjectComplementOf ce) {
 		Set<OWLIndividual> interpretation = new TreeSet<OWLIndividual>(model.getAllIndividuals());
-		interpretation.removeAll(ce.accept(this));
+		interpretation.removeAll(ce.getOperand().accept(this));
 		return interpretation;
 	}
 

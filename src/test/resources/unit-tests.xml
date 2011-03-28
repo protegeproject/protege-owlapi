@@ -3,7 +3,9 @@
 <suite name="OWLApi Database Backend Test Suite" verbose="1">
 
     <test name="Postgres Tests">
-        <class/>
+        <classes>
+        	<class name="org.protege.owlapi.inconsistent.TestInconsistentPizza"/>
+        </classes>
     </test>
 
 </suite>
