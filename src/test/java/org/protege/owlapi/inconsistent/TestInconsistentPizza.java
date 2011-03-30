@@ -30,7 +30,7 @@ public class TestInconsistentPizza {
         Class<?> hermitClass = Class.forName("org.semanticweb.HermiT.Reasoner$ReasonerFactory");
         OWLReasonerFactory hermitFactory = (OWLReasonerFactory) hermitClass.newInstance();
         Phase01 heuristic = new Phase01();
-        heuristic.phase01(pizza, hermitFactory);
+        heuristic.run(pizza, hermitFactory);
         OWLClass pizzaClass = factory.getOWLClass(IRI.create(PIZZA_NS + "#Pizza"));
         assertTrue(heuristic.getInconsistentClasses().contains(pizzaClass));
         checkExplanationForPizza01(heuristic.explain(pizzaClass), factory);
