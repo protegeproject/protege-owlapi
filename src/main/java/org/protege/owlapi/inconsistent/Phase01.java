@@ -1,20 +1,33 @@
 package org.protege.owlapi.inconsistent;
 
+import java.io.File;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.apache.log4j.Logger;
+import org.semanticweb.owlapi.io.FileDocumentTarget;
+import org.semanticweb.owlapi.io.OWLXMLOntologyFormat;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
+import org.semanticweb.owlapi.model.OWLOntologyFormat;
+import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
+import org.semanticweb.owlapi.reasoner.ReasonerInterruptedException;
 
 import com.clarkparsia.owlapi.explanation.BlackBoxExplanation;
 
 public class Phase01 {
+	public static final Logger LOGGER = Logger.getLogger(Phase01.class);
+	
+	private boolean reasonerActive = false;
+	private boolean isCancelled = false;
+	
 	private OWLOntology ontology;
 	private OWLReasonerFactory reasonerFactory;
 	private OntologySplitter splitter;
@@ -55,7 +68,12 @@ public class Phase01 {
 	
 	
 
-	public void phase01(OWLOntology ontology, OWLReasonerFactory reasonerFactory) throws OWLOntologyCreationException {
+	public boolean run(OWLOntology ontology, OWLReasonerFactory reasonerFactory) throws OWLOntologyCreationException {
+		synchronized (this) {
+			if (isCancelled) {
+				return false;
+			}
+		}
 		this.ontology = ontology;
 		OWLDataFactory factory = ontology.getOWLOntologyManager().getOWLDataFactory();
 		this.reasonerFactory = reasonerFactory;
@@ -68,7 +86,24 @@ public class Phase01 {
 		
 		inconsistentClasses = new HashSet<OWLClass>();
 		inconsistentIndividuals = new HashSet<OWLIndividual>();
-		for (OWLClass c : reasoner.getBottomClassNode().getEntities()) {
+		synchronized (this) {
+			if (isCancelled) {
+				return false;
+			}
+			reasonerActive = true;
+		}
+		Set<OWLClass> entities;
+		try {
+			entities = reasoner.getBottomClassNode().getEntities();
+		}
+		catch (ReasonerInterruptedException interrupt) {
+			LOGGER.info("Reasoning process was interrupted - aborting explanation.");
+			return false;
+		}
+		synchronized (this) {
+			reasonerActive = false;
+		}
+		for (OWLClass c : entities) {
 			if (c.equals(factory.getOWLNothing())) {
 				continue;
 			}
@@ -81,6 +116,27 @@ public class Phase01 {
 					inconsistentClasses.add(c);
 				}
 			}
+		}
+		return true;
+	}
+	
+	public void cancel() {
+		synchronized (this) {
+			isCancelled = true;
+			if (reasonerActive) {
+				reasoner.interrupt();
+			}
+		}
+	}
+
+	public void reset() {
+		isCancelled = false;
+		reasonerActive = false;
+	}
+	
+	public void dispose() {
+		if (reasoner != null) {
+			reasoner.dispose();
 		}
 	}
 	
@@ -103,6 +159,26 @@ public class Phase01 {
 			}
 		}
 		return axioms;
+	}
+	
+	public File saveOntologies(File parent) throws OWLOntologyStorageException {
+		OWLOntologyManager manager = consistentOntology.getOWLOntologyManager();
+		File dir;
+		for (int i = 0; true; i++) {
+			dir = new File(parent, "explanation-" + i);
+			if (!dir.exists()) {
+				break;
+			}
+		}
+		OWLXMLOntologyFormat format = new OWLXMLOntologyFormat();
+		OWLOntologyFormat originalFormat = ontology.getOWLOntologyManager().getOntologyFormat(ontology);
+		if (originalFormat.isPrefixOWLOntologyFormat()) {
+			format.copyPrefixesFrom(originalFormat.asPrefixOWLOntologyFormat());
+		}
+		manager.saveOntology(consistentOntology, format, new FileDocumentTarget(new File(dir, "ConsistentSubset.owl")));
+		manager.saveOntology(surrogateTypeOntology, format, new FileDocumentTarget(new File(dir, "SurrogateTypes.owl")));
+		manager.saveOntology(otherPartOntology, format, new FileDocumentTarget(new File(dir, "RemainingPart.owl")));		
+		return dir;
 	}
 	
 
