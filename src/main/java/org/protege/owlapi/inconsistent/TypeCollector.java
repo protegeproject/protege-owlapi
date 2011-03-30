@@ -1,7 +1,9 @@
 package org.protege.owlapi.inconsistent;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 import org.semanticweb.owlapi.model.EntityType;
 import org.semanticweb.owlapi.model.OWLAnnotationAssertionAxiom;
@@ -57,6 +59,7 @@ public class TypeCollector implements OWLAxiomVisitorEx<OWLAxiom> {
 	private OWLDataFactory factory;
 	private Map<OWLIndividual, OWLClass> surrogateTypeMap = new HashMap<OWLIndividual, OWLClass>();
 	private Map<OWLClass, OWLIndividual> typedIndividualMap = new HashMap<OWLClass, OWLIndividual>();
+	private Set<OWLAxiom> singletonAxioms = new HashSet<OWLAxiom>();
 		
 	public TypeCollector(OWLDataFactory factory) {
 		this.factory = factory;
@@ -72,12 +75,17 @@ public class TypeCollector implements OWLAxiomVisitorEx<OWLAxiom> {
 			surrogate = Util.generateRandomEntity(factory, EntityType.CLASS);
 			surrogateTypeMap.put(i, surrogate);
 			typedIndividualMap.put(surrogate, i);
+			singletonAxioms.add(factory.getOWLSubClassOfAxiom(surrogate, factory.getOWLObjectOneOf(i)));
 		}
 		return surrogate;
 	}
 	
 	public OWLIndividual getTypedIndividual(OWLClass c) {
 		return typedIndividualMap.get(c);
+	}
+	
+	public Set<OWLAxiom> getSingletonAxioms() {
+		return singletonAxioms;
 	}
 
 	/* **********************************************************************

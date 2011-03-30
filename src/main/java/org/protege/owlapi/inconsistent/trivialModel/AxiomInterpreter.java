@@ -227,7 +227,7 @@ public class AxiomInterpreter implements OWLAxiomVisitorEx<Boolean> {
 
 	
 	public Boolean visit(OWLObjectPropertyAssertionAxiom axiom) {
-		return !model.isTopProperty(axiom.getProperty());
+		return model.isTopProperty(axiom.getProperty());
 	}
 
 	

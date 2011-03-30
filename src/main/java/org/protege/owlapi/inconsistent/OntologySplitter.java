@@ -89,6 +89,11 @@ public class OntologySplitter {
 		}
 		manager.applyChanges(changes);
 		changes.clear();
+		for (OWLAxiom axiom : typeCollector.getSingletonAxioms()) {
+			changes.add(new AddAxiom(surrogateTypePart, axiom));
+		}
+		manager.applyChanges(changes);
+		changes.clear();
 		for (OWLEntity e : otherPart.getSignature()) {
 			if (!consistentPart.containsEntityInSignature(e)) {
 				changes.add(new AddAxiom(consistentPart, factory.getOWLDeclarationAxiom(e)));
