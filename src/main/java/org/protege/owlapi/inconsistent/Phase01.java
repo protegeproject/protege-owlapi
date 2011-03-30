@@ -98,7 +98,7 @@ public class Phase01 {
 			if (originalAxiom != null) {
 				axioms.add(originalAxiom);
 			}
-			else {
+			else if (!splitter.getTypeCollector().getSingletonAxioms().contains(axiom)){
 				axioms.add(axiom);
 			}
 		}
