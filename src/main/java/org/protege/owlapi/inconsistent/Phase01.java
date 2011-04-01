@@ -160,26 +160,9 @@ public class Phase01 {
 		}
 		return axioms;
 	}
-	
+
 	public File saveOntologies(File parent) throws OWLOntologyStorageException {
-		OWLOntologyManager manager = consistentOntology.getOWLOntologyManager();
-		File dir;
-		for (int i = 0; true; i++) {
-			dir = new File(parent, "explanation-" + i);
-			if (!dir.exists()) {
-				break;
-			}
-		}
-		OWLXMLOntologyFormat format = new OWLXMLOntologyFormat();
-		OWLOntologyFormat originalFormat = ontology.getOWLOntologyManager().getOntologyFormat(ontology);
-		if (originalFormat.isPrefixOWLOntologyFormat()) {
-			format.copyPrefixesFrom(originalFormat.asPrefixOWLOntologyFormat());
-		}
-		manager.saveOntology(consistentOntology, format, new FileDocumentTarget(new File(dir, "ConsistentSubset.owl")));
-		manager.saveOntology(surrogateTypeOntology, format, new FileDocumentTarget(new File(dir, "SurrogateTypes.owl")));
-		manager.saveOntology(otherPartOntology, format, new FileDocumentTarget(new File(dir, "RemainingPart.owl")));		
-		return dir;
+		return splitter.saveOntologies(parent);
 	}
-	
 
 }

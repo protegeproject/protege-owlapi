@@ -1,5 +1,6 @@
 package org.protege.owlapi.inconsistent;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -8,6 +9,8 @@ import java.util.Map;
 import org.protege.owlapi.inconsistent.trivialModel.AxiomInterpreter;
 import org.protege.owlapi.inconsistent.trivialModel.TrivialModel;
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.io.FileDocumentTarget;
+import org.semanticweb.owlapi.io.OWLXMLOntologyFormat;
 import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.AddImport;
 import org.semanticweb.owlapi.model.IRI;
@@ -20,10 +23,13 @@ import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyChange;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
+import org.semanticweb.owlapi.model.OWLOntologyFormat;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 
 public class OntologySplitter {
+	private OWLOntology originalOntology;
 	private OWLOntology consistentPart;
 	private OWLOntology otherPart;
 	private OWLOntology surrogateTypePart;
@@ -51,6 +57,7 @@ public class OntologySplitter {
 	}
 	
 	public void split(OWLOntology ontology, OWLReasonerFactory reasonerFactory) throws OWLOntologyCreationException {
+		originalOntology = ontology;
 		typeCollector = new TypeCollector(ontology.getOWLOntologyManager().getOWLDataFactory());
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		initializeOntologies(manager);
@@ -100,6 +107,28 @@ public class OntologySplitter {
 			}
 		}
 		manager.applyChanges(changes);
+	}
+	
+	
+	public File saveOntologies(File parent) throws OWLOntologyStorageException {
+		OWLOntologyManager manager = consistentPart.getOWLOntologyManager();
+		File dir;
+		for (int i = 0; true; i++) {
+			dir = new File(parent, "explanation-" + i);
+			if (!dir.exists()) {
+				break;
+			}
+		}
+		dir.mkdir();
+		OWLXMLOntologyFormat format = new OWLXMLOntologyFormat();
+		OWLOntologyFormat originalFormat = originalOntology.getOWLOntologyManager().getOntologyFormat(originalOntology);
+		if (originalFormat.isPrefixOWLOntologyFormat()) {
+			format.copyPrefixesFrom(originalFormat.asPrefixOWLOntologyFormat());
+		}
+		manager.saveOntology(consistentPart, format, new FileDocumentTarget(new File(dir, "ConsistentSubset.owl")));
+		manager.saveOntology(surrogateTypePart, format, new FileDocumentTarget(new File(dir, "SurrogateTypes.owl")));
+		manager.saveOntology(otherPart, format, new FileDocumentTarget(new File(dir, "RemainingPart.owl")));		
+		return dir;
 	}
 
 }
