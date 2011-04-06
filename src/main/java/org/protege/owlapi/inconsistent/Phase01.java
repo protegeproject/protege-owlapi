@@ -54,6 +54,10 @@ public class Phase01 {
 		return surrogateTypeOntology;
 	}
 	
+	public OWLOntology getHotspots() {
+		return splitter.getHotSpotPart();
+	}
+	
 	public Set<OWLClass> getInconsistentClasses() {
 		return inconsistentClasses;
 	}
