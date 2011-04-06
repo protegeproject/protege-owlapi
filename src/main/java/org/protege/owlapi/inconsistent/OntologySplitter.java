@@ -15,11 +15,9 @@ import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.AddImport;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
-import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLEntity;
 import org.semanticweb.owlapi.model.OWLImportsDeclaration;
-import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyChange;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
@@ -33,6 +31,7 @@ public class OntologySplitter {
 	private OWLOntology consistentPart;
 	private OWLOntology otherPart;
 	private OWLOntology surrogateTypePart;
+	private OWLOntology hotSpotPart;
 	private TypeCollector typeCollector;
 	private Map<OWLAxiom, OWLAxiom> substituteAxiomMap = new HashMap<OWLAxiom, OWLAxiom>();
 	
@@ -52,6 +51,10 @@ public class OntologySplitter {
 		return surrogateTypePart;
 	}
 	
+	public OWLOntology getHotSpotPart() {
+		return hotSpotPart;
+	}
+	
 	public OWLAxiom getOriginalAxiom(OWLAxiom substituteAxiom) {
 		return substituteAxiomMap.get(substituteAxiom);
 	}
@@ -69,9 +72,11 @@ public class OntologySplitter {
 		consistentPart = manager.createOntology(consistentPartIRI);
 		otherPart = manager.createOntology(Util.generateRandomIRI("RemainingAxioms"));
 		surrogateTypePart = manager.createOntology(Util.generateRandomIRI("SurrogateIndividualTypes"));
+		hotSpotPart = manager.createOntology(Util.generateRandomIRI("Hotspots"));
 		OWLImportsDeclaration decl = manager.getOWLDataFactory().getOWLImportsDeclaration(consistentPartIRI);
 		manager.applyChange(new AddImport(otherPart, decl));
 		manager.applyChange(new AddImport(surrogateTypePart, decl));
+		manager.applyChange(new AddImport(hotSpotPart, decl));
 	}
 	
 	private void assignAxioms(OWLOntology originalOntology, OWLReasonerFactory reasonerFactory) throws OWLOntologyCreationException {
@@ -89,6 +94,9 @@ public class OntologySplitter {
 					if (substituteAxiom != null) {
 						changes.add(new AddAxiom(surrogateTypePart, substituteAxiom));
 						substituteAxiomMap.put(substituteAxiom, axiom);
+					}
+					else {
+						changes.add(new AddAxiom(hotSpotPart, axiom));
 					}
 					changes.add(new AddAxiom(otherPart, axiom));
 				}
