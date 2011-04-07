@@ -555,7 +555,7 @@ public class WriteSafeOWLOntologyImpl implements OWLMutableOntology, WriteSafeOW
         }
     }
 
-    public Set<OWLClassAssertionAxiom> getClassAssertionAxioms(OWLClass ce) {
+    public Set<OWLClassAssertionAxiom> getClassAssertionAxioms(OWLClassExpression ce) {
         readLock.lock();
         try {
             return delegate.getClassAssertionAxioms(ce);
