@@ -1,8 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="OWLApi Database Backend Test Suite" verbose="1">
+<suite name="Protege OWLAPI Extensions Test Suite" verbose="1">
 
-    <test name="Postgres Tests">
+    <test name="Main Tests">
         <classes>
         	<class name="org.protege.owlapi.inconsistent.TestInconsistentPizza"/>
         </classes>
