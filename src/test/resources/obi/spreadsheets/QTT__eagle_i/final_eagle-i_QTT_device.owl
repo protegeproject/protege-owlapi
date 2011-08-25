@@ -1,0 +1,1973 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:p3="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl#"
+    xmlns:j.0="http://purl.org/obo/owl/PATO#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:obo="http://purl.obolibrary.org/obo/"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:p4="http://purl.obolibrary.org/obo/obi.owl#"
+    xmlns:p1="http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/IAO.owl#"
+    xmlns:j.1="http://purl.org/obo/owl/NCBITaxon#"
+    xmlns:j.2="http://www.obofoundry.org/ro/ro.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:p2="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl#"
+    xmlns:j.3="http://purl.org/obo/owl/CARO#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:roproposed="http://purl.org/obo/owl/OBO_REL#"
+    xmlns:j.4="http://purl.org/obo/owl/PRO#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.5="http://purl.org/obo/owl/CHEBI#"
+  xml:base="http://www.owl-ontologies.com/test.owl">
+  <owl:Ontology rdf:about="http://purl.org/QTT/QTT.owl">
+    <owl:imports rdf:resource="http://obi.svn.sourceforge.net/viewvc/obi/trunk/src/ontology/branches/obi.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_79">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bead array reader</obo:IAO_0000111>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to acquire and image bead array data.</obo:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bead array reader</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_93">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >J. Black, Microbiology, Prentice Hall (1993) pg. 334; http://en.wikipedia.org/wiki/Autoclave</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to sterilize equipment and supplies by subjecting them to high pressure steam at 121 C or more, typically for 15 to 20 minutes depending on the size of the load and the contents.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >autoclave</obo:IAO_0000111>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000946"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >autoclave</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_49">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_38"/>
+    </rdfs:subClassOf>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A microplate washer that is used for enzyme-linked immunosorbent assays (ELISA).</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ELISA microplate washer</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ELISA microplate washer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_75">
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000375"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to freeze dry material.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >lyophilizer</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >lyophilizer</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Freeze_drying</obo:IAO_0000119>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_83">
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A balance that consists of a metal plate on which to place an object and a digital readout of the measurement of its mass.</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >top loading balance</obo:IAO_0000111>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_81"/>
+    </rdfs:subClassOf>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >top loading balance</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_16">
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cryofixation device</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001036"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Cryofixation</obo:IAO_0000119>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used for the fixation or stabilization of biological materials as the first step in specimen preparation for electron microscopy.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cryofixation device</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_65">
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used for the imaging of immunoblots.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >immunoblot scanner</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >immunoblot scanner</obo:IAO_0000111>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_12">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_10"/>
+    </rdfs:subClassOf>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A confocal microscope that uses a Nipkow disk, a mechanical, geometrically operating image scanning device.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >spinning-disk confocal microscope</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >spinning-disk confocal microscope</obo:IAO_0000111>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Nipkow_disk</obo:IAO_0000119>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_69">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Sonography</obo:IAO_0000119>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ultrasound machine</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ultrasound machine</obo:IAO_0000111>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to visualize subcutaneous body structures including tendons, muscles, joints, vessels and internal organs.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_22">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Densitometer</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >densitometer</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >densitometer</obo:IAO_0000111>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that measures the degree of darkness (the optical density) of a photographic or semitransparent material or of a reflecting surface.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_59">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >high performance liquid chromatography instrument</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/High_performance_liquid_chromatography</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >high performance liquid chromatography instrument</obo:IAO_0000111>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A liquid chromatography instrument that consists of a reservoir of mobile phase, a pump, an injector, a separation column, and a detector. The pump (rather than gravity) provides the higher pressure required to propel the mobile phase and analyte through the densely packed column.</obo:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_6"/>
+    </rdfs:subClassOf>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_6">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000048"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A chromatography device that dissolves a mixture in liquid mobile phase to separate the analyte to be measured from other molecules in the mixture and allows it to be isolated</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Matthew Brush</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Matthew Brush</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >liquid chromatography instrument</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >liquid chromatography instrument</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_32">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_25"/>
+    </rdfs:subClassOf>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ELISA microplate reader</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ELISA microplate reader</rdfs:label>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A microplate reader that is used for enzyme-linked immunosorbent assays (ELISA).</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_88">
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >angiograph</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >angiograph</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that records the patterns of pulse waves inside blood vessels.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://medical-dictionary.thefreedictionary.com/angiograph</obo:IAO_0000119>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000368"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_55">
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >pulsed-field gel electrophoresis system</obo:IAO_0000111>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A gel electrophoresis system that is used to separate very large molecules of DNA.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Pulsed_field_gel_electrophoresis</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >pulsed-field gel electrophoresis system</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_53"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_26">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An device that is used to determine the order of nucleotides in nucleic acid sequences.</obo:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >nucleic acid sequencer</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >nucleic acid sequencer</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_51">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Category:Electrophoresis</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that moves charged particles through a medium by using an electric field induced by electrodes.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >electrophoresis system</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >electrophoresis system</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_62">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >chip spotting device</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >chip spotting device</obo:IAO_0000111>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >United States Patent 7416705</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device for dropping and immobilizing a solution of biomolecules, for example, nucleic acids such as probe DNA, mRNA, and peptide nucleic acid (PNA), and proteins on a DNA microarray surface to manufacture a DNA microarray.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_36">
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://medical-dictionary.thefreedictionary.com/microdissection</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used for the dissection of tissues under magnification.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microdissection instrument</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microdissection instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_41">
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plate shaker</obo:IAO_0000111>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that provides shaking motion for microplates.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plate shaker</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_72">
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >automatic staining machine</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >automatic staining machine</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000961"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to automatically stain tissue sections on slides or tissue specimens.</obo:IAO_0000115>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_45">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vacuum manifold</obo:IAO_0000111>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vacuum manifold</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used for the vacuum-driven processing of multiwell strips or plates, or spin columns. IS THIS AN INSTRUMENT? IS THE DEFINTION CORRECT - TO DISTRIBUTE PRESSURE EVENLY.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_84">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.answers.com/topic/micropipette</obo:IAO_0000119>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A microinjection device that is used to measure very small volumes of liquids.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >micropipette</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >micropipette</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_21">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >coagulation analyzer</obo:IAO_0000111>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >coagulation analyzer</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >United States Patent 5439646</obo:IAO_0000119>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device for automatically analyzing blood coagulation in a clinical laboratory.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_94">
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000387"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Cryostat</obo:IAO_0000119>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cryostat</obo:IAO_0000111>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cryostat</rdfs:label>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device consisting of a vessel, similar in construction to a vacuum flask, that is used to maintain cold cryogenic temperatures. FIX THIS DEFINITION</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_66">
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >infrared image acquisition device</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >United States Patent 4107530</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >infrared image acquisition device</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An image acquisition device that is responsive to an infrared emissive target within a given field of view.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_15">
+    <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >x-ray generator</obo:IAO_0000118>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >X-ray source</obo:IAO_0000111>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/X-ray_generator</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >X-ray source</rdfs:label>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to generate X-rays.</obo:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000374"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_9">
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An optical microscope that uses two separate optical paths with two objectives and two eyepieces to provide slightly different viewing angles to the left and right eyes.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Optical_microscope#Stereo_microscope</obo:IAO_0000119>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >stereo microscope</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >stereo microscope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000940"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_76">
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >capillary blotter</obo:IAO_0000111>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to transfer nucleic acids from agarose gels onto a membrane, based on the movement of buffer from a reservoir through the gel and the blotting membrane to a stack of dry blotting paper by capillary force. The molecules are carried to the blotting membrane on which they are adsorbed.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >capillary blotter</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.biometra.de/</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_11">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >laser scanning confocal microscope</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A confocal microscope that obtains high-resolution optical images with depth selectivity, in which a laser beam passes through a light source aperture and then is focused by an objective lens into a small (ideally diffraction limited) focal volume within or on the surface of a specimen.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >laser scanning confocal microscope</obo:IAO_0000111>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Confocal_laser_scanning_microscopy</obo:IAO_0000119>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_10"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_5">
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tandem mass spectrometer</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tandem mass spectrometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000049"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://goldbook.iupac.org/T06250.html</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A mass spectrometer in which ions are subjected to two or more sequential stages of analysis (which may be separated spatially or temporally) according to the quotient mass/charge.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_31">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >multimode microplate reader</rdfs:label>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A microplate reader that can detect multiple types of absorbance, luminescence or fluorescence.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >multimode microplate reader</obo:IAO_0000111>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_25"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_80">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SPECT scanner</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Single_photon_emission_computed_tomography</obo:IAO_0000119>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SPECT scanner</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A nuclear medicine tomographic imaging device that uses gamma rays to provide 3D information, typically presented as cross-sectional slices through the specimen but with the ability to be freely reformatted or manipulated as required.</obo:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_56">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to isolate and collect nucleic acids (DNA or RNA) for subsequent molecular analysis.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >nucleic acid extraction/purification instrument</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >nucleic acid extraction/purification instrument</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_61">
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000376"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PET synthesizer</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PET synthesizer</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to produce targeted molecular pharmaceuticals for use in positron emission tomography.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_52">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Capillary_electrophoresis</obo:IAO_0000119>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An electrophoresis system that is used to separate ionic species by their charge and frictional forces and mass.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >capillary electrophoresis instrument</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >capillary electrophoresis instrument</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://purl.org/QTT/QTT.owl#Class_51"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_2">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Two-photon_excitation_microscopy</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >two-photon laser/detector</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400065"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A light source used in fluorescence imaging that allows the imaging of living tissue up to a depth of 1 mm, based on the concept that two photons of low energy can excite a fluorophore in a quantum event, resulting in the emission of a fluorescence photon, typically at a higher energy than either of the two excitatory photons.</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >two-photon laser/detector</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_39">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microtome knife maker</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microtome knife maker</obo:IAO_0000111>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A glass cutting and breaking device that is used to produce glass knives used in ultramicrotomy.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_25">
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microplate reader</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A measurement device that detects biological, chemical or physical events of samples in microtiter plates.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microplate reader</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Plate_reader</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_42">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >rocker</rdfs:label>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that provides three-dimensional motion for biomedical applications (e.g., gel trays).</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >rocker</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_29">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >surface plasmon resonance instrument</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >surface plasmon resonance instrument</obo:IAO_0000111>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A tool for measuring adsorption of material onto planar metal (typically gold and silver) surfaces or onto the surface of metal nanoparticles.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Surface_plasmon_resonance</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_35">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >freeze substitution system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000375"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device or system for dehydrating and then chemically fixing electron microscopy samples at low temperatures in preparation for various treatments including embedding in resins.</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >freeze substitution system</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >doi:10.1017/S143192760707866X</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_87">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_86"/>
+    </rdfs:subClassOf>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >multichannel electronic pipette</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >multichannel electronic pipette</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.faqs.org/patents/app/20090196797</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A multichannel pipette that can be programmed by the user to aspirate a volume of liquid reagent or sample and dispense the aspirated volume or a series of aliquots in successive dispensing operations.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_46">
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to effect the transition of a substance into a glass.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vitrification apparatus</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vitrification apparatus</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Glass_transition</obo:IAO_0000119>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_71">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000960"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >automatic tissue processor</obo:IAO_0000111>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A machine for processing histological tissue having a tissue carrier basket suspended from a turntable overlying a plurality of beakers suspended from a carrier plate. The turntable is raised, indexed, and lowered by a suitable driving mechanism to move the tissue basket sequentially through the beakers. Timers can each be programmed to control the movement of the turntable to provide various different cycles for processing the tissue. Some of the beakers are received in individual thermal baths to heat and control the temperature of the substances received in the beakers for treating the tissue.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >automatic tissue processor</rdfs:label>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >United States Patent 3762362</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_30">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Scintillation_counter</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >scintillation counter</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to measure ionizing radiation.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >scintillation counter</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_18">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >slide warmer</rdfs:label>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to heat microscope slides.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >slide warmer</obo:IAO_0000111>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_8">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >digital microscope</rdfs:label>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Digital_microscope</obo:IAO_0000119>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >digital microscope</obo:IAO_0000111>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A microscope that uses optics and a charge-coupled device (CCD) camera to output a digital image to a monitor.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_47">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Laboratory_centrifuge</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microcentrifuge</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A type of centrifuge that is designed for small tubes (0.2 ml to 2.0 ml), has a compact design, and has a small footprint.</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microcentrifuge</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400106"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_34">
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A microscope that forms images of surfaces using a physical probe that scans the specimen.</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >scanning force microscope</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >scanning force microscope</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Scanning_probe_microscopy</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_20">
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to measure the ion currents across the membrane of excitable cells, such as neurons, while holding the membrane voltage at a set level.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Voltage_clamp</obo:IAO_0000119>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >voltage clamp device</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >voltage clamp device</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_91">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used for the warming of paraffin embedding medium.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >paraffin oven</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >paraffin oven</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_85">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.faqs.org/patents/app/20090196797</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.org/QTT/QTT.owl#Class_84"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A micropipette that can be programmed by the user to aspirate a volume of liquid reagent or sample and dispense a series of aliquots in successive dispensing operations.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >electronic repeater pipette</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >electronic repeater pipette</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_50">
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used for the separation of proteins.</obo:IAO_0000115>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >protein separation apparatus</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >protein separation apparatus</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_81">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >balance</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >balance</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Weighing_scale</obo:IAO_0000119>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A measuring instrument that is used to determine the weight or mass of an object.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_67">
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An image acquisition device that uses ionizing electromagnetic radiation such as X-rays to view objects.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >radiography instrument</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >radiography instrument</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Medical_radiography</obo:IAO_0000119>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_95">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Weighing_scale</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.org/QTT/QTT.owl#Class_81"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >analytical balance</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A balance with weighing pan(s) inside a transparent enclosure that is used to measure mass to a very high degree of precision and accuracy.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >analytical balance</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_14">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Cluster_(computing)</obo:IAO_0000119>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A group of linked computers, working together closely so that in many respects they form a single computer.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400107"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >computer cluster</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >computer cluster</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_4">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >portable fluorometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400143"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >portable fluorometer</obo:IAO_0000111>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A compact fluorometer that can be carried or moved with ease.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_77">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >real-time PCR machine</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >real-time PCR machine</obo:IAO_0000111>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An PCR instrument that enables both detection and quantification of one or more specific sequences in a DNA sample.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Real-time_polymerase_chain_reaction</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000989"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_63">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >digital camera</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >digital camera</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An image acquisition device that takes video or still photographs, or both, digitally by recording images via an electronic image sensor.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Digital_camera</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_53">
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >electrophoresis system</obo:IAO_0000111>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that moves charged particles through a medium by using an electric field induced by electrodes.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/QTT/QTT.owl#Class_51"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Category:Electrophoresis</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >gel electrophoresis system</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_24">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microhardness tester</rdfs:label>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A hardness testing device that is used in light-optical microscopes.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microhardness tester</obo:IAO_0000111>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >United States Patent 4611487</obo:IAO_0000119>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_70">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cell harvester</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to harvest cells from microplates and deposit samples on a filter mat. NOT AN INSTRUMENT?</obo:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001043"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cell harvester</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_43">
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >spot cutter</obo:IAO_0000111>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A robotic device that is used to excise spots from gels.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >spot cutter</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_57">
+    <rdfs:subClassOf rdf:resource="http://purl.org/QTT/QTT.owl#Class_56"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to isolate and collect DNA for subsequent molecular analysis.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DNA extraction/purification instrument</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DNA extraction/purification instrument</obo:IAO_0000111>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/DNA_extraction</obo:IAO_0000119>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_60">
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A high performance liquid chromatography instrument that employs temperature-dependent separation of DNA containing mismatched base pairs from PCR-amplified DNA fragments for chromatographic mutation analysis.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >denaturing high-performance liquid chromatography instrument</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >doi:10.1385/1-59259-850-1:173</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >denaturing high-performance liquid chromatography instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_90">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hybridization oven</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hybridization oven</rdfs:label>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000136"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that creates an appropriate environment for nucleic acid hybridization.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_38">
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to wash immunoassays in microwell strips and plates with professional accuracy. WHAT IS PROFESSIONAL ACCURACY??</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microplate washer</rdfs:label>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microplate washer</obo:IAO_0000111>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.articlesnatch.com/Article/Microplate-Readers-And-Washers-For-Laboratories/948037</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_10">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >confocal microscope</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Confocal_microscopy</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >confocal microscope</obo:IAO_0000111>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A microscope that is used to increase micrograph contrast and/or reconstruct three-dimensional images by using a spatial pinhole to eliminate out-of-focus light in specimens that are thicker than the focal plane.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_28">
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An device that is used to determine the order of amino acids in protein sequences.</obo:IAO_0000115>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >protein sequencer</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >protein sequencer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_19">
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >patch clamp device</obo:IAO_0000111>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Patch_clamp</obo:IAO_0000119>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device used in electrophysiology that allows the study of single or multiple ion channels in cells.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >patch clamp device</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_74">
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device or system that supports a biologically active environment. ALAN SAYS NOT AN INSTRUMENT</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bioreactor</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bioreactor</rdfs:label>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Bioreactor</obo:IAO_0000119>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_7">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400113"/>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An oligonucleotide synthesizer that is used to custom-build DNA molecules to contain a particular sequence of nucleotides.</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DNA synthesizer</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DNA synthesizer</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.globalspec.com/LearnMore/Labware_Scientific_Instruments/Clinical_Research_Labware/DNA_Synthesizers</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_17">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device or system in which perfusion units are integrated.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >perfusion station</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >perfusion station</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001036"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_92">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vacuum oven</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vacuum oven</obo:IAO_0000111>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that heats materials in a vacuum.</obo:IAO_0000115>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_86">
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A pipetting system that has a plurality of tip fittings and is used for multi-well plate applications.</obo:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >multichannel pipette</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >multichannel pipette</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_48">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400112"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A liquid handling device that provides automatic liquid extraction.</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >liquid extraction robot</obo:IAO_0000111>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >liquid extraction robot</rdfs:label>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_33">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >laser capture microdissection microscope</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.answers.com/topic/laser-capture-microdissection-microscope-in-medicine</obo:IAO_0000119>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A microscope that uses low-energy laser beams and special transfer film to lift single cells from a tissue.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >laser capture microdissection microscope</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_68">
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >small-animal image acquisition device</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to image¬†small¬†laboratory¬†animals (e.g., rats and mice) in vivo.</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >small-animal image acquisition device</obo:IAO_0000111>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_82">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mechanical balance</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.britannica.com/EBchecked/topic/49765/balance</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.org/QTT/QTT.owl#Class_81"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A balance that is used to compare the weights of two bodies, to determine the difference in mass (or weight).</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mechanical balance</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_78">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000376"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Microwave_chemistry</obo:IAO_0000119>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to apply microwave irradiation to chemical reactions.</obo:IAO_0000115>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000374"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microwave synthesis system</rdfs:label>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microwave synthesis system</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_3">
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >electron paramagnetic resonance spectrometer</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400115"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An spectrophotometer that is used to investigate chemical species that have one or more unpaired electrons, such as organic and inorganic free radicals or inorganic complexes possessing a transition metal ion.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Electron_paramagnetic_resonance</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >electron paramagnetic resonance spectrometer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_64">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to acquire images of laboratory gels.</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >gel imaging system</obo:IAO_0000111>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >gel imaging system</rdfs:label>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_13">
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Verveer et al, Journal of Microscopy, vol. 189, pt. 3, pp. 192-8</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >programmable array microscope</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.org/QTT/QTT.owl#Class_10"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >programmable array microscope</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A confocal microscope that uses a programmable spatial light modulator for generating an arbitrary pattern of conjugate illumination and detection apertures.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_23">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A measurement device for analyzing the structure of a material from the scattering pattern produced when a beam of radiation or particles (e.g. X rays or neutrons) interacts with it.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >diffractometer</obo:IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >diffractometer</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Diffractometer</obo:IAO_0000119>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_54">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >agarose gel electrophoresis system</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A gel electrophoresis system that is used to separate DNA or RNA molecules by size, achieved by moving negatively charged nucleic acid molecules through an agarose matrix with an electric field.</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >agarose gel electrophoresis system</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://purl.org/QTT/QTT.owl#Class_51"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Agarose_gel_electrophoresis</obo:IAO_0000119>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_89">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that consists of a radiosensitive detector and a means of recording the effects of radiation on the detector.</obo:IAO_0000115>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000368"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >radiation measurement device</rdfs:label>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >radiation measurement device</obo:IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_58">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RNA extraction/purification instrument</rdfs:label>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to isolate and collect RNA for subsequent molecular analysis.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RNA extraction/purification instrument</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://purl.org/QTT/QTT.owl#Class_56"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_44">
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tissue embedding station</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to perform paraffin embedding of tissue specimens.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tissue embedding station</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_37">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to fabricate glass micropipettes.</obo:IAO_0000115>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Micropipette</obo:IAO_0000119>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >micropipette puller</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >micropipette puller</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_40">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microtome knife sharpener</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microtome knife sharpener</obo:IAO_0000111>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to sharpen knives used in microtomy.</obo:IAO_0000115>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_27">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >pH meter</rdfs:label>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >pH meter</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A device that is used to measure the pH (acidity or alkalinity) of a liquid.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/PH_meter</obo:IAO_0000119>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_73">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000119>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An incubating device that provides shaking motion for biomedical applications (e.g., cell cultures).</obo:IAO_0000115>
+    <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >incubator shaker</obo:IAO_0000111>
+    <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Erik Segerdell</obo:IAO_0000117>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >incubator shaker</rdfs:label>
+  </owl:Class>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000059">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.4, Build 579)  http://protege.stanford.edu -->

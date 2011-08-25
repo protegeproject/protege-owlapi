@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=/Users/alanr/repos/obi/trunk/src/ontology/branches" prefer="public" xml:base="">
+        <uri name="http://purl.obolibrary.org/obo/obi/external-byhand.owl" uri="external-byhand.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/obi.owl" uri="obi.owl"/>
+        <uri name="http://purl.org/obo/owl/ro_bfo_bridge/1.1" uri="external/ro_bfo_bridge11.owl"/>
+        <uri name="http://www.obofoundry.org/ro/ro.owl" uri="external/ro.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/iao/dev/iao.owl" uri="external/iao/iao.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/iao/dev/external.owl" uri="external/iao/external.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl" uri="external/iao/externalDerived.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="external/iao/externalByHand.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl" uri="external/iao/obsolete.owl"/>
+        <uri name="http://www.ifomis.org/bfo/1.1" uri="external/bfo11.owl"/>
+        <uri name="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl" uri="external/protege-dc.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/obi/external.owl" uri="external.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/obi/externalDerived.owl" uri="externalDerived.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/obi/dev/crux-staging.owl" uri="crux-staging.owl"/>
+    </group>
+</catalog>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://purl.obolibrary.org/obo/"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    >
+  <owl:Ontology rdf:about="">
+    <owl:imports> <owl:Ontology  rdf:about="../external/bfo11.owl"/></owl:imports>
+    <owl:imports> <owl:Ontology  rdf:about="../external/ro.owl"/></owl:imports>
+    <owl:imports> <owl:Ontology  rdf:about="../external/iao/ontology-metadata.owl"/></owl:imports>
+    <owl:imports> <owl:Ontology  rdf:about="../external/iao/IAO.owl"/></owl:imports> 
+    <owl:imports> <owl:Ontology  rdf:about="../external/iao/iao-main.owl"/></owl:imports>
+    <owl:imports> <owl:Ontology  rdf:about="../external/iao/obsolete.owl"/></owl:imports> 
+    <owl:imports> <owl:Ontology  rdf:about="../external/iao/external.owl"/></owl:imports>
+    <owl:imports> <owl:Ontology  rdf:about="../external/iao/externalDerived.owl"/></owl:imports>
+    <protege:defaultLanguage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</protege:defaultLanguage> 
+    <owl:imports> <owl:Ontology  rdf:about="../external/ro_bfo_bridge11.owl"/></owl:imports>
+    <owl:imports> <owl:Ontology  rdf:about="../external/protege-dc.owl"/></owl:imports>
+    <owl:imports> <owl:Ontology  rdf:about="../branches/external.owl"/></owl:imports>
+    <owl:imports> <owl:Ontology  rdf:about="../branches/externalDerived.owl"/></owl:imports>
+    <owl:imports> <owl:Ontology  rdf:about="../branches/external-byhand.owl"/></owl:imports>
+    <owl:imports> <owl:Ontology  rdf:about="../branches/quality-assurance.owl"/></owl:imports>
+    <owl:imports> <owl:Ontology  rdf:about="obi.owl"/></owl:imports>
+  </owl:Ontology>
+  <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#defaultLanguage"/> 
+</rdf:RDF>

@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
+    xmlns:obi_owlfull="http://purl.obolibrary.org/obo/obi/obi-owl-full.owl#"
+    xmlns:pato="http://purl.org/obo/owl/PATO#"
+    xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:fma="http://purl.org/obo/owl/FMA#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="http://purl.obolibrary.org/obo/"
+    xmlns:rotoo="http://purl.org/obo/owl/ro#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:obi_extd="http://purl.obolibrary.org/obo/obi/externalDerived.owl#"
+    xmlns:obi_rel="http://purl.obolibrary.org/obo/obi/Relations.owl#"
+    xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+    xmlns:go="http://purl.org/obo/owl/GO#"
+    xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+    xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
+    xmlns:envo="http://purl.org/obo/owl/ENVO#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:ncbitax="http://purl.org/obo/owl/NCBITaxon#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:caro="http://purl.org/obo/owl/CARO#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:cell="http://purl.org/obo/owl/CL#"
+    xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
+    xmlns:obi_ext="http://purl.obolibrary.org/obo/obi/external.owl#"
+    xmlns:chebi="http://purl.org/obo/owl/CHEBI#"
+  xml:base="http://purl.obolibrary.org/obo/obi/external-byhand.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >$Revision: 80 $</owl:versionInfo>
+  </owl:Ontology>
+  <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#function_of">
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</IAO_0000117>
+    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/ro_proposed"/>
+    <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >function_of</IAO_0000111>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Chris Mungall</IAO_0000117>
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >function_of</rdfs:label>
+    <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A relation between a function F and an entity E. F function_of E iff: Q inheres_in E and Q is a function</IAO_0000115>
+    <IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Example: 'to blood pump' function_of 'heart'</IAO_0000112>
+    <rdfs:subPropertyOf>
+      <owl:FunctionalProperty rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+
+<!-- DMS -->
+<owl:Class  rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_59050">
+	<rdfs:label xml:lang="en">Dimethyl sulfate</rdfs:label>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The dimethyl ester of sulfuric acid</IAO_0000115>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dimethyl sulfate</IAO_0000111>
+</owl:Class>
+
+<!--DEPC -->
+<owl:Class  rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_59051">
+	<rdfs:label xml:lang="en">Diethylpyrocarbonate</rdfs:label>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diethylpyrocarbonate</IAO_0000111>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The diethyl ester of dicarbonic acid</IAO_0000115>
+</owl:Class>
+
+
+<owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_59052">
+	<rdfs:label xml:lang="en">1,1-dihydroxy-3-ethoxy-2-butanone</rdfs:label>
+	<IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,1-dihydroxy-3-ethoxy-2-butanone</IAO_0000111>
+	<IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A butanone derivative having two hydroxy substituents at the 1-position and an ethoxy substituent at the 3-position.</IAO_0000115>
+</owl:Class> 
+
+<!-- CMCT-->
+   <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_59053">
+    <rdfs:label xml:lang="en">N-cyclohexyl-N'-(2-(4-morpholinyl)ethyl)carbodiimide</rdfs:label>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-cyclohexyl-N'-(2-(4-morpholinyl)ethyl)carbodiimide</IAO_0000111>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A carbodiimide having cyclcohexyl and 2-(4-morpholinyl)ethyl as the two N-substituents.</IAO_0000115>
+  </owl:Class>
+  
+<!-- NMIA-->  
+   <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_59054">
+    <rdfs:label xml:lang="en">N-methylisatoic anhydride</rdfs:label>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-methylisatoic anhydride</IAO_0000111>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A 3,1-benzoxazin-1,4-dione having an N-methyl substituent.</IAO_0000115>
+  </owl:Class> 
+    
+<!-- Fe-BABE-->
+   <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_59055">
+    <rdfs:label xml:lang="en">Fe-BABE</rdfs:label>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fe-BABE</IAO_0000111>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tetracarboxylic acid consisting of ethylenediaminetetraacetic acid having a 4-bromoacetamidobenzyl group at the C1-position and (S)-configuration.</IAO_0000115>
+  </owl:Class>   
+
+<!-- Fe-MP-->
+   <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_59056">
+    <rdfs:label xml:lang="en">EDTA methidiumpropylamide</rdfs:label>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EDTA methidiumpropylamide</IAO_0000111>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A combined intercalating and chelating reagent. The iron chelate, prepared by adding Fe(NH4)2(SO4)2, effects random oxidative cleavage of DNA in the presence of O2 and a reducing agent. This activity is useful as a footprinting probe.</IAO_0000115>
+  </owl:Class>  
+
+<!-- bromophenol blue-->
+   <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_59424">
+    <rdfs:label xml:lang="en">bromophenol blue</rdfs:label>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bromophenol blue</IAO_0000111>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A combined intercalating and chelating reagent. The iron chelate, prepared by adding Fe(NH4)2(SO4)2, effects random oxidative cleavage of DNA in the presence of O2 and a reducing agent. This activity is useful as a footprinting probe.</IAO_0000115>
+  </owl:Class>  
+
+<!-- tritiated thymidine -->
+  <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_53526">
+    <rdfs:label xml:lang="en">tritiated thymidine</rdfs:label>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tritiated thymidine</IAO_0000111>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3H-2,1-Benzoxathiole 1,1-dioxide in which both of the hydrogens at position 3 have been substituted by 3,5-dibromo-4-hydroxyphenyl groups. It is used as a laboratory indicator, changing from yellow below pH 3 to purple at pH 4.6, and as a size marker for monitoring the progress of agarose gel and polyacrylamide gel electrophoresis. It has also been used as an industrial dye.</IAO_0000115>
+  </owl:Class>
+
+ <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_32142">
+   <rdfs:subClassOf>
+     <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_23367"/>
+   </rdfs:subClassOf>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sodium citrate dihydrate</IAO_0000111>
+    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/CHEBI"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sodium citrate dihydrate</rdfs:label>
+ </owl:Class>
+
+ <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_472552">
+   <rdfs:subClassOf>
+     <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_23367"/>
+   </rdfs:subClassOf>
+   <IAO_0000412 rdf:resource="http://purl.org/obo/owl/CHEBI"/>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >5-bromo-2-deoxyuridine</IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-bromo-2-deoxyuridine</rdfs:label>
+ </owl:Class>
+
+  <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#towards">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >towards</rdfs:label>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >towards</IAO_0000111>
+    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/ro_proposed"/>
+    <rdfs:subPropertyOf>
+      <owl:FunctionalProperty rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+    </rdfs:subPropertyOf>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A relation between a relational quality and an independent continuant, subproperty of inheres that distinguishes the main bearers of a relational quality from additional dependents.</IAO_0000115>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</IAO_0000117>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Chris Mungall</IAO_0000117>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#role_of">
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000316"/>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</IAO_0000117>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Chris Mungall</IAO_0000117>
+    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/ro_proposed"/>
+    <rdfs:subPropertyOf>
+      <owl:FunctionalProperty rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+    </rdfs:subPropertyOf>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A relation between a role R and an entity E. R role_of E iff: R inheres_in E and R is a role</IAO_0000115>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >role_of</IAO_0000111>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >role_of</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000298"/>
+  <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#quality_of">
+    <rdfs:subPropertyOf>
+      <owl:FunctionalProperty rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+    </rdfs:subPropertyOf>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Chris Mungall</IAO_0000117>
+    <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000298"/>
+    <IAO_0000412 rdf:resource="http://purl.org/obo/owl/ro_proposed"/>
+    <IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >GROUP:OBI:&lt;http://obi.sourceforge.net&gt;</IAO_0000117>
+    <rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >quality_of</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+    <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >quality_of</IAO_0000111>
+    <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A relation between a quality Q and an entity E. Q quality_of E iff: Q inheres_in E and Q is a quality</IAO_0000115>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#unfolds_in">
+  <IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >unfolds_in</IAO_0000111>
+    <rdfs:label xml:lang="en">unfolds_in</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Example: oocyte axis determination : The establishment, maintenance and elaboration of an axis in the oocyte. This process unfolds_in the oocyte</rdfs:comment>
+  <IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P unfolds_in C : the execution of P is spatially contained by C. forall pP,  forall c' partipates_in p, c' located_in C at t, for some t in P</IAO_0000115>
+<rdfs:range rdf:resource="http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant"/>
+<rdfs:domain rdf:resource="http://www.ifomis.org/bfo/1.1/span#ProcessualEntity"/>
+  </owl:ObjectProperty>
+
+
+
+<!-- PATO terms including 3 merged terms -->
+
+<!-- fluid flow rate -->
+ <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0002243">
+   <IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
+    <rdfs:label xml:lang="en">fluid flow rate</rdfs:label>
+  <IAO_0000115>A physical quality inhering in a fluid (liquid or gas) by virtue of the amount of fluid which passes through a given surface per unit time.
+  </IAO_0000115>
+ </owl:Class>
+
+ <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0001238">
+    <rdfs:label xml:lang="en">quality of related physical entities</rdfs:label>
+    <IAO_0000115 xml:lang="en">A physical entity quality which exists in relation towards some other entity.</IAO_0000115>
+    <IAO_0000111 xml:lang="en">quality of related physical entities</IAO_0000111>
+ </owl:Class>
+ <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0001237">
+    <IAO_0000115 xml:lang="en">A physical object quality which inheres in a single-bearer.</IAO_0000115>
+    <IAO_0000111 xml:lang="en">quality of a single physical entity</IAO_0000111>
+    <rdfs:label xml:lang="en">quality of a single physical entity</rdfs:label>
+ </owl:Class>
+ <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0001631">
+    <IAO_0000115 xml:lang="en">A quality of related physical entities inhering in a bearer by virtue of the bearer's pertaining to or involving or having the nature of space in relation to another entity.</IAO_0000115>
+    <rdfs:label xml:lang="en">relational spatial quality</rdfs:label>
+    <IAO_0000111 xml:lang="en">relational spatial quality</IAO_0000111>
+ </owl:Class>
+
+
+
+
+<!-- UBERON terms, have trouble to retrieved using the LISP script -->
+
+<!-- life cycle stage -->
+  <owl:Class rdf:about="http://purl.org/obo/owl/UBERON#UBERON_0000105">
+    <rdfs:label xml:lang="en">life cycle stage</rdfs:label>
+    <IAO_0000115 xml:lang="en">A spatiotemporal region encompassing some part of the life cycle of an organism.</IAO_0000115>
+    <IAO_0000111 xml:lang="en">life cycle stage</IAO_0000111>
+  </owl:Class >
+
+  <owl:Class rdf:about="http://purl.org/obo/owl/UBERON#UBERON_0002812">
+    <rdfs:label xml:lang="en">left cerebral hemisphere</rdfs:label>
+    <IAO_0000111 xml:lang="en">left cerebral hemisphere</IAO_0000111>
+  </owl:Class >
+  
+  <owl:Class rdf:about="http://purl.org/obo/owl/UBERON#UBERON_0002813">
+    <rdfs:label xml:lang="en">right cerebral hemisphere</rdfs:label>
+    <IAO_0000111 xml:lang="en">right cerebral hemisphere</IAO_0000111>
+  </owl:Class >
+
+  <owl:Class rdf:about="http://purl.org/obo/owl/UBERON#UBERON_0001874">
+    <rdfs:label xml:lang="en">putamen</rdfs:label>
+    <IAO_0000115 xml:lang="en">Nucleus of brain which lies ventral to the caudate nucleus and internal capsule and medial to the external capsule. The putamen and caudate nucleus together form the dorsal striatum. It is also one of the structures that comprises the basal ganglia. Through various pathways, the putamen is connected to the substantia nigra and globus pallidus. The main function of the putamen is to regulate movements and influence various types of learning. It employs dopamine to perform its functions. The putamen also plays a role in degenerative neurological disorders, such as Parkinson's disease.</IAO_0000115>
+    <IAO_0000111 xml:lang="en">putamen</IAO_0000111>
+  </owl:Class >
+
+
+<!-- PRO terms, have trouble to retrieved using the LISP script -->
+
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000003252">
+    <IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</IAO_0000116>
+    <IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/PR"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human antithrombin-III protein</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000000001"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000000001">
+    <rdfs:label xml:lang="en">protein</rdfs:label>
+    <IAO_0000115 xml:lang="en">An amino acid chain that is produced de novo by ribosome-mediated translation of a genetically-encoded mRNA.</IAO_0000115>
+    <IAO_0000111 xml:lang="en">protein</IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000001004">
+    <IAO_0000111 xml:lang="en">CD4</IAO_0000111>
+    <IAO_0000115 xml:lang="en">A protein that is a translation product of the CD4 gene or a 1:1 ortholog thereof. CD4 is an accessory protein for MHC class-II antigen/T-cell receptor interaction. It is the primary receptor for HIV-1. CD4 has four immunoglobulin-like domains in its extracellular region that share the same structure, but can differ in sequence.</IAO_0000115>
+    <rdfs:label xml:lang="en">CD4</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000001018">
+    <IAO_0000115 xml:lang="en">A protein with a core domain composition consisting of an extracellular N-terminal domain that adopts an immunoglobulin fold, a transmembrane domain, and an intracellular C-terminal domain with a single copy of the Immunoreceptor tyrosine-based activation motif (PF02189) (ITAM). It constitutes the invariant subunit of the T cell antigen receptor (TCR). TCR is a surface receptor on T cells responsible for recognizing MHC-restricted antigens and initiating the cellular immune response.</IAO_0000115>
+    <rdfs:label xml:lang="en">CD3 subunit with immunoglobulin domain</rdfs:label>
+    <IAO_0000111 xml:lang="en">CD3 subunit with immunoglobulin domain</IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000003745">
+    <IAO_0000115 xml:lang="en">A protein that is a translation product of the ADAR gene or a 1:1 ortholog thereof.</IAO_0000115>
+    <rdfs:label xml:lang="en">double-stranded RNA-specific adenosine deaminase</rdfs:label>
+    <IAO_0000111 xml:lang="en">double-stranded RNA-specific adenosine deaminase</IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000006592">
+    <rdfs:label xml:lang="en">deoxyribonuclease-1</rdfs:label>
+    <IAO_0000115 xml:lang="en">A protein that is a translation product of the DNASE1 gene or a 1:1 ortholog thereof.</IAO_0000115>
+    <IAO_0000111 xml:lang="en">deoxyribonuclease-1</IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000007928">
+    <IAO_0000111 xml:lang="en">glial cell line-derived neurotrophic factor</IAO_0000111>
+    <rdfs:label xml:lang="en">glial cell line-derived neurotrophic factor</rdfs:label>
+    <IAO_0000115 xml:lang="en">A protein that is a translation product of the GDNF gene or a 1:1 ortholog thereof.</IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000014060">
+    <IAO_0000111 xml:lang="en">ribonuclease T2</IAO_0000111>
+    <IAO_0000115 xml:lang="en">A protein that is a translation product of the RNASET2 gene or a 1:1 ortholog thereof.</IAO_0000115>
+    <rdfs:label xml:lang="en">ribonuclease T2</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000023089">
+    <rdfs:label xml:lang="en">DNA ligase</rdfs:label>
+    <IAO_0000111 xml:lang="en">DNA ligase</IAO_0000111>
+    <IAO_0000115 xml:lang="en">A protein that is a translation product of the ligA gene or a 1:1 ortholog thereof.</IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000025402">
+    <IAO_0000111 xml:lang="en">T cell receptor co-receptor CD8</IAO_0000111>
+    <rdfs:label xml:lang="en">T cell receptor co-receptor CD8</rdfs:label>
+    <IAO_0000115 xml:lang="en">A protein complex that is a membrane-bound heterodimeric co-receptor for MHC class-I antigen/T-cell receptor interaction.</IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000025467">
+    <IAO_0000115 xml:lang="en">A protein that is a translation product of the Aspergillus oryzae rntA gene or a 1:1 ortholog thereof.</IAO_0000115>
+    <IAO_0000111 xml:lang="en">guanyl-specific ribonuclease T1</IAO_0000111>
+    <rdfs:label xml:lang="en">guanyl-specific ribonuclease T1</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000025471">
+    <IAO_0000115 xml:lang="en">A protein that is a translation product of the Aspergillus oryzae nucS gene or a 1:1 ortholog thereof.</IAO_0000115>
+    <rdfs:label xml:lang="en">nuclease S1</rdfs:label>
+    <IAO_0000111 xml:lang="en">nuclease S1</IAO_0000111>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000025475">
+    <IAO_0000115 xml:lang="en">A protein that is a translation product of the Ustilago sphaerogena RNU2 gene or a 1:1 ortholog thereof.</IAO_0000115>
+    <IAO_0000111 xml:lang="en">ribonuclease U2</IAO_0000111>
+    <rdfs:label xml:lang="en">ribonuclease U2</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000025477">
+    <rdfs:label xml:lang="en">ribonuclease V1</rdfs:label>
+    <IAO_0000111 xml:lang="en">ribonuclease V1</IAO_0000111>
+    <IAO_0000115 xml:lang="en">A protein with ribonuclease activity that is a constituent of cobra venom.</IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/PR_000025478">
+    <IAO_0000111 xml:lang="en">ribonuclease CL3</IAO_0000111>
+    <rdfs:label xml:lang="en">ribonuclease CL3</rdfs:label>
+    <IAO_0000115 xml:lang="en">A protein with ribonuclease activity that is purified from chicken liver.</IAO_0000115>
+  </owl:Class>
+  
+
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+    <rdfs:label xml:lang="en">term editor</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+    <rdfs:label xml:lang="en">imported from</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+    <rdfs:label xml:lang="en">editor note</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+    <rdfs:label xml:lang="en">alternative term</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+    <rdfs:label xml:lang="en">example of usage</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+    <rdfs:label xml:lang="en">definition</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+  	<rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+  </owl:AnnotationProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 533)  http://protege.stanford.edu -->

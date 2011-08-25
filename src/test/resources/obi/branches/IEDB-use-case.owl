@@ -1,0 +1,1382 @@
+<rdf:RDF
+    xmlns:j.0="http://purl.org/obo/owl/PATO#"
+    xmlns:roproposed="http://purl.org/obo/owl/OBO_REL#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:j.1="http://purl.org/obo/owl/PRO#"
+    xmlns:j.2="http://purl.org/obo/owl/NCBITaxon#"
+    xmlns:j.3="http://www.obofoundry.org/ro/ro.owl#"
+    xmlns:j.4="http://purl.org/obo/owl/CARO#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:obo="http://purl.obolibrary.org/obo/"
+    xmlns:j.5="http://purl.org/obo/owl/CHEBI#">
+  <owl:Ontology rdf:about="http://purl.org/IEDB/IEDB.owl">
+    <owl:imports rdf:resource="http://obi.svn.sourceforge.net/viewvc/obi/trunk/src/ontology/branches/obi.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://purl.obolibrary.org/obo/Class_8">
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Query class: articles about cytokine production and killing assays</rdfs:label>
+    <owl:equivalentClass>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000013"/>
+          <owl:Restriction>
+            <owl:someValuesFrom>
+              <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000066"/>
+                  <owl:Restriction>
+                    <owl:someValuesFrom>
+                      <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+                          <owl:Restriction>
+                            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                            <owl:someValuesFrom>
+                              <owl:Restriction>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/GO#GO_0001816"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                              </owl:Restriction>
+                            </owl:someValuesFrom>
+                          </owl:Restriction>
+                        </owl:intersectionOf>
+                      </owl:Class>
+                    </owl:someValuesFrom>
+                    <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                  </owl:Restriction>
+                  <owl:Restriction>
+                    <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_part"/>
+                    <owl:someValuesFrom>
+                      <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                          <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000070"/>
+                          <owl:Restriction>
+                            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                            <owl:someValuesFrom>
+                              <owl:Restriction>
+                                <owl:someValuesFrom rdf:resource="http://purl.org/obo/owl/GO#GO_0001913"/>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                              </owl:Restriction>
+                            </owl:someValuesFrom>
+                          </owl:Restriction>
+                        </owl:intersectionOf>
+                      </owl:Class>
+                    </owl:someValuesFrom>
+                  </owl:Restriction>
+                </owl:intersectionOf>
+              </owl:Class>
+            </owl:someValuesFrom>
+            <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </owl:equivalentClass>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_35278">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_439488"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">ssRNA positive-strand viruses, no DNA stage</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">ssRNA positive-strand viruses, no DNA stage</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_39107">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10066"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Murinae</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Murinae</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314293">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_376913"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Simiiformes</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Simiiformes</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32523">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_8287"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Tetrapoda</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Tetrapoda</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33154">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_2759"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Fungi/Metazoa group</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Fungi/Metazoa group</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11623">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_208896"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Lymphocytic choriomeningitis virus</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Lymphocytic choriomeningitis virus</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11103">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11102"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Hepatitis C virus</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Hepatitis C virus</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_1639">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_1637"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Listeria monocytogenes</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Listeria monocytogenes</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314295">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9526"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Hominoidea</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Hominoidea</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_337687">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33553"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Muroidea</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Muroidea</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9606">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9605"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Homo sapiens</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_208896">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11618"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Old world arenaviruses</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Old world arenaviruses</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_12475">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_39759"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Hepatitis delta virus</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Hepatitis delta virus</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_186820">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_1385"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Listeriaceae</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Listeriaceae</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9605">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_207598"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Homo</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Homo</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9604">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314295"/>
+    <rdfs:label xml:lang="en">Hominidae</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Hominidae</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7711">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33511"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Chordata</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Chordata</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10088">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_39107"/>
+    <rdfs:label xml:lang="en">Mus</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Mus</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11617">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_35301"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Arenaviridae</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Arenaviridae</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10292">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_548681"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Herpesviridae</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Herpesviridae</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7742">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_89593"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Vertebrata</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Vertebrata</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_2759">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_131567"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Eukaryota</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Eukaryota</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9526">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314293"/>
+    <rdfs:label xml:lang="en">Catarrhini</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Catarrhini</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_35301">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_439488"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">ssRNA negative-strand viruses</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">ssRNA negative-strand viruses</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_1239">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_2"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Firmicutes</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Firmicutes</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32525">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_40674"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Theria</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Theria</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11618">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11617"/>
+    <rdfs:label xml:lang="en">Arenavirus</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Arenavirus</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10359">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10358"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Human herpesvirus 5</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Human herpesvirus 5</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33553">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9989"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Sciurognathi</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Sciurognathi</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_178830">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11157"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Bornaviridae</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Bornaviridae</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_186458">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_178830"/>
+    <rdfs:label xml:lang="en">Bornavirus</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Bornavirus</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_8287">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117571"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Sarcopterygii</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Sarcopterygii</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_131567">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+    <rdfs:label xml:lang="en">cellular organisms</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">cellular organisms</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10357">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10292"/>
+    <rdfs:label xml:lang="en">Betaherpesvirinae</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Betaherpesvirinae</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10090">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10088"/>
+    <rdfs:label xml:lang="en">Mus musculus</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Mus musculus</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10239">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+    <rdfs:label xml:lang="en">Viruses</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Viruses</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_39759">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10239"/>
+    <rdfs:label xml:lang="en">Deltavirus</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Deltavirus</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9443">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314146"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Primates</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Primates</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_1385">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_91061"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Bacillales</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Bacillales</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10000216">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10090"/>
+    <rdfs:label xml:lang="en">Mus musculus C57BL/6 X BALB/c</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Mus musculus C57BL/6 X BALB/c</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+    <obo:IAO_0000116>This organism is IEDB specific and will be given an OBI ID in the future</obo:IAO_0000116>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10358">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10357"/>
+    <rdfs:label xml:lang="en">Cytomegalovirus</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Cytomegalovirus</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314146">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9347"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Euarchontoglires</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Euarchontoglires</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_2">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_131567"/>
+    <rdfs:label xml:lang="en">Bacteria</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Bacteria</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10000627">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10090"/>
+    <rdfs:label xml:lang="en">Mus musculus MRL/MpJ</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Mus musculus MRL/MpJ</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+    <obo:IAO_0000116>This organism is IEDB specific and will be given an OBI ID in the future</obo:IAO_0000116>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_91061">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_1239"/>
+    <rdfs:label xml:lang="en">Bacilli</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Bacilli</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9347">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32525"/>
+    <rdfs:label xml:lang="en">Eutheria</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Eutheria</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_6072">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33208"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Eumetazoa</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Eumetazoa</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_376913">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9443"/>
+    <rdfs:label xml:lang="en">Haplorrhini</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Haplorrhini</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10000288">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10090"/>
+    <rdfs:label xml:lang="en">Mus musculus B6Smn.C3-Faslgld</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Mus musculus B6Smn.C3-Faslgld</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+    <obo:IAO_0000116>This organism is IEDB specific and will be given an OBI ID in the future</obo:IAO_0000116>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314147">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314146"/>
+    <rdfs:label xml:lang="en">Glires</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Glires</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_1637">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_186820"/>
+    <rdfs:label xml:lang="en">Listeria</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Listeria</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11157">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_35301"/>
+    <rdfs:label xml:lang="en">Mononegavirales</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Mononegavirales</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_439488">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10239"/>
+    <rdfs:label xml:lang="en">ssRNA viruses</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">ssRNA viruses</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117570">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7776"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Teleostomi</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Teleostomi</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11624">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11623"/>
+    <rdfs:label xml:lang="en">Lymphocytic choriomeningitis virus (strain Armstrong)</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Lymphocytic choriomeningitis virus (strain Armstrong)</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11102">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11050"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Hepacivirus</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Hepacivirus</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_11050">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_35278"/>
+    <rdfs:label xml:lang="en">Flaviviridae</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Flaviviridae</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32524">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32523"/>
+    <rdfs:label xml:lang="en">Amniota</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Amniota</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10000522">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_12475"/>
+    <rdfs:label xml:lang="en">Hepatitis delta virus (isolate TW2667)</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Hepatitis delta virus (isolate TW2667)</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+    <obo:IAO_0000116>This organism is IEDB specific and will be given an OBI ID in the future</obo:IAO_0000116>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33208">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33154"/>
+    <rdfs:label xml:lang="en">Metazoa</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Metazoa</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33316">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33213"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Coelomata</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Coelomata</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_548681">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_35237"/>
+    </rdfs:subClassOf>
+    <rdfs:label xml:lang="en">Herpesvirales</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Herpesvirales</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10066">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_337687"/>
+    <rdfs:label xml:lang="en">Muridae</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Muridae</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9989">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_314147"/>
+    <rdfs:label xml:lang="en">Rodentia</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Rodentia</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_35237">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_10239"/>
+    <rdfs:label xml:lang="en">dsDNA viruses, no RNA stage</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">dsDNA viruses, no RNA stage</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117571">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_117570"/>
+    <rdfs:label xml:lang="en">Euteleostomi</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Euteleostomi</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33213">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_6072"/>
+    <rdfs:label xml:lang="en">Bilateria</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Bilateria</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_207598">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_9604"/>
+    <rdfs:label xml:lang="en">Homininae</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Homininae</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_12455">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_186458"/>
+    <rdfs:label xml:lang="en">Borna disease virus</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Borna disease virus</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_89593">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7711"/>
+    <rdfs:label xml:lang="en">Craniata</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Craniata</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7776">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_7742"/>
+    <rdfs:label xml:lang="en">Gnathostomata</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Gnathostomata</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33511">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_33316"/>
+    <rdfs:label xml:lang="en">Deuterostomia</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Deuterostomia</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_40674">
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/NCBITaxon#NCBITaxon_32524"/>
+    <rdfs:label xml:lang="en">Mammalia</rdfs:label>
+    <obo:IAO_0000111 xml:lang="en">Mammalia</obo:IAO_0000111>
+    <obo:OBI_0000283 rdf:resource="http://purl.org/obo/owl/NCBITaxon"/>
+  </owl:Class>
+  <j.2:NCBITaxon_10000627 rdf:about="http://purl.org/IEDB/NCBITaxon_10000627_5842_00017">
+    <rdfs:label>NCBITaxon_10000627_5842_00017:Mus musculus MRL/MpJ</rdfs:label>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110109"/>
+    <obo:OBI_0000298>
+      <j.0:PATO_0000011 rdf:about="http://purl.org/IEDB/PATO_0000011_NCBITaxon_10000627_5842_00017">
+        <obo:OBI_1110121>10-17 days</obo:OBI_1110121>
+        <rdfs:label>NCBITaxon_10000627_5842_00017:10-17 days</rdfs:label>
+      </j.0:PATO_0000011>
+    </obo:OBI_0000298>
+  </j.2:NCBITaxon_10000627>
+  <j.2:NCBITaxon_9606 rdf:about="http://purl.org/IEDB/NCBITaxon_9606_1383395_00131">
+    <rdfs:label>NCBITaxon_9606_1383395_00131:Homo sapiens</rdfs:label>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110026"/>
+  </j.2:NCBITaxon_9606>
+  <obo:IAO_0000109 rdf:about="http://purl.org/IEDB/IAO_0000109_1312704_00115">
+    <rdfs:label>IAO_0000109_1312704_00115:Positive</rdfs:label>
+    <obo:IAO_0000116>This is not the correct way to model a positive measurement.  We are waiting on OBI/IAO to resolve this issue.</obo:IAO_0000116>
+  </obo:IAO_0000109>
+  <j.2:NCBITaxon_12455 rdf:about="http://purl.org/IEDB/NCBITaxon_12455_5842_00020">
+    <rdfs:label>NCBITaxon_12455_5842_00020:Borna disease virus</rdfs:label>
+  </j.2:NCBITaxon_12455>
+  <j.0:PATO_0000011 rdf:about="http://purl.org/IEDB/PATO_0000011_NCBITaxon_10000216_10498_00088">
+    <obo:OBI_1110121>8-12 wk</obo:OBI_1110121>
+    <rdfs:label>NCBITaxon_10000216_10498_00088:8-12 wk</rdfs:label>
+  </j.0:PATO_0000011>
+  <j.2:NCBITaxon_12455 rdf:about="http://purl.org/IEDB/NCBITaxon_12455_5843_00005">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110023"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110108"/>
+    <rdfs:label>NCBITaxon_12455_5843_00005:Borna disease virus</rdfs:label>
+    <obo:OBI_1110121></obo:OBI_1110121>
+  </j.2:NCBITaxon_12455>
+  <j.5:CHEBI_16670 rdf:about="http://purl.org/IEDB/CHEBI_16670_105_00109">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CHEBI_16670_105_00109:large delta antigen (26-34)</rdfs:label>
+    <obo:OBI_1110121>Antigen Object ID: 11527</obo:OBI_1110121>
+    <obo:OBI_1110121>Antigen Description: KLEDLERDL</obo:OBI_1110121>
+    <j.3:derives_from>
+      <j.1:PRO_000000001 rdf:about="http://purl.org/IEDB/PRO_000000001_GenPept_11022742_00143">
+        <rdfs:label>PRO_000000001_GenPept_11022742_00143:large delta antigen</rdfs:label>
+        <j.3:derives_from>
+          <j.2:NCBITaxon_10000522 rdf:about="http://purl.org/IEDB/NCBITaxon_10000522_105_00106">
+            <rdfs:label>NCBITaxon_10000522_105_00106:Hepatitis delta virus (isolate TW2667)</rdfs:label>
+          </j.2:NCBITaxon_10000522>
+        </j.3:derives_from>
+      </j.1:PRO_000000001>
+    </j.3:derives_from>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110034"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110001"/>
+    <obo:OBI_1110121>Epitope ID: 17</obo:OBI_1110121>
+    <obo:OBI_1110121>Epitope Name: HDV 26-34</obo:OBI_1110121>
+  </j.5:CHEBI_16670>
+  <obo:OBI_1110150 rdf:about="http://purl.org/IEDB/OBI_1110150_1383395_00129">
+    <rdfs:label>OBI_1110150_1383395_00129:51 Chromium Release</rdfs:label>
+    <obo:OBI_0000293>
+      <j.5:CHEBI_16670 rdf:about="http://purl.org/IEDB/CHEBI_16670_1383395_00135">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CHEBI_16670_1383395_00135:HCMVUL83 (495-503)</rdfs:label>
+        <obo:OBI_1110121>Antigen Object ID: 35000</obo:OBI_1110121>
+        <obo:OBI_1110121>Antigen Description: NLVPMVATV</obo:OBI_1110121>
+        <j.3:derives_from>
+          <j.1:PRO_000000001 rdf:about="http://purl.org/IEDB/PRO_000000001_GenPept_1780861_00149">
+            <rdfs:label>PRO_000000001_GenPept_1780861_00149:HCMVUL83</rdfs:label>
+            <j.3:derives_from>
+              <j.2:NCBITaxon_10359 rdf:about="http://purl.org/IEDB/NCBITaxon_10359_1383395_00134">
+                <rdfs:label>NCBITaxon_10359_1383395_00134:Human herpesvirus 5</rdfs:label>
+              </j.2:NCBITaxon_10359>
+            </j.3:derives_from>
+          </j.1:PRO_000000001>
+        </j.3:derives_from>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110034"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110001"/>
+        <obo:OBI_1110121>Epitope ID: 1126684</obo:OBI_1110121>
+        <obo:OBI_1110121>Epitope Name: HCMV pp65 495-503</obo:OBI_1110121>
+      </j.5:CHEBI_16670>
+    </obo:OBI_0000293>
+    <j.3:has_participant>
+      <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_1383395_00139">
+        <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000236"/>
+        <rdfs:label>OBI_0100060_1383395_00139:B cell culture</rdfs:label>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110106"/>
+      </obo:OBI_0100060>
+    </j.3:has_participant>
+    <j.3:has_participant>
+      <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_1383395_00138">
+        <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000625"/>
+        <rdfs:label>OBI_0100060_1383395_00138:T cell CD8+ culture</rdfs:label>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110107"/>
+      </obo:OBI_0100060>
+    </j.3:has_participant>
+    <obo:OBI_0000299>
+      <obo:IAO_0000109 rdf:about="http://purl.org/IEDB/IAO_0000109_1383395_00130">
+        <rdfs:label>IAO_0000109_1383395_00130:Positive</rdfs:label>
+        <obo:IAO_0000116>This is not the correct way to model a positive measurement.  We are waiting on OBI/IAO to resolve this issue.</obo:IAO_0000116>
+      </obo:IAO_0000109>
+    </obo:OBI_0000299>
+  </obo:OBI_1110150>
+  <obo:OBI_1110040 rdf:about="http://purl.org/IEDB/OBI_1110040_1312704">
+    <rdfs:label>OBI_1110040_1312704:Acute hepatitis C infection</rdfs:label>
+    <obo:OBI_1110121>B17.1</obo:OBI_1110121>
+    <roproposed:inheres_in>
+      <j.2:NCBITaxon_9606 rdf:about="http://purl.org/IEDB/NCBITaxon_9606_1312704_00116">
+        <rdfs:label>NCBITaxon_9606_1312704_00116:Homo sapiens</rdfs:label>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110026"/>
+      </j.2:NCBITaxon_9606>
+    </roproposed:inheres_in>
+  </obo:OBI_1110040>
+  <obo:IAO_0000109 rdf:about="http://purl.org/IEDB/IAO_0000109_8591_00059">
+    <rdfs:label>IAO_0000109_8591_00059:Positive</rdfs:label>
+    <obo:IAO_0000116>This is not the correct way to model a positive measurement.  We are waiting on OBI/IAO to resolve this issue.</obo:IAO_0000116>
+  </obo:IAO_0000109>
+  <j.5:CHEBI_16670 rdf:about="http://purl.org/IEDB/CHEBI_16670_1313382_00079">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CHEBI_16670_1313382_00079:polyprotein (2252-2260)</rdfs:label>
+    <obo:OBI_1110121>Antigen Object ID: 38563</obo:OBI_1110121>
+    <obo:OBI_1110121>Antigen Description: ILDSFDPLV</obo:OBI_1110121>
+    <j.3:derives_from>
+      <j.1:PRO_000000001 rdf:about="http://purl.org/IEDB/PRO_000000001_GenPept_329738_00145">
+        <rdfs:label>PRO_000000001_GenPept_329738_00145:polyprotein</rdfs:label>
+        <j.3:derives_from>
+          <j.2:NCBITaxon_11103 rdf:about="http://purl.org/IEDB/NCBITaxon_11103_1313382_00076">
+            <rdfs:label>NCBITaxon_11103_1313382_00076:Hepatitis C virus</rdfs:label>
+          </j.2:NCBITaxon_11103>
+        </j.3:derives_from>
+      </j.1:PRO_000000001>
+    </j.3:derives_from>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110034"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110001"/>
+    <obo:OBI_1110121>Epitope ID: 1088753</obo:OBI_1110121>
+    <obo:OBI_1110121>Epitope Name: NS5 2252-2261</obo:OBI_1110121>
+  </j.5:CHEBI_16670>
+  <obo:IAO_0000109 rdf:about="http://purl.org/IEDB/IAO_0000109_1313382_00072">
+    <rdfs:label>IAO_0000109_1313382_00072:Positive</rdfs:label>
+    <obo:IAO_0000116>This is not the correct way to model a positive measurement.  We are waiting on OBI/IAO to resolve this issue.</obo:IAO_0000116>
+  </obo:IAO_0000109>
+  <obo:OBI_1110008 rdf:about="http://purl.org/IEDB/OBI_1110008_1312704">
+    <rdfs:label>OBI_1110008_1312704:Occurrence of Acute hepatitis C</rdfs:label>
+    <j.3:part_of>
+      <obo:OBI_0000066 rdf:about="http://purl.org/IEDB/OBI_0000066_11851899">
+        <rdfs:label>Quantitative and functional differences in CD8+ lymphocyte responses in resolved acute and chronic hepatitis C virus infection.</rdfs:label>
+        <j.3:has_part>
+          <obo:OBI_1110008 rdf:about="http://purl.org/IEDB/OBI_1110008_1313382">
+            <rdfs:label>OBI_1110008_1313382:Occurrence of Chronic viral hepatitis C</rdfs:label>
+            <j.3:part_of rdf:resource="http://purl.org/IEDB/OBI_0000066_11851899"/>
+            <obo:OBI_0000308>
+              <obo:OBI_1110040 rdf:about="http://purl.org/IEDB/OBI_1110040_1313382">
+                <rdfs:label>OBI_1110040_1313382:Chronic viral hepatitis C infection</rdfs:label>
+                <obo:OBI_1110121>B18.2</obo:OBI_1110121>
+                <roproposed:inheres_in>
+                  <j.2:NCBITaxon_9606 rdf:about="http://purl.org/IEDB/NCBITaxon_9606_1313382_00073">
+                    <rdfs:label>NCBITaxon_9606_1313382_00073:Homo sapiens</rdfs:label>
+                    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110026"/>
+                  </j.2:NCBITaxon_9606>
+                </roproposed:inheres_in>
+              </obo:OBI_1110040>
+            </obo:OBI_0000308>
+            <j.3:has_participant rdf:resource="http://purl.org/IEDB/NCBITaxon_9606_1313382_00073"/>
+            <j.3:has_participant>
+              <j.2:NCBITaxon_11103 rdf:about="http://purl.org/IEDB/NCBITaxon_11103_1313382_00075">
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110023"/>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110027"/>
+                <j.3:adjacent_to rdf:resource="http://purl.org/IEDB/NCBITaxon_9606_1313382_00073"/>
+                <rdfs:label>NCBITaxon_11103_1313382_00075:Hepatitis C virus</rdfs:label>
+                <obo:OBI_1110121></obo:OBI_1110121>
+              </j.2:NCBITaxon_11103>
+            </j.3:has_participant>
+          </obo:OBI_1110008>
+        </j.3:has_part>
+        <j.3:has_part>
+          <obo:OBI_1110150 rdf:about="http://purl.org/IEDB/OBI_1110150_1313382_00071">
+            <rdfs:label>OBI_1110150_1313382_00071:51 Chromium Release</rdfs:label>
+            <obo:OBI_0000293 rdf:resource="http://purl.org/IEDB/CHEBI_16670_1313382_00079"/>
+            <j.3:has_participant>
+              <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_1313382_00083">
+                <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000084"/>
+                <rdfs:label>OBI_0100060_1313382_00083:T cell culture</rdfs:label>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110106"/>
+                <j.3:derives_from>
+                  <j.4:CARO_0000043 rdf:about="http://purl.org/IEDB/CARO_0000043_1313382_00085">
+                    <rdfs:label>CARO_0000043_1313382_00085:Blood</rdfs:label>
+                    <j.3:derives_from rdf:resource="http://purl.org/IEDB/NCBITaxon_9606_1313382_00073"/>
+                  </j.4:CARO_0000043>
+                </j.3:derives_from>
+              </obo:OBI_0100060>
+            </j.3:has_participant>
+            <j.3:has_participant>
+              <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_1313382_00082">
+                <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000625"/>
+                <rdfs:label>OBI_0100060_1313382_00082:T cell CD8+ culture</rdfs:label>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110107"/>
+              </obo:OBI_0100060>
+            </j.3:has_participant>
+            <obo:OBI_0000299 rdf:resource="http://purl.org/IEDB/IAO_0000109_1313382_00072"/>
+          </obo:OBI_1110150>
+        </j.3:has_part>
+        <j.3:has_part rdf:resource="http://purl.org/IEDB/OBI_1110008_1312704"/>
+        <j.3:has_part>
+          <obo:OBI_1110059 rdf:about="http://purl.org/IEDB/OBI_1110059_1312704_00114">
+            <rdfs:label>OBI_1110059_1312704_00114:ELISPOT</rdfs:label>
+            <obo:OBI_0000293>
+              <j.5:CHEBI_16670 rdf:about="http://purl.org/IEDB/CHEBI_16670_1312704_00122">
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >CHEBI_16670_1312704_00122:polyprotein (1004-1012)</rdfs:label>
+                <obo:OBI_1110121>Antigen Object ID: 43498</obo:OBI_1110121>
+                <obo:OBI_1110121>Antigen Description: ARRGREILL</obo:OBI_1110121>
+                <j.3:derives_from>
+                  <j.1:PRO_000000001 rdf:about="http://purl.org/IEDB/PRO_000000001_GenPept_1160328_00146">
+                    <rdfs:label>PRO_000000001_GenPept_1160328_00146:polyprotein</rdfs:label>
+                    <j.3:derives_from>
+                      <j.2:NCBITaxon_11103 rdf:about="http://purl.org/IEDB/NCBITaxon_11103_1312704_00119">
+                        <rdfs:label>NCBITaxon_11103_1312704_00119:Hepatitis C virus</rdfs:label>
+                      </j.2:NCBITaxon_11103>
+                    </j.3:derives_from>
+                  </j.1:PRO_000000001>
+                </j.3:derives_from>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110034"/>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110001"/>
+                <obo:OBI_1110121>Epitope ID: 1088407</obo:OBI_1110121>
+                <obo:OBI_1110121>Epitope Name: NS2 1004-1012</obo:OBI_1110121>
+              </j.5:CHEBI_16670>
+            </obo:OBI_0000293>
+            <j.3:has_participant>
+              <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_1312704_00126">
+                <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000084"/>
+                <rdfs:label>OBI_0100060_1312704_00126:T cell culture</rdfs:label>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110106"/>
+                <j.3:derives_from>
+                  <j.4:CARO_0000043 rdf:about="http://purl.org/IEDB/CARO_0000043_1312704_00128">
+                    <rdfs:label>CARO_0000043_1312704_00128:Blood</rdfs:label>
+                    <j.3:derives_from rdf:resource="http://purl.org/IEDB/NCBITaxon_9606_1312704_00116"/>
+                  </j.4:CARO_0000043>
+                </j.3:derives_from>
+              </obo:OBI_0100060>
+            </j.3:has_participant>
+            <j.3:has_participant>
+              <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_1312704_00125">
+                <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000625"/>
+                <rdfs:label>OBI_0100060_1312704_00125:T cell CD8+ culture</rdfs:label>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110107"/>
+              </obo:OBI_0100060>
+            </j.3:has_participant>
+            <obo:OBI_0000299 rdf:resource="http://purl.org/IEDB/IAO_0000109_1312704_00115"/>
+          </obo:OBI_1110059>
+        </j.3:has_part>
+      </obo:OBI_0000066>
+    </j.3:part_of>
+    <obo:OBI_0000308 rdf:resource="http://purl.org/IEDB/OBI_1110040_1312704"/>
+    <j.3:has_participant rdf:resource="http://purl.org/IEDB/NCBITaxon_9606_1312704_00116"/>
+    <j.3:has_participant>
+      <j.2:NCBITaxon_11103 rdf:about="http://purl.org/IEDB/NCBITaxon_11103_1312704_00118">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110023"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110027"/>
+        <j.3:adjacent_to rdf:resource="http://purl.org/IEDB/NCBITaxon_9606_1312704_00116"/>
+        <rdfs:label>NCBITaxon_11103_1312704_00118:Hepatitis C virus</rdfs:label>
+        <obo:OBI_1110121></obo:OBI_1110121>
+      </j.2:NCBITaxon_11103>
+    </j.3:has_participant>
+  </obo:OBI_1110008>
+  <j.1:PRO_000000001 rdf:about="http://purl.org/IEDB/PRO_000000001_GenPept_11022742_00142">
+    <rdfs:label>PRO_000000001_GenPept_11022742_00142:large delta antigen</rdfs:label>
+    <j.3:derives_from>
+      <j.2:NCBITaxon_10000522 rdf:about="http://purl.org/IEDB/NCBITaxon_10000522_8591_00063">
+        <rdfs:label>NCBITaxon_10000522_8591_00063:Hepatitis delta virus (isolate TW2667)</rdfs:label>
+      </j.2:NCBITaxon_10000522>
+    </j.3:derives_from>
+  </j.1:PRO_000000001>
+  <obo:IAO_0000109 rdf:about="http://purl.org/IEDB/IAO_0000109_10495_00030">
+    <rdfs:label>IAO_0000109_10495_00030:Positive</rdfs:label>
+    <obo:IAO_0000116>This is not the correct way to model a positive measurement.  We are waiting on OBI/IAO to resolve this issue.</obo:IAO_0000116>
+  </obo:IAO_0000109>
+  <obo:OBI_1110150 rdf:about="http://purl.org/IEDB/OBI_1110150_10495_00029">
+    <rdfs:label>OBI_1110150_10495_00029:51 Chromium Release</rdfs:label>
+    <obo:OBI_0000293>
+      <j.5:CHEBI_16670 rdf:about="http://purl.org/IEDB/CHEBI_16670_10495_00037">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >CHEBI_16670_10495_00037:Listeria epitope LemA (1-7)</rdfs:label>
+        <obo:OBI_1110121>Antigen Object ID: 52240</obo:OBI_1110121>
+        <obo:OBI_1110121>Antigen Description: MIGWIIA + FORM(M1)</obo:OBI_1110121>
+        <j.3:derives_from>
+          <j.1:PRO_000000001 rdf:about="http://purl.org/IEDB/PRO_000000001_GenPept_81509756_00150">
+            <rdfs:label>PRO_000000001_GenPept_81509756_00150:Listeria epitope LemA</rdfs:label>
+            <j.3:derives_from>
+              <j.2:NCBITaxon_1639 rdf:about="http://purl.org/IEDB/NCBITaxon_1639_10495_00034">
+                <rdfs:label>NCBITaxon_1639_10495_00034:Listeria monocytogenes</rdfs:label>
+              </j.2:NCBITaxon_1639>
+            </j.3:derives_from>
+          </j.1:PRO_000000001>
+        </j.3:derives_from>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110034"/>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110001"/>
+        <obo:OBI_1110121>Epitope ID: 4026</obo:OBI_1110121>
+        <obo:OBI_1110121>Epitope Name: f-MIGWIIA</obo:OBI_1110121>
+      </j.5:CHEBI_16670>
+    </obo:OBI_0000293>
+    <j.3:has_participant>
+      <obo:OBI_1110118 rdf:about="http://purl.org/IEDB/OBI_0100060_10495_00041">
+        <rdfs:label>OBI_0100060_10495_00041:P815-Mast cell culture</rdfs:label>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110106"/>
+      </obo:OBI_1110118>
+    </j.3:has_participant>
+    <j.3:has_participant>
+      <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_10495_00040">
+        <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000625"/>
+        <rdfs:label>OBI_0100060_10495_00040:T cell CD8+ culture</rdfs:label>
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110107"/>
+      </obo:OBI_0100060>
+    </j.3:has_participant>
+    <obo:OBI_0000299 rdf:resource="http://purl.org/IEDB/IAO_0000109_10495_00030"/>
+  </obo:OBI_1110150>
+  <j.2:NCBITaxon_12455 rdf:about="http://purl.org/IEDB/NCBITaxon_12455_5842_00019">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110023"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110108"/>
+    <rdfs:label>NCBITaxon_12455_5842_00019:Borna disease virus</rdfs:label>
+    <obo:OBI_1110121></obo:OBI_1110121>
+  </j.2:NCBITaxon_12455>
+  <obo:IAO_0000013 rdf:about="http://purl.org/IEDB/IAO_0000013_15448372">
+    <rdfs:label>(2004) The Journal of general virology., Vol. 85, 3089-98</rdfs:label>
+    <obo:IAO_0000116>reation of journal instances will be brought in line to that in Neurocommons, after AR provides a template</obo:IAO_0000116>
+    <obo:IAO_0000136>
+      <obo:OBI_0000066 rdf:about="http://purl.org/IEDB/OBI_0000066_15448372">
+        <rdfs:label>Identification of novel HLA-A*0201-restricted CD8+ T-cell epitopes on hepatitis delta virus.</rdfs:label>
+        <j.3:has_part>
+          <obo:OBI_1110008 rdf:about="http://purl.org/IEDB/OBI_1110008_8591">
+            <rdfs:label>OBI_1110008_8591:Occurrence of Hepatitis Delta Virus Infection</rdfs:label>
+            <j.3:part_of rdf:resource="http://purl.org/IEDB/OBI_0000066_15448372"/>
+            <obo:OBI_0000308>
+              <obo:OBI_1110040 rdf:about="http://purl.org/IEDB/OBI_1110040_8591">
+                <rdfs:label>OBI_1110040_8591:Hepatitis Delta Virus Infection infection</rdfs:label>
+                <obo:OBI_1110121>U18</obo:OBI_1110121>
+                <roproposed:inheres_in>
+                  <j.2:NCBITaxon_9606 rdf:about="http://purl.org/IEDB/NCBITaxon_9606_8591_00060">
+                    <rdfs:label>NCBITaxon_9606_8591_00060:Homo sapiens</rdfs:label>
+                    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110026"/>
+                    <obo:OBI_0000298>
+                      <j.0:PATO_0000047 rdf:about="http://purl.org/IEDB/PATO_0000047_NCBITaxon_9606_8591_00060">
+                        <obo:OBI_1110121>M</obo:OBI_1110121>
+                        <rdfs:label>NCBITaxon_9606_8591_00060:M</rdfs:label>
+                      </j.0:PATO_0000047>
+                    </obo:OBI_0000298>
+                    <obo:OBI_0000298>
+                      <j.0:PATO_0000011 rdf:about="http://purl.org/IEDB/PATO_0000011_NCBITaxon_9606_8591_00060">
+                        <obo:OBI_1110121>51 years</obo:OBI_1110121>
+                        <rdfs:label>NCBITaxon_9606_8591_00060:51 years</rdfs:label>
+                      </j.0:PATO_0000011>
+                    </obo:OBI_0000298>
+                  </j.2:NCBITaxon_9606>
+                </roproposed:inheres_in>
+              </obo:OBI_1110040>
+            </obo:OBI_0000308>
+            <j.3:has_participant rdf:resource="http://purl.org/IEDB/NCBITaxon_9606_8591_00060"/>
+            <j.3:has_participant>
+              <j.2:NCBITaxon_10000522 rdf:about="http://purl.org/IEDB/NCBITaxon_10000522_8591_00062">
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110023"/>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110027"/>
+                <j.3:adjacent_to rdf:resource="http://purl.org/IEDB/NCBITaxon_9606_8591_00060"/>
+                <rdfs:label>NCBITaxon_10000522_8591_00062:Hepatitis delta virus (isolate TW2667)</rdfs:label>
+                <obo:OBI_1110121></obo:OBI_1110121>
+              </j.2:NCBITaxon_10000522>
+            </j.3:has_participant>
+          </obo:OBI_1110008>
+        </j.3:has_part>
+        <j.3:has_part>
+          <obo:OBI_1110179 rdf:about="http://purl.org/IEDB/OBI_1110179_8591_00058">
+            <rdfs:label>OBI_1110179_8591_00058:MHC Tetramer/Multimer Staining</rdfs:label>
+            <obo:OBI_0000293>
+              <j.5:CHEBI_16670 rdf:about="http://purl.org/IEDB/CHEBI_16670_8591_00066">
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >CHEBI_16670_8591_00066:large delta antigen (43-51)</rdfs:label>
+                <obo:OBI_1110121>Antigen Object ID: 40118</obo:OBI_1110121>
+                <obo:OBI_1110121>Antigen Description: KLEDENPWL</obo:OBI_1110121>
+                <j.3:derives_from rdf:resource="http://purl.org/IEDB/PRO_000000001_GenPept_11022742_00142"/>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110034"/>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110001"/>
+                <obo:OBI_1110121>Epitope ID: 3112</obo:OBI_1110121>
+                <obo:OBI_1110121>Epitope Name: HDV 43-51</obo:OBI_1110121>
+              </j.5:CHEBI_16670>
+            </obo:OBI_0000293>
+            <j.3:has_participant>
+              <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_8591_00069">
+                <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000625"/>
+                <rdfs:label>OBI_0100060_8591_00069:T cell CD8+ culture</rdfs:label>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110107"/>
+              </obo:OBI_0100060>
+            </j.3:has_participant>
+            <obo:OBI_0000299 rdf:resource="http://purl.org/IEDB/IAO_0000109_8591_00059"/>
+          </obo:OBI_1110179>
+        </j.3:has_part>
+        <j.3:has_part>
+          <obo:OBI_1110008 rdf:about="http://purl.org/IEDB/OBI_1110008_105">
+            <rdfs:label>OBI_1110008_105:Occurrence of Hepatitis Delta Virus Infection</rdfs:label>
+            <j.3:part_of rdf:resource="http://purl.org/IEDB/OBI_0000066_15448372"/>
+            <obo:OBI_0000308>
+              <obo:OBI_1110040 rdf:about="http://purl.org/IEDB/OBI_1110040_105">
+                <rdfs:label>OBI_1110040_105:Hepatitis Delta Virus Infection infection</rdfs:label>
+                <obo:OBI_1110121>U18</obo:OBI_1110121>
+                <roproposed:inheres_in>
+                  <j.2:NCBITaxon_9606 rdf:about="http://purl.org/IEDB/NCBITaxon_9606_105_00103">
+                    <rdfs:label>NCBITaxon_9606_105_00103:Homo sapiens</rdfs:label>
+                    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110026"/>
+                    <obo:OBI_0000298>
+                      <j.0:PATO_0000047 rdf:about="http://purl.org/IEDB/PATO_0000047_NCBITaxon_9606_105_00103">
+                        <obo:OBI_1110121>M</obo:OBI_1110121>
+                        <rdfs:label>NCBITaxon_9606_105_00103:M</rdfs:label>
+                      </j.0:PATO_0000047>
+                    </obo:OBI_0000298>
+                    <obo:OBI_0000298>
+                      <j.0:PATO_0000011 rdf:about="http://purl.org/IEDB/PATO_0000011_NCBITaxon_9606_105_00103">
+                        <obo:OBI_1110121>51 years</obo:OBI_1110121>
+                        <rdfs:label>NCBITaxon_9606_105_00103:51 years</rdfs:label>
+                      </j.0:PATO_0000011>
+                    </obo:OBI_0000298>
+                  </j.2:NCBITaxon_9606>
+                </roproposed:inheres_in>
+              </obo:OBI_1110040>
+            </obo:OBI_0000308>
+            <j.3:has_participant rdf:resource="http://purl.org/IEDB/NCBITaxon_9606_105_00103"/>
+            <j.3:has_participant>
+              <j.2:NCBITaxon_10000522 rdf:about="http://purl.org/IEDB/NCBITaxon_10000522_105_00105">
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110023"/>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110027"/>
+                <j.3:adjacent_to rdf:resource="http://purl.org/IEDB/NCBITaxon_9606_105_00103"/>
+                <rdfs:label>NCBITaxon_10000522_105_00105:Hepatitis delta virus (isolate TW2667)</rdfs:label>
+                <obo:OBI_1110121></obo:OBI_1110121>
+              </j.2:NCBITaxon_10000522>
+            </j.3:has_participant>
+          </obo:OBI_1110008>
+        </j.3:has_part>
+        <j.3:has_part>
+          <obo:OBI_1110179 rdf:about="http://purl.org/IEDB/OBI_1110179_105_00101">
+            <rdfs:label>OBI_1110179_105_00101:MHC Tetramer/Multimer Staining</rdfs:label>
+            <obo:OBI_0000293 rdf:resource="http://purl.org/IEDB/CHEBI_16670_105_00109"/>
+            <j.3:has_participant>
+              <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_105_00112">
+                <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000625"/>
+                <rdfs:label>OBI_0100060_105_00112:T cell CD8+ culture</rdfs:label>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110107"/>
+              </obo:OBI_0100060>
+            </j.3:has_participant>
+            <obo:OBI_0000299>
+              <obo:IAO_0000109 rdf:about="http://purl.org/IEDB/IAO_0000109_105_00102">
+                <rdfs:label>IAO_0000109_105_00102:Positive</rdfs:label>
+                <obo:IAO_0000116>This is not the correct way to model a positive measurement.  We are waiting on OBI/IAO to resolve this issue.</obo:IAO_0000116>
+              </obo:IAO_0000109>
+            </obo:OBI_0000299>
+          </obo:OBI_1110179>
+        </j.3:has_part>
+      </obo:OBI_0000066>
+    </obo:IAO_0000136>
+    <obo:IAO_0000115>http://www.ncbi.nlm.nih.gov/pubmed/15448372</obo:IAO_0000115>
+  </obo:IAO_0000013>
+  <j.2:NCBITaxon_10359 rdf:about="http://purl.org/IEDB/NCBITaxon_10359_1383395_00133">
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110023"/>
+    <j.3:adjacent_to rdf:resource="http://purl.org/IEDB/NCBITaxon_9606_1383395_00131"/>
+    <rdfs:label>NCBITaxon_10359_1383395_00133:Human herpesvirus 5</rdfs:label>
+    <obo:OBI_1110121></obo:OBI_1110121>
+  </j.2:NCBITaxon_10359>
+  <j.5:CHEBI_16670 rdf:about="http://purl.org/IEDB/CHEBI_16670_5842_00022">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CHEBI_16670_5842_00022:Nucleoprotein (129-136)</rdfs:label>
+    <obo:OBI_1110121>Antigen Object ID: 10025</obo:OBI_1110121>
+    <obo:OBI_1110121>Antigen Description: TELEISSI</obo:OBI_1110121>
+    <j.3:derives_from>
+      <j.1:PRO_000000001 rdf:about="http://purl.org/IEDB/PRO_000000001_GenPept_1722775_00148">
+        <rdfs:label>PRO_000000001_GenPept_1722775_00148:Nucleoprotein</rdfs:label>
+        <j.3:derives_from rdf:resource="http://purl.org/IEDB/NCBITaxon_12455_5842_00020"/>
+      </j.1:PRO_000000001>
+    </j.3:derives_from>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110034"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110001"/>
+    <obo:OBI_1110121>Epitope ID: 2212</obo:OBI_1110121>
+    <obo:OBI_1110121>Epitope Name: TELEISSI</obo:OBI_1110121>
+  </j.5:CHEBI_16670>
+  <j.0:PATO_0000047 rdf:about="http://purl.org/IEDB/PATO_0000047_NCBITaxon_10000216_10495_00031">
+    <obo:OBI_1110121>F</obo:OBI_1110121>
+    <rdfs:label>NCBITaxon_10000216_10495_00031:F</rdfs:label>
+  </j.0:PATO_0000047>
+  <obo:IAO_0000013 rdf:about="http://purl.org/IEDB/IAO_0000013_15634878">
+    <rdfs:label>(2005) Journal of immunology (Baltimore, Md. :  1950), Vol. 174, 614-8</rdfs:label>
+    <obo:IAO_0000116>reation of journal instances will be brought in line to that in Neurocommons, after AR provides a template</obo:IAO_0000116>
+    <obo:IAO_0000136>
+      <obo:OBI_0000066 rdf:about="http://purl.org/IEDB/OBI_0000066_15634878">
+        <rdfs:label>Cutting edge: MHC class II-restricted killing in vivo during viral infection.</rdfs:label>
+        <j.3:has_part>
+          <obo:OBI_0600007 rdf:about="http://purl.org/IEDB/OBI_0600007_17842">
+            <rdfs:label>OBI_0600007_17842:Administering Lymphocytic choriomeningitis virus (strain Armstrong) to Mus musculus B6Smn.C3-Faslgld</rdfs:label>
+            <j.3:part_of rdf:resource="http://purl.org/IEDB/OBI_0000066_15634878"/>
+            <j.3:has_participant>
+              <j.2:NCBITaxon_10000288 rdf:about="http://purl.org/IEDB/NCBITaxon_10000288_17842_00046">
+                <rdfs:label>NCBITaxon_10000288_17842_00046:Mus musculus B6Smn.C3-Faslgld</rdfs:label>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110109"/>
+              </j.2:NCBITaxon_10000288>
+            </j.3:has_participant>
+            <j.3:has_participant>
+              <j.2:NCBITaxon_11624 rdf:about="http://purl.org/IEDB/NCBITaxon_11624_17842_00048">
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110023"/>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110108"/>
+                <rdfs:label>NCBITaxon_11624_17842_00048:Lymphocytic choriomeningitis virus (strain Armstrong)</rdfs:label>
+                <obo:OBI_1110121></obo:OBI_1110121>
+              </j.2:NCBITaxon_11624>
+            </j.3:has_participant>
+          </obo:OBI_0600007>
+        </j.3:has_part>
+        <j.3:has_part>
+          <obo:OBI_1110172 rdf:about="http://purl.org/IEDB/OBI_1110172_17842_00044">
+            <rdfs:label>OBI_1110172_17842_00044:Intracellular cytokine staining (ICS)</rdfs:label>
+            <obo:OBI_0000293>
+              <j.5:CHEBI_16670 rdf:about="http://purl.org/IEDB/CHEBI_16670_17842_00051">
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >CHEBI_16670_17842_00051:Glycoprotein polyprotein (61-80)</rdfs:label>
+                <obo:OBI_1110121>Antigen Object ID: 14466</obo:OBI_1110121>
+                <obo:OBI_1110121>Antigen Description: GLNGPDIYKGVYQFKSVEFD</obo:OBI_1110121>
+                <j.3:derives_from>
+                  <j.1:PRO_000000001 rdf:about="http://purl.org/IEDB/PRO_000000001_GenPept_138357_00144">
+                    <rdfs:label>PRO_000000001_GenPept_138357_00144:Glycoprotein polyprotein</rdfs:label>
+                    <j.3:derives_from>
+                      <j.2:NCBITaxon_11624 rdf:about="http://purl.org/IEDB/NCBITaxon_11624_17842_00049">
+                        <rdfs:label>NCBITaxon_11624_17842_00049:Lymphocytic choriomeningitis virus (strain Armstrong)</rdfs:label>
+                      </j.2:NCBITaxon_11624>
+                    </j.3:derives_from>
+                  </j.1:PRO_000000001>
+                </j.3:derives_from>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110034"/>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110001"/>
+                <obo:OBI_1110121>Epitope ID: 25</obo:OBI_1110121>
+                <obo:OBI_1110121>Epitope Name: GP 61-80</obo:OBI_1110121>
+              </j.5:CHEBI_16670>
+            </obo:OBI_0000293>
+            <j.3:has_participant>
+              <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_17842_00055">
+                <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#OBI_1110116"/>
+                <rdfs:label>OBI_0100060_17842_00055:Splenocyte culture</rdfs:label>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110106"/>
+                <j.3:derives_from>
+                  <j.4:CARO_0000043 rdf:about="http://purl.org/IEDB/CARO_0000043_17842_00057">
+                    <rdfs:label>CARO_0000043_17842_00057:Spleen</rdfs:label>
+                    <j.3:derives_from rdf:resource="http://purl.org/IEDB/NCBITaxon_10000288_17842_00046"/>
+                  </j.4:CARO_0000043>
+                </j.3:derives_from>
+              </obo:OBI_0100060>
+            </j.3:has_participant>
+            <j.3:has_participant>
+              <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_17842_00054">
+                <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000624"/>
+                <rdfs:label>OBI_0100060_17842_00054:T cell CD4+ culture</rdfs:label>
+                <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110107"/>
+              </obo:OBI_0100060>
+            </j.3:has_participant>
+            <obo:OBI_0000299>
+              <obo:IAO_0000109 rdf:about="http://purl.org/IEDB/IAO_0000109_17842_00045">
+                <rdfs:label>IAO_0000109_17842_00045:Positive</rdfs:label>
+                <obo:IAO_0000116>This is not the correct way to model a positive measurement.  We are waiting on OBI/IAO to resolve this issue.</obo:IAO_0000116>
+              </obo:IAO_0000109>
+            </obo:OBI_0000299>
+          </obo:OBI_1110172>
+        </j.3:has_part>
+      </obo:OBI_0000066>
+    </obo:IAO_0000136>
+    <obo:IAO_0000115>http://www.ncbi.nlm.nih.gov/pubmed/15634878</obo:IAO_0000115>
+  </obo:IAO_0000013>
+  <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_10498_00097">
+    <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000625"/>
+    <rdfs:label>OBI_0100060_10498_00097:T cell CD8+ culture</rdfs:label>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110107"/>
+  </obo:OBI_0100060>
+  <obo:OBI_1110118 rdf:about="http://purl.org/IEDB/OBI_0100060_10498_00098">
+    <rdfs:label>OBI_0100060_10498_00098:P815-Mast cell culture</rdfs:label>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110106"/>
+  </obo:OBI_1110118>
+  <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_5842_00025">
+    <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000842"/>
+    <rdfs:label>OBI_0100060_5842_00025:Mononuclear cell culture</rdfs:label>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110107"/>
+  </obo:OBI_0100060>
+  <obo:OBI_0000066 rdf:about="http://purl.org/IEDB/OBI_0000066_10432283">
+    <rdfs:label>H2-M3-restricted T cells in bacterial infection: rapid primary but diminished memory responses.</rdfs:label>
+    <j.3:has_part>
+      <obo:OBI_0600007 rdf:about="http://purl.org/IEDB/OBI_0600007_10495">
+        <rdfs:label>OBI_0600007_10495:Administering Listeria monocytogenes to Mus musculus C57BL/6 X BALB/c</rdfs:label>
+        <j.3:part_of rdf:resource="http://purl.org/IEDB/OBI_0000066_10432283"/>
+        <j.3:has_participant>
+          <j.2:NCBITaxon_10000216 rdf:about="http://purl.org/IEDB/NCBITaxon_10000216_10495_00031">
+            <rdfs:label>NCBITaxon_10000216_10495_00031:Mus musculus C57BL/6 X BALB/c</rdfs:label>
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110109"/>
+            <obo:OBI_0000298 rdf:resource="http://purl.org/IEDB/PATO_0000047_NCBITaxon_10000216_10495_00031"/>
+            <obo:OBI_0000298>
+              <j.0:PATO_0000011 rdf:about="http://purl.org/IEDB/PATO_0000011_NCBITaxon_10000216_10495_00031">
+                <obo:OBI_1110121>8-12 wk</obo:OBI_1110121>
+                <rdfs:label>NCBITaxon_10000216_10495_00031:8-12 wk</rdfs:label>
+              </j.0:PATO_0000011>
+            </obo:OBI_0000298>
+          </j.2:NCBITaxon_10000216>
+        </j.3:has_participant>
+        <j.3:has_participant>
+          <j.2:NCBITaxon_1639 rdf:about="http://purl.org/IEDB/NCBITaxon_1639_10495_00033">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110023"/>
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110108"/>
+            <rdfs:label>NCBITaxon_1639_10495_00033:Listeria monocytogenes</rdfs:label>
+            <obo:OBI_1110121></obo:OBI_1110121>
+          </j.2:NCBITaxon_1639>
+        </j.3:has_participant>
+      </obo:OBI_0600007>
+    </j.3:has_part>
+    <j.3:has_part rdf:resource="http://purl.org/IEDB/OBI_1110150_10495_00029"/>
+    <j.3:has_part>
+      <obo:OBI_0600007 rdf:about="http://purl.org/IEDB/OBI_0600007_10498">
+        <rdfs:label>OBI_0600007_10498:Administering Listeria monocytogenes to Mus musculus C57BL/6 X BALB/c</rdfs:label>
+        <j.3:part_of rdf:resource="http://purl.org/IEDB/OBI_0000066_10432283"/>
+        <j.3:has_participant>
+          <j.2:NCBITaxon_10000216 rdf:about="http://purl.org/IEDB/NCBITaxon_10000216_10498_00088">
+            <rdfs:label>NCBITaxon_10000216_10498_00088:Mus musculus C57BL/6 X BALB/c</rdfs:label>
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110109"/>
+            <obo:OBI_0000298>
+              <j.0:PATO_0000047 rdf:about="http://purl.org/IEDB/PATO_0000047_NCBITaxon_10000216_10498_00088">
+                <obo:OBI_1110121>F</obo:OBI_1110121>
+                <rdfs:label>NCBITaxon_10000216_10498_00088:F</rdfs:label>
+              </j.0:PATO_0000047>
+            </obo:OBI_0000298>
+            <obo:OBI_0000298 rdf:resource="http://purl.org/IEDB/PATO_0000011_NCBITaxon_10000216_10498_00088"/>
+          </j.2:NCBITaxon_10000216>
+        </j.3:has_participant>
+        <j.3:has_participant>
+          <j.2:NCBITaxon_1639 rdf:about="http://purl.org/IEDB/NCBITaxon_1639_10498_00090">
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110023"/>
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110108"/>
+            <rdfs:label>NCBITaxon_1639_10498_00090:Listeria monocytogenes</rdfs:label>
+            <obo:OBI_1110121></obo:OBI_1110121>
+          </j.2:NCBITaxon_1639>
+        </j.3:has_participant>
+      </obo:OBI_0600007>
+    </j.3:has_part>
+    <j.3:has_part>
+      <obo:OBI_1110059 rdf:about="http://purl.org/IEDB/OBI_1110059_10498_00086">
+        <rdfs:label>OBI_1110059_10498_00086:ELISPOT</rdfs:label>
+        <obo:OBI_0000293>
+          <j.5:CHEBI_16670 rdf:about="http://purl.org/IEDB/CHEBI_16670_10498_00094">
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >CHEBI_16670_10498_00094:Listeria epitope LemA (1-7)</rdfs:label>
+            <obo:OBI_1110121>Antigen Object ID: 52240</obo:OBI_1110121>
+            <obo:OBI_1110121>Antigen Description: MIGWIIA + FORM(M1)</obo:OBI_1110121>
+            <j.3:derives_from>
+              <j.1:PRO_000000001 rdf:about="http://purl.org/IEDB/PRO_000000001_GenPept_81509756_00151">
+                <rdfs:label>PRO_000000001_GenPept_81509756_00151:Listeria epitope LemA</rdfs:label>
+                <j.3:derives_from>
+                  <j.2:NCBITaxon_1639 rdf:about="http://purl.org/IEDB/NCBITaxon_1639_10498_00091">
+                    <rdfs:label>NCBITaxon_1639_10498_00091:Listeria monocytogenes</rdfs:label>
+                  </j.2:NCBITaxon_1639>
+                </j.3:derives_from>
+              </j.1:PRO_000000001>
+            </j.3:derives_from>
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110034"/>
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110001"/>
+            <obo:OBI_1110121>Epitope ID: 4026</obo:OBI_1110121>
+            <obo:OBI_1110121>Epitope Name: f-MIGWIIA</obo:OBI_1110121>
+          </j.5:CHEBI_16670>
+        </obo:OBI_0000293>
+        <j.3:has_participant rdf:resource="http://purl.org/IEDB/OBI_0100060_10498_00098"/>
+        <j.3:has_participant rdf:resource="http://purl.org/IEDB/OBI_0100060_10498_00097"/>
+        <obo:OBI_0000299>
+          <obo:IAO_0000109 rdf:about="http://purl.org/IEDB/IAO_0000109_10498_00087">
+            <rdfs:label>IAO_0000109_10498_00087:Positive</rdfs:label>
+            <obo:IAO_0000116>This is not the correct way to model a positive measurement.  We are waiting on OBI/IAO to resolve this issue.</obo:IAO_0000116>
+          </obo:IAO_0000109>
+        </obo:OBI_0000299>
+      </obo:OBI_1110059>
+    </j.3:has_part>
+  </obo:OBI_0000066>
+  <j.5:CHEBI_16670 rdf:about="http://purl.org/IEDB/CHEBI_16670_5843_00008">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CHEBI_16670_5843_00008:Nucleoprotein (129-136)</rdfs:label>
+    <obo:OBI_1110121>Antigen Object ID: 10025</obo:OBI_1110121>
+    <obo:OBI_1110121>Antigen Description: TELEISSI</obo:OBI_1110121>
+    <j.3:derives_from>
+      <j.1:PRO_000000001 rdf:about="http://purl.org/IEDB/PRO_000000001_GenPept_1722775_00147">
+        <rdfs:label>PRO_000000001_GenPept_1722775_00147:Nucleoprotein</rdfs:label>
+        <j.3:derives_from>
+          <j.2:NCBITaxon_12455 rdf:about="http://purl.org/IEDB/NCBITaxon_12455_5843_00006">
+            <rdfs:label>NCBITaxon_12455_5843_00006:Borna disease virus</rdfs:label>
+          </j.2:NCBITaxon_12455>
+        </j.3:derives_from>
+      </j.1:PRO_000000001>
+    </j.3:derives_from>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110034"/>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110001"/>
+    <obo:OBI_1110121>Epitope ID: 2212</obo:OBI_1110121>
+    <obo:OBI_1110121>Epitope Name: TELEISSI</obo:OBI_1110121>
+  </j.5:CHEBI_16670>
+  <obo:OBI_1110099 rdf:about="http://purl.org/IEDB/OBI_0100060_5842_00026">
+    <rdfs:label>OBI_0100060_5842_00026:L cells-Fibroblast culture</rdfs:label>
+    <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110106"/>
+  </obo:OBI_1110099>
+  <j.0:PATO_0000011 rdf:about="http://purl.org/IEDB/PATO_0000011_NCBITaxon_10000627_5843_00003">
+    <obo:OBI_1110121>10-17 days</obo:OBI_1110121>
+    <rdfs:label>NCBITaxon_10000627_5843_00003:10-17 days</rdfs:label>
+  </j.0:PATO_0000011>
+  <obo:OBI_1110150 rdf:about="http://purl.org/IEDB/OBI_1110150_5842_00015">
+    <rdfs:label>OBI_1110150_5842_00015:51 Chromium Release</rdfs:label>
+    <obo:OBI_0000293 rdf:resource="http://purl.org/IEDB/CHEBI_16670_5842_00022"/>
+    <j.3:has_participant rdf:resource="http://purl.org/IEDB/OBI_0100060_5842_00026"/>
+    <j.3:has_participant rdf:resource="http://purl.org/IEDB/OBI_0100060_5842_00025"/>
+    <obo:OBI_0000299>
+      <obo:IAO_0000109 rdf:about="http://purl.org/IEDB/IAO_0000109_5842_00016">
+        <rdfs:label>IAO_0000109_5842_00016:Positive</rdfs:label>
+        <obo:IAO_0000116>This is not the correct way to model a positive measurement.  We are waiting on OBI/IAO to resolve this issue.</obo:IAO_0000116>
+      </obo:IAO_0000109>
+    </obo:OBI_0000299>
+  </obo:OBI_1110150>
+  <obo:OBI_1110061 rdf:about="http://purl.org/IEDB/OBI_1110061_1383395">
+    <rdfs:label>OBI_1110061_1383395:Exposure with existing reactivity to Human herpesvirus 5</rdfs:label>
+    <j.3:part_of>
+      <obo:OBI_0000066 rdf:about="http://purl.org/IEDB/OBI_0000066_10933725">
+        <rdfs:label>Functional heterogeneity and high frequencies of cytomegalovirus-specific CD8(+) T lymphocytes in healthy seropositive donors.</rdfs:label>
+        <j.3:has_part rdf:resource="http://purl.org/IEDB/OBI_1110061_1383395"/>
+        <j.3:has_part rdf:resource="http://purl.org/IEDB/OBI_1110150_1383395_00129"/>
+      </obo:OBI_0000066>
+    </j.3:part_of>
+    <j.3:has_participant rdf:resource="http://purl.org/IEDB/NCBITaxon_9606_1383395_00131"/>
+    <j.3:has_participant rdf:resource="http://purl.org/IEDB/NCBITaxon_10359_1383395_00133"/>
+  </obo:OBI_1110061>
+  <obo:OBI_0000066 rdf:about="http://purl.org/IEDB/OBI_0000066_15627979">
+    <rdfs:label>The functional avidity of virus-specific CD8+ T cells is down-modulated in Borna disease virus-induced immunopathology of the central nervous system.</rdfs:label>
+    <j.3:has_part>
+      <obo:OBI_0600007 rdf:about="http://purl.org/IEDB/OBI_0600007_5843">
+        <rdfs:label>OBI_0600007_5843:Administering Borna disease virus to Mus musculus MRL/MpJ</rdfs:label>
+        <j.3:part_of rdf:resource="http://purl.org/IEDB/OBI_0000066_15627979"/>
+        <j.3:has_participant>
+          <j.2:NCBITaxon_10000627 rdf:about="http://purl.org/IEDB/NCBITaxon_10000627_5843_00003">
+            <rdfs:label>NCBITaxon_10000627_5843_00003:Mus musculus MRL/MpJ</rdfs:label>
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110109"/>
+            <obo:OBI_0000298 rdf:resource="http://purl.org/IEDB/PATO_0000011_NCBITaxon_10000627_5843_00003"/>
+          </j.2:NCBITaxon_10000627>
+        </j.3:has_participant>
+        <j.3:has_participant rdf:resource="http://purl.org/IEDB/NCBITaxon_12455_5843_00005"/>
+      </obo:OBI_0600007>
+    </j.3:has_part>
+    <j.3:has_part>
+      <obo:OBI_1110059 rdf:about="http://purl.org/IEDB/OBI_1110059_5843_00001">
+        <rdfs:label>OBI_1110059_5843_00001:ELISPOT</rdfs:label>
+        <obo:OBI_0000293 rdf:resource="http://purl.org/IEDB/CHEBI_16670_5843_00008"/>
+        <j.3:has_participant>
+          <obo:OBI_1110099 rdf:about="http://purl.org/IEDB/OBI_0100060_5843_00012">
+            <rdfs:label>OBI_0100060_5843_00012:L cells-Fibroblast culture</rdfs:label>
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110106"/>
+          </obo:OBI_1110099>
+        </j.3:has_participant>
+        <j.3:has_participant>
+          <obo:OBI_0100060 rdf:about="http://purl.org/IEDB/OBI_0100060_5843_00011">
+            <obo:OBI-has_grain rdf:resource="http://purl.org/obo/owl/CL#CL_0000842"/>
+            <rdfs:label>OBI_0100060_5843_00011:Mononuclear cell culture</rdfs:label>
+            <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_1110107"/>
+          </obo:OBI_0100060>
+        </j.3:has_participant>
+        <obo:OBI_0000299>
+          <obo:IAO_0000109 rdf:about="http://purl.org/IEDB/IAO_0000109_5843_00002">
+            <rdfs:label>IAO_0000109_5843_00002:Positive</rdfs:label>
+            <obo:IAO_0000116>This is not the correct way to model a positive measurement.  We are waiting on OBI/IAO to resolve this issue.</obo:IAO_0000116>
+          </obo:IAO_0000109>
+        </obo:OBI_0000299>
+      </obo:OBI_1110059>
+    </j.3:has_part>
+    <j.3:has_part>
+      <obo:OBI_0600007 rdf:about="http://purl.org/IEDB/OBI_0600007_5842">
+        <rdfs:label>OBI_0600007_5842:Administering Borna disease virus to Mus musculus MRL/MpJ</rdfs:label>
+        <j.3:part_of rdf:resource="http://purl.org/IEDB/OBI_0000066_15627979"/>
+        <j.3:has_participant rdf:resource="http://purl.org/IEDB/NCBITaxon_10000627_5842_00017"/>
+        <j.3:has_participant rdf:resource="http://purl.org/IEDB/NCBITaxon_12455_5842_00019"/>
+      </obo:OBI_0600007>
+    </j.3:has_part>
+    <j.3:has_part rdf:resource="http://purl.org/IEDB/OBI_1110150_5842_00015"/>
+  </obo:OBI_0000066>
+  <obo:IAO_0000013 rdf:about="http://purl.org/IEDB/IAO_0000013_11851899">
+    <rdfs:label>(2002) Journal of viral hepatitis. , Vol. 9, 18-28</rdfs:label>
+    <obo:IAO_0000116>reation of journal instances will be brought in line to that in Neurocommons, after AR provides a template</obo:IAO_0000116>
+    <obo:IAO_0000136 rdf:resource="http://purl.org/IEDB/OBI_0000066_11851899"/>
+    <obo:IAO_0000115>http://www.ncbi.nlm.nih.gov/pubmed/11851899</obo:IAO_0000115>
+  </obo:IAO_0000013>
+  <obo:IAO_0000013 rdf:about="http://purl.org/IEDB/IAO_0000013_10933725">
+    <rdfs:label>(2000) Journal of virology, Vol. 74, 8140-50</rdfs:label>
+    <obo:IAO_0000116>reation of journal instances will be brought in line to that in Neurocommons, after AR provides a template</obo:IAO_0000116>
+    <obo:IAO_0000136 rdf:resource="http://purl.org/IEDB/OBI_0000066_10933725"/>
+    <obo:IAO_0000115>http://www.ncbi.nlm.nih.gov/pubmed/10933725</obo:IAO_0000115>
+  </obo:IAO_0000013>
+  <obo:IAO_0000013 rdf:about="http://purl.org/IEDB/IAO_0000013_10432283">
+    <rdfs:label>(1999) The Journal of experimental medicine., Vol. 190, 195-204</rdfs:label>
+    <obo:IAO_0000116>reation of journal instances will be brought in line to that in Neurocommons, after AR provides a template</obo:IAO_0000116>
+    <obo:IAO_0000136 rdf:resource="http://purl.org/IEDB/OBI_0000066_10432283"/>
+    <obo:IAO_0000115>http://www.ncbi.nlm.nih.gov/pubmed/10432283</obo:IAO_0000115>
+  </obo:IAO_0000013>
+  <obo:IAO_0000013 rdf:about="http://purl.org/IEDB/IAO_0000013_15627979">
+    <rdfs:label>(2005) European journal of immunology., Vol. 35, 487-97</rdfs:label>
+    <obo:IAO_0000116>reation of journal instances will be brought in line to that in Neurocommons, after AR provides a template</obo:IAO_0000116>
+    <obo:IAO_0000136 rdf:resource="http://purl.org/IEDB/OBI_0000066_15627979"/>
+    <obo:IAO_0000115>http://www.ncbi.nlm.nih.gov/pubmed/15627979</obo:IAO_0000115>
+  </obo:IAO_0000013>
+</rdf:RDF>

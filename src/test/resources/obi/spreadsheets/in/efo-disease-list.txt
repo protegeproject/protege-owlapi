@@ -1,0 +1,207 @@
+Work in progress - sifting through the disease state terms.
+
+Disease state: The name of the pathology diagnosed in the organism
+from which the biomaterial was derived. The disease state is normal if
+no disease has been diagnosed. E.g Acute Lymphocytic Leukemia
+
+abdominal cavity	not
+uninfected	not
+control not
+normal not
+
+--
+
+asthma
+celiac disease
+Barretts esophagus
+chronic obstructive pulmonary disease
+Crohn's disease
+cystic fibrosis
+fetal growth restriction
+familial combined hyperlipidemia
+hypertension
+hypopituitarism
+idiopathic pulmonary fibrosis
+memory impairment
+preeclampsia
+pulmonary arterial hypertension
+sickle cell disease
+emphysema
+lepromatous leprosy
+glaucoma
+atrial fibrillation
+
+-- glucose metabolism
+diabetes
+diabetes mellitus
+type I diabetes mellitus
+type II diabetes mellitus
+diabetic nephropathy
+hyperglycaemia
+
+-- "syndrome" 
+Cockayne syndrome
+Down syndrome
+MELAS syndrome
+metabolic syndrome
+myelodysplastic syndrome
+polycystic ovary syndrome
+Rett syndrome
+scott syndrome
+severe acute respiratory syndrome
+irritable bowel syndrome
+MELAS syndrome
+Rett syndrome
+
+-- infections
+
+malaria
+Pseudomonas aeruginosa CF5 infection
+infection
+influenza
+Pseudomonas aeruginosa PA14 infection
+human papilloma virus
+cytomegalovirus
+Drosophila C virus
+simian immunodeficiency virus
+HIV
+HIV-1
+sepsis
+
+
+- muscle related
+
+muscular dystrophy
+Duchenne muscular dystrophy
+muscular dystrophy
+acute quadriplegic myopathy
+cardiomyopathy
+congestive cardiomyopathy
+hypertrophic cardiomyopathy
+idiopathic cardiomyopathy
+opathic cardiomyopathy
+
+- neuro
+Alzheimer's disease
+amyotrophic lateral sclerosis
+epilepsy
+familial amyotrophic lateral sclerosis
+Huntington's disease
+bipolar disorder
+post-traumatic stress disorder
+sporadic amyotrophic lateral sclerosis
+
+
+-- inflammatory
+autoimmune pancreatitis
+chronic pancreatitis
+dermatomyositis
+encephalomyelitis
+experimental autoimmune encephalomyelitis
+rheumatoid arthritis
+ulcerative colitis
+psoriasis
+
+-- Disorders
+vitamin B12 deficiency
+folate deficiency
+cirrhosis of liver
+cataract
+morbid obesity
+obesity
+aortic stenosis
+injury - not really a disease
+deafness
+ischemia
+myocardial infarction
+endometriosis
+
+-- proliferative
+monoclonal gammopathy
+essential thrombocythemia
+hyperplasia
+T cell acute lymphoblastic leukemia
+promyelocytic leukemia
+acute lymphoblastic leukemia
+acute lymphocytic leukemia
+acute myeloid leukemia
+acute promyelocytic leukemia
+B-precursor acute lymphoblastic leukemia
+childhood acute myeloid leukemia
+chronic lymphocytic leukemia
+chronic myelogenous leukemia
+chronic myeloid leukemia
+plasma cell leukemia
+lymphoblastic leukemia MOLT-4
+
+adenocarcinoma
+adenoma
+aldosterone-producing adenoma
+alveolar rhabdomyosarcoma
+adrenal gland pheochromocytoma
+age-related macular degeneration
+astrocytoma
+bladder carcinoma
+borderline leprosy
+breast adenocarcinoma
+breast carcinoma
+Burkitt's lymphoma
+cervical adenocarcinoma
+cervical carcinoma
+chronic obstructive pulmonary disease
+colon adenocarcinoma
+colon carcinoma
+colon mucinous adenocarcinoma
+colorectal adenocarcinoma
+colorectal carcinoma
+colorectal carcinoma
+Daudi Burkitts lymphoma
+embryonal rhabdomyosarcoma
+esophageal adenocarcinoma
+Ewing's sarcoma
+extra-adrenal sympathetic paraganglioma
+ganglioneuroblastoma
+ganglioneuroma
+gastric adenocarcinoma
+gastric carcinoma
+glioblastoma
+glioma
+head and neck squamous cell carcinoma
+hepatocellular carcinoma
+hereditary spastic paraplegia
+invasive ductal and lobular carcinoma
+invasive ductal carcinoma
+invasive lobular carcinoma
+Kaposis sarcoma
+lung adenocarcinoma
+lung carcinoma
+lymphoma
+malignant pleural mesothelioma
+melanoma
+mucoid ductal carcinoma
+multiple myeloma
+neuroblastoma
+oligoastrocytoma
+oligodendroglioma
+osteosarcoma
+ovarian carcinoma
+papillary renal cell carcinoma
+papillary thyroid carcinoma
+prostate carcinoma
+Raji Burkitts lymphoma
+renal clear cell carcinoma
+small cell lung carcinoma
+spondyloarthropathy
+squamous cell carcinoma
+squamous cell lung carcinoma
+synovial sarcoma
+T-cell lymphoblastic lymphoma
+undifferentiated sarcoma
+well-differentiated_sarcoma
+Wilms tumor
+nevus
+clear cell sarcoma of the kidney
+ductal carcinoma in situ
+Ewing family tumor
+astrocytic tumor
+endometrioid carcinoma

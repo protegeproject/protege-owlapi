@@ -1,0 +1,795 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY NCBITaxon "http://purl.org/obo/owl/NCBITaxon#">
+  <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#">
+  <!ENTITY UO "http://purl.org/obo/owl/UO#">
+  <!ENTITY investigation-use-case "http://purl.obolibrary.org/obo/obi/investigation-use-case.owl">
+  <!ENTITY obo "http://purl.obolibrary.org/obo/">
+  <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+  <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#">
+  <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY ro "http://www.obofoundry.org/ro/ro.owl#">
+  <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="http://purl.obolibrary.org/obo/obi/investigation-use-case.owl"
+         xmlns:NCBITaxon="&NCBITaxon;"
+         xmlns:OBO_REL="&OBO_REL;"
+         xmlns:UO="&UO;"
+         xmlns:obo="&obo;"
+         xmlns:owl="&owl;"
+         xmlns:protege="&protege;"
+         xmlns:rdf="&rdf;"
+         xmlns:rdfs="&rdfs;"
+         xmlns:ro="&ro;">
+
+<!-- Ontology Information -->
+  <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obi/investigation-use-case.owl"
+                protege:defaultLanguage="en"
+                owl:versionInfo="$Revision: 2563 $">
+    <owl:imports><owl:Ontology rdf:about="&obo;obi.owl"/></owl:imports>
+  </owl:Ontology>
+
+<!-- Classes -->
+  <owl:Class rdf:about="&obo;IAO_0000003"/>
+  <owl:Class rdf:about="&obo;IAO_0000032"/>
+  <owl:Class rdf:about="&obo;IAO_0000078"/>
+  <owl:Class rdf:about="&obo;IAO_0000144"/>
+  <owl:Class rdf:about="&obo;IAO_0000414"/>
+  <owl:Class rdf:about="&obo;IAO_0000415"/>
+  <owl:Class rdf:about="&obo;OBI_0000066"/>
+  <owl:Class rdf:about="&obo;OBI_0000175"/>
+  <owl:Class rdf:about="&obo;OBI_0000202"/>
+  <owl:Class rdf:about="&obo;OBI_0000260"/>
+  <owl:Class rdf:about="&obo;OBI_0000319"/>
+  <owl:Class rdf:about="&obo;OBI_0000338"/>
+  <owl:Class rdf:about="&obo;OBI_0000339"/>
+  <owl:Class rdf:about="&obo;OBI_0000471"/>
+  <owl:Class rdf:about="&obo;OBI_0000673"/>
+  <owl:Class rdf:about="&obo;OBI_0000798"/>
+  <owl:Class rdf:about="&obo;OBI_0000805"/>
+  <owl:Class rdf:about="&obo;OBI_0000813"/>
+  <owl:Class rdf:about="&obo;OBI_0000814"/>
+  <owl:Class rdf:about="&obo;OBI_0000817"/>
+  <owl:Class rdf:about="&obo;OBI_0000819"/>
+  <owl:Class rdf:about="&obo;OBI_0000821"/>
+  <owl:Class rdf:about="&obo;OBI_0000825"/>
+  <owl:Class rdf:about="&obo;OBI_0000826"/>
+  <owl:Class rdf:about="&obo;OBI_0000837"/>
+  <owl:Class rdf:about="&obo;OBI_0000842"/>
+  <owl:Class rdf:about="&obo;OBI_0000843"/>
+  <owl:Class rdf:about="&obo;OBI_0000844"/>
+  <owl:Class rdf:about="&obo;OBI_0000847"/>
+  <owl:Class rdf:about="&obo;OBI_0100017"/>
+  <owl:Class rdf:about="&obo;OBI_0500006"/>
+  <owl:Class rdf:about="&obo;OBI_0600004"/>
+  <owl:Class rdf:about="&obo;OBI_0600005"/>
+  <owl:Class rdf:about="&obo;OBI_0600015"/>
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0015">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">Exactly those subjects who are assigned to be treated with active ingredient in the fucoidan pilot study</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">subject in control arm of fucoidan pilot study</rdfs:label>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&NCBITaxon;NCBITaxon_9606"/>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
+        <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0017"/>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0016">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">Exactly those subjects who are assigned to be treated with placebo in the fucoidan pilot study</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">subject in treated arm of fucoidan pilot study</rdfs:label>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&NCBITaxon;NCBITaxon_9606"/>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
+        <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0018"/>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0017">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">Role of any subject in the fucoidan study who is to be treated with guar gum in the pilot study as placebo</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">role of subject to be treated with guar gum in the fucoidan pilot study</rdfs:label>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&obo;OBI_0000825"/>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;OBI_0000300"/>
+        <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0027"/>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0018">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">role of any subject in the fucoidan study who is to be treated with fucoidan pilot study as active ingredient</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">role of subject to be treated with fucoidan in the fucoidan pilot study</rdfs:label>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&obo;OBI_0000813"/>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;OBI_0000300"/>
+        <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0026"/>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0021">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">guar gum capsule used in the fucoidan study cited as definition source</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">guar gum capsule for fucoidan study</rdfs:label>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&obo;OBI_0000821"/>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&ro;has_part"/>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+              <rdf:Description rdf:about="&obo;OBI_0000814"/>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000298"/>
+                <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0023"/>
+              </owl:Restriction>
+            </owl:intersectionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0022">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">A single capsule with 75% by weight fucoidan. A total of 3 grams of this capsule is given to treated subjects.</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009-11-17 Alan Ruttenberg. It is unclear from the paper whether each capsule is 3 grams or whether multiple capsules weighing a total of 3 grams are administered</obo:IAO_0000116>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">fucoidan capsule used in fucoidan pilot study</rdfs:label>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&obo;OBI_0000821"/>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&ro;has_part"/>
+        <owl:someValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&obo;OBI_0000298"/>
+            <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0025"/>
+          </owl:Restriction>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&ro;has_part"/>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000316"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000847"/>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000298"/>
+                <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0024"/>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000643"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000817"/>
+              </owl:Restriction>
+            </owl:intersectionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&ro;has_part"/>
+        <owl:someValuesFrom rdf:resource="&obo;OBI_0000798"/>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0023">
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">A mass quality that has been measured, to the precision of whatever instrument did the measuring, to be 3 grams</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/10/18 Alan Ruttenberg. OBO/OBI doesn't yet have a standard way of representing determinable qualities. This is a strategy that works however, and is arguable more accurate. The class members are those mass quality instances that are measured to be a specific number of grams. An actualy mass of exactly some specified number of grams is, statistically speaking, highly improbable</obo:IAO_0000116>
+    <rdfs:label rdf:datatype="&xsd;string">mass measured to be 3 grams</rdfs:label>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://purl.org/obo/owl/PATO#PATO_0000125"/>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;IAO_0000417"/>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+              <rdf:Description rdf:about="&obo;IAO_0000414"/>
+              <owl:Restriction>
+                <owl:hasValue rdf:datatype="&xsd;float">3.0</owl:hasValue>
+                <owl:onProperty rdf:resource="&obo;IAO_0000004"/>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:hasValue rdf:resource="&UO;UO_00000021"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+              </owl:Restriction>
+            </owl:intersectionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0024">
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">A mass quality that has been measured, to the precision of whatever instrument did the measuring, to be 2.25 grams</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/10/18 Alan Ruttenberg. OBO/OBI doesn't yet have a standard way of representing determinable qualities. This is a strategy that works however, and is arguable more accurate. The class members are those mass quality instances that are measured to be a specific number of grams. An actualy mass of exactly some specified number of grams is, statistically speaking, highly improbable</obo:IAO_0000116>
+    <rdfs:label rdf:datatype="&xsd;string">mass measured to be 2.25 grams</rdfs:label>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://purl.org/obo/owl/PATO#PATO_0000125"/>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;IAO_0000417"/>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+              <rdf:Description rdf:about="&obo;IAO_0000414"/>
+              <owl:Restriction>
+                <owl:hasValue rdf:resource="&UO;UO_00000021"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:hasValue rdf:datatype="&xsd;float">2.25</owl:hasValue>
+                <owl:onProperty rdf:resource="&obo;IAO_0000004"/>
+              </owl:Restriction>
+            </owl:intersectionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0025">
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">A mass quality that has been measured, to the precision of whatever instrument did the measuring, to be .75 grams</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/10/18 Alan Ruttenberg. OBO/OBI doesn't yet have a standard way of representing determinable qualities. This is a strategy that works however, and is arguable more accurate. The class members are those mass quality instances that are measured to be a specific number of grams. An actualy mass of exactly some specified number of grams is, statistically speaking, highly improbable</obo:IAO_0000116>
+    <rdfs:label rdf:datatype="&xsd;string">mass measured to be .75 grams</rdfs:label>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="http://purl.org/obo/owl/PATO#PATO_0000125"/>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;IAO_0000417"/>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+              <rdf:Description rdf:about="&obo;IAO_0000414"/>
+              <owl:Restriction>
+                <owl:hasValue rdf:resource="&UO;UO_00000021"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000039"/>
+              </owl:Restriction>
+              <owl:Restriction>
+                <owl:hasValue rdf:datatype="&xsd;float">0.75</owl:hasValue>
+                <owl:onProperty rdf:resource="&obo;IAO_0000004"/>
+              </owl:Restriction>
+            </owl:intersectionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0026">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">single treatment of fucoidan in fucoidan study</rdfs:label>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&obo;OBI_0000837"/>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&obo;obi/example/fucoidan/fc_0007"/>
+        <owl:onProperty rdf:resource="&ro;part_of"/>
+      </owl:Restriction>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+        <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0022"/>
+      </owl:Restriction>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+              <rdf:Description rdf:about="&obo;OBI_0000319"/>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&OBO_REL;role_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0022"/>
+              </owl:Restriction>
+            </owl:intersectionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0027">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">single treatment of guar gum in fucoidan pilot study</rdfs:label>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&obo;OBI_0000837"/>
+      <owl:Restriction>
+        <owl:hasValue rdf:resource="&obo;obi/example/fucoidan/fc_0007"/>
+        <owl:onProperty rdf:resource="&ro;part_of"/>
+      </owl:Restriction>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:intersectionOf rdf:parseType="Collection">
+              <rdf:Description rdf:about="&obo;OBI_0000319"/>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&OBO_REL;role_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0021"/>
+              </owl:Restriction>
+            </owl:intersectionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+        <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0021"/>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0031">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">Taking blood specimen from subject in fucoidan study</rdfs:label>
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&obo;OBI_0600005"/>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <rdf:Description rdf:about="&obo;obi/example/fucoidan/fc_0015"/>
+              <rdf:Description rdf:about="&obo;obi/example/fucoidan/fc_0016"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+        <owl:someValuesFrom rdf:resource="&obo;OBI_0100017"/>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0032">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">antithrombin assay in the fucoidan study, which used the Berichrom(r) Antithrombin III (A) Kit for reagents and the Sysmex CA-6000 Coagulation Analyzer for measurement</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">antithrombin assay in the fucoidan study</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;OBI_0000805"/>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+            <owl:someValuesFrom>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0031"/>
+              </owl:Restriction>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&obo;OBI_0000308"/>
+            <owl:someValuesFrom>
+              <owl:Restriction>
+                <owl:onProperty rdf:resource="&OBO_REL;function_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000843"/>
+              </owl:Restriction>
+            </owl:someValuesFrom>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&ro;has_participant"/>
+            <owl:someValuesFrom rdf:resource="&obo;OBI_0000843"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="&obo;obi/example/fucoidan/fc_0039">
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">The class of measurment datum that are those outputs of antithrombin assays on the subjects taken on day 1 or day 4 of the study</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">measured AT3 levels of treated subjects on day 1 and day 4 in the fucoidan pilot study</rdfs:label>
+    <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+    <owl:equivalentClass>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+        <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0032"/>
+      </owl:Restriction>
+    </owl:equivalentClass>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_23367"/>
+  <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_32142">
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/CHEBI"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_23367"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.org/obo/owl/CHEBI#CHEBI_42191">
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/CHEBI"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/CHEBI#CHEBI_23367"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.org/obo/owl/FMA#FMA_49184">
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/FMA"/>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <rdf:Description rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&ro;part_of"/>
+            <owl:someValuesFrom rdf:resource="&NCBITaxon;NCBITaxon_9606"/>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.org/obo/owl/GO#GO_007596">
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000412 rdf:resource="&obo;GO"/>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&NCBITaxon;NCBITaxon_9606"/>
+  <owl:Class rdf:about="http://purl.org/obo/owl/PATO#PATO_0000125">
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/PATO"/>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://purl.org/obo/owl/PRO#PRO_000000001"/>
+  <owl:Class rdf:about="http://purl.org/obo/owl/PRO#PRO_000003252">
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/PRO"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/PRO#PRO_000000001"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&UO;UO_0000002">
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
+    <rdfs:subClassOf rdf:resource="&obo;IAO_0000003"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="&UO;UO_0000003">
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
+    <rdfs:subClassOf rdf:resource="&obo;IAO_0000003"/>
+  </owl:Class>
+
+  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#MaterialEntity"/>
+  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/snap#Quality"/>
+  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#Process"/>
+  <owl:Class rdf:nodeID="b445">
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&obo;OBI_0000471"/>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class>
+            <owl:complementOf rdf:resource="&obo;OBI_0000842"/>
+          </owl:Class>
+        </owl:allValuesFrom>
+        <owl:onProperty rdf:resource="&ro;has_part"/>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:nodeID="b450">
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&obo;OBI_0000826"/>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&ro;has_part"/>
+        <owl:someValuesFrom rdf:resource="&obo;OBI_0000819"/>
+      </owl:Restriction>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class>
+            <owl:complementOf rdf:resource="&obo;OBI_0000842"/>
+          </owl:Class>
+        </owl:allValuesFrom>
+        <owl:onProperty rdf:resource="&ro;has_part"/>
+      </owl:Restriction>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&ro;has_part"/>
+        <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0031"/>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:nodeID="b453">
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&obo;OBI_0000471"/>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class>
+            <owl:complementOf rdf:resource="&obo;OBI_0000842"/>
+          </owl:Class>
+        </owl:allValuesFrom>
+        <owl:onProperty rdf:resource="&ro;has_part"/>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+  <owl:Class rdf:nodeID="b456">
+    <owl:intersectionOf rdf:parseType="Collection">
+      <rdf:Description rdf:about="&obo;OBI_0600015"/>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+        <owl:someValuesFrom rdf:resource="&NCBITaxon;NCBITaxon_9606"/>
+      </owl:Restriction>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <rdf:Description rdf:about="&obo;obi/example/fucoidan/fc_0017"/>
+              <rdf:Description rdf:about="&obo;obi/example/fucoidan/fc_0018"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </owl:intersectionOf>
+  </owl:Class>
+
+<!-- Annotation Properties -->
+  <owl:AnnotationProperty rdf:about="&protege;defaultLanguage"/>
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000111"/>
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000112"/>
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000114"/>
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+    <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000116">
+    <rdfs:label rdf:datatype="&xsd;string">editor note</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000117">
+    <rdfs:label rdf:datatype="&xsd;string">definition editor</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+    <rdfs:label rdf:datatype="&xsd;string">definition source</rdfs:label>
+  </owl:AnnotationProperty>
+
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000232"/>
+  <owl:AnnotationProperty rdf:about="&obo;IAO_0000412"/>
+  <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+  
+  <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+
+<!-- Datatype Properties -->
+  <owl:DatatypeProperty rdf:about="&obo;IAO_0000004"/>
+
+<!-- Object Properties -->
+  <owl:ObjectProperty rdf:about="&obo;IAO_0000039"/>
+  <owl:ObjectProperty rdf:about="&obo;IAO_0000136"/>
+  <owl:ObjectProperty rdf:about="&obo;IAO_0000219"/>
+  <owl:ObjectProperty rdf:about="&obo;IAO_0000417"/>
+  <owl:ObjectProperty rdf:about="&obo;OBI_0000293"/>
+  <owl:ObjectProperty rdf:about="&obo;OBI_0000298"/>
+  <owl:ObjectProperty rdf:about="&obo;OBI_0000299"/>
+  <owl:ObjectProperty rdf:about="&obo;OBI_0000300"/>
+  <owl:ObjectProperty rdf:about="&obo;OBI_0000304"/>
+  <owl:ObjectProperty rdf:about="&obo;OBI_0000308"/>
+  <owl:ObjectProperty rdf:about="&obo;OBI_0000312"/>
+  <owl:ObjectProperty rdf:about="&obo;OBI_0000316"/>
+  <owl:ObjectProperty rdf:about="&obo;OBI_0000417"/>
+  <owl:ObjectProperty rdf:about="&obo;OBI_0000643"/>
+  <owl:ObjectProperty rdf:about="&obo;OBI_0000846"/>
+  <owl:ObjectProperty rdf:about="&OBO_REL;bearer_of"/>
+  <owl:ObjectProperty rdf:about="&OBO_REL;function_of"/>
+  <owl:ObjectProperty rdf:about="&OBO_REL;inheres_in"/>
+  <owl:ObjectProperty rdf:about="&OBO_REL;role_of"/>
+  <owl:ObjectProperty rdf:about="&ro;contains"/>
+  <owl:ObjectProperty rdf:about="&ro;has_part"/>
+  <owl:ObjectProperty rdf:about="&ro;has_participant"/>
+  <owl:ObjectProperty rdf:about="&ro;part_of"/>
+
+<!-- Instances -->
+  <obo:IAO_0000078 rdf:about="&obo;IAO_0000120"/>
+  <obo:IAO_0000078 rdf:about="&obo;IAO_0000121"/>
+  <obo:IAO_0000078 rdf:about="&obo;IAO_0000122"/>
+  <obo:IAO_0000078 rdf:about="&obo;IAO_0000123"/>
+  <obo:IAO_0000078 rdf:about="&obo;IAO_0000124"/>
+  <obo:IAO_0000078 rdf:about="&obo;IAO_0000125"/>
+  <NCBITaxon:NCBITaxon_9606 rdf:about="&obo;obi/example/fucoidan/fc_0002">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <obo:OBI_0000846 rdf:resource="&obo;obi/example/fucoidan/fc_0030"/>
+    <rdf:type>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
+        <owl:someValuesFrom rdf:resource="&obo;OBI_0000202"/>
+      </owl:Restriction>
+    </rdf:type>
+    <rdf:type>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
+        <owl:someValuesFrom rdf:resource="&obo;OBI_0000202"/>
+      </owl:Restriction>
+    </rdf:type>
+    <rdfs:label rdf:datatype="&xsd;string">RM Lowenthal</rdfs:label>
+  </NCBITaxon:NCBITaxon_9606>
+
+  <obo:OBI_0000260 rdf:about="&obo;obi/example/fucoidan/fc_0004">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <obo:OBI_0000300 rdf:resource="&obo;obi/example/fucoidan/fc_0005"/>
+    <OBO_REL:inheres_in rdf:resource="&obo;obi/example/fucoidan/fc_0002"/>
+    <rdfs:label rdf:datatype="&xsd;string">RM Lowenthal's plan to develop a study design for fucoidan study</rdfs:label>
+  </obo:OBI_0000260>
+
+  <obo:OBI_0000339 rdf:about="&obo;obi/example/fucoidan/fc_0005">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <obo:OBI_0000299 rdf:resource="&obo;obi/example/fucoidan/fc_0009"/>
+    <obo:OBI_0000308 rdf:resource="&obo;obi/example/fucoidan/fc_0004"/>
+    <rdfs:label rdf:datatype="&xsd;string">planning the fucoidan study</rdfs:label>
+  </obo:OBI_0000339>
+
+  <obo:OBI_0600004 rdf:about="&obo;obi/example/fucoidan/fc_0006">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="&xsd;string">enrolling subjects for fucoidan study</rdfs:label>
+  </obo:OBI_0600004>
+
+  <rdf:Description rdf:about="&obo;obi/example/fucoidan/fc_0007">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <rdf:type rdf:nodeID="b445"/>
+    <rdf:type rdf:nodeID="b453"/>
+    <rdfs:label rdf:datatype="&xsd;string">study design execution in fucoidan investigation</rdfs:label>
+  </rdf:Description>
+
+  <obo:OBI_0000066 rdf:about="&obo;obi/example/fucoidan/fc_0008">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <ro:has_part rdf:resource="&obo;obi/example/fucoidan/fc_0005"/>
+    <ro:has_part rdf:resource="&obo;obi/example/fucoidan/fc_0007"/>
+    <rdfs:label rdf:datatype="&xsd;string">the overall investigation that includes the fucoidan study</rdfs:label>
+  </obo:OBI_0000066>
+
+  <obo:OBI_0500006 rdf:about="&obo;obi/example/fucoidan/fc_0009">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/10 Helen Parkinson: This should be a more specific subclass of study design. Parallel group and reference design were suggested. Need to further investigate and determine disjoints.</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</obo:IAO_0000117>
+    <obo:OBI_0000312 rdf:resource="&obo;obi/example/fucoidan/fc_0005"/>
+    <rdfs:label rdf:datatype="&xsd;string">Plan for pilot fucoidan study</rdfs:label>
+  </obo:OBI_0500006>
+
+  <rdf:Description rdf:about="&obo;obi/example/fucoidan/fc_0029">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000124"/>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <ro:part_of rdf:resource="&obo;obi/example/fucoidan/fc_0007"/>
+    <rdf:type rdf:nodeID="b450"/>
+    <rdfs:label rdf:datatype="&xsd;string">treatment portion of study design execution in fucoidan investigation</rdfs:label>
+  </rdf:Description>
+
+  <obo:OBI_0000844 rdf:about="&obo;obi/example/fucoidan/fc_0030">
+    <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.dhhs.tas.gov.au/hospitals/royal_hobart</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">Royal Hobart Hospital</rdfs:label>
+  </obo:OBI_0000844>
+
+  <obo:IAO_0000415 rdf:about="&obo;obi/example/fucoidan/fc_0033">
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">The hypothesis that fucoidan may have anticoagulant activity in vivo, as expressed, slightly obliquely, in the first paragraph of the abstract of the paper 'Pilot clinical study to evaluate the anticoagulant activity of fucoidan', by Lowenthal et. al.</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/10/12 Alan Ruttenberg. There isn't a clear statement of hypothesis in the paper but one can infer the hypothesis from the paper's abstract, relevant bit cited in definition source.</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660#Seaweed-derived heparin-like substances such as fucoidan have been extensively studied in vitro as potential blood anticoagulants. However, there have been no human studies investigating the anticoagulant activity of fucoidan when administered orally. This pilot clinical trial was aimed to assess the safety and clinical effects of fucoidan ingestion on hemostasis as well as study its in-vitro anticoagulant activity.</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">fucoidan may have anticoagulant activity in vivo</rdfs:label>
+  </obo:IAO_0000415>
+
+  <obo:IAO_0000144 rdf:about="&obo;obi/example/fucoidan/fc_0034">
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">The conclusion that fucoidan has a small statistically significant effect on AT3 level but no useful useful clinical effect as in-vivo anticoagulant, as expressed in the final paragraph of the paper first paragraph of the abstract of the paper 'Pilot clinical study to evaluate the anticoagulant activity of fucoidan', by Lowenthal et. al.</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660#In conclusion, this study demonstrated that a small quantity of bioavailable fucoidan, given orally, had a modest but significant effect on some of the coagulation assays, in particular, the intrinsic pathway. Changes in the coagulation tests were still within reference ranges and unlikely in themselves to be 'clinically valuable'.</obo:IAO_0000119>
+    <obo:OBI_0000312 rdf:resource="&obo;obi/example/fucoidan/fc_0036"/>
+    <rdfs:label rdf:datatype="&xsd;string">fucoidan has a small statistically significant effect on AT3 level but no useful clinical effect as in-vivo anticoagulant</rdfs:label>
+  </obo:IAO_0000144>
+
+  <obo:OBI_0000673 rdf:about="&obo;obi/example/fucoidan/fc_0035">
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:1969666#AT-III increased significantly from 113.5% at baseline to 117% after 4 days n = 10, P =  0.02; Table 2</obo:IAO_0000119>
+    <obo:OBI_0000299 rdf:resource="&obo;obi/example/fucoidan/fc_0037"/>
+    <rdf:type>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+            <owl:someValuesFrom rdf:resource="&obo;obi/example/fucoidan/fc_0032"/>
+          </owl:Restriction>
+        </owl:allValuesFrom>
+        <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+      </owl:Restriction>
+    </rdf:type>
+    <rdfs:label rdf:datatype="&xsd;string">Test of significance of Antithrombin-III level change between day 1 and day 4</rdfs:label>
+  </obo:OBI_0000673>
+
+  <obo:OBI_0000338 rdf:about="&obo;obi/example/fucoidan/fc_0036">
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">The process of interpreting the results of the statistical analyses on the fucoidan study assays</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:19696660</obo:IAO_0000119>
+    <obo:OBI_0000293 rdf:resource="&obo;obi/example/fucoidan/fc_0037"/>
+    <obo:OBI_0000299 rdf:resource="&obo;obi/example/fucoidan/fc_0034"/>
+    <ro:has_participant rdf:resource="&obo;obi/example/fucoidan/fc_0002"/>
+    <rdfs:label rdf:datatype="&xsd;string">interpreting fucoidan study data</rdfs:label>
+  </obo:OBI_0000338>
+
+  <obo:OBI_0000175 rdf:about="&obo;obi/example/fucoidan/fc_0037">
+    <obo:IAO_0000004 rdf:datatype="&xsd;float">0.02</obo:IAO_0000004>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <obo:IAO_0000119 rdf:datatype="&xsd;string">PMID:1969666#AT-III increased significantly from 113.5% at baseline to 117% after 4 days (n = 10, P =  0.02; Table 2)</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="&xsd;string">p-value of 0.02 from test of significance of Antithrombin-III level fucoidan study</rdfs:label>
+  </obo:OBI_0000175>
+
+  <rdf:Description rdf:about="&obo;obi/example/fucoidan/fc_0038">
+    <obo:IAO_0000115 rdf:datatype="&xsd;string">A group assignment process in which participants in the fucoidan study are assigned to either the control or treated arm of the study</obo:IAO_0000115>
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
+    <rdf:type rdf:nodeID="b456"/>
+    <rdfs:label rdf:datatype="&xsd;string">group assignment for fucoidan study</rdfs:label>
+  </rdf:Description>
+
+  <UO:UO_0000002 rdf:about="&UO;UO_00000021">
+    <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
+    <obo:IAO_0000412 rdf:resource="http://purl.org/obo/owl/UO"/>
+  </UO:UO_0000002>
+</rdf:RDF>

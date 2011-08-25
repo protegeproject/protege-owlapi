@@ -1,0 +1,228 @@
+(+)-abscisic acid	EFO_0001464	compound	CHEBI:2365
+(+)-alpha-tocopherol	EFO_0001465	compound	CHEBI:18145
+"1-(2,4-dichlorobenzyl)-1H-indazole-3-carboxylic acid"	EFO_0001466	compound	CHEBI:50138
+17alpha-estradiol	EFO_0001467	compound	CHEBI:17160
+17beta-estradiol	EFO_0001468	compound	CHEBI:16469
+1-naphthyl isothiocyanate	EFO_0001469	compound	CHEBI:35455
+"2,3,7,8-tetrachlorodibenzodioxine"	EFO_0001470	compound	CHEBI:28119
+"3',5'-cyclic AMP"	EFO_0001471	compound	CHEBI:17489
+4-hydroxy-2-nonenal	EFO_0001472	compound	CHEBI:32585
+5-aza-2'-deoxycytidine	EFO_0001473	compound	CHEBI:50131
+5-fluorouracil	EFO_0001474	compound	CHEBI:46345
+6alpha-methylprednisolone	EFO_0001475	compound	CHEBI:6888
+AACOCF3	EFO_0001476	compound	CHEBI:2341
+abscisic acid	EFO_0001477	compound	CHEBI:22152
+acetylsalicylic acid	EFO_0001462	compound	CHEBI:15365
+actinomycin D	EFO_0001478	compound	CHEBI:27666
+aldosterone	EFO_0001479	compound	CHEBI:27584
+"all-cis-docosa-4,7,10,13,16,19-hexaenoic acid"	EFO_0001480	compound	CHEBI:28125
+all-trans-retinoic acid	EFO_0001481	compound	CHEBI:15367
+alpha-D-glucose	EFO_0001482	compound	CHEBI:17925
+amitriptyline	EFO_0001483	compound	CHEBI:2666
+androgen	EFO_0001484	compound	CHEBI:50113
+antibiotic	EFO_0001485	compound	CHEBI:22582
+antipsychotic drug	EFO_0001486	compound	CHEBI:35476
+antirheumatic drug	EFO_0001487	compound	CHEBI:35842
+apratoxin A	EFO_0001488	compound	CHEBI:35212
+arachidonic acid	EFO_0001489	compound	CHEBI:15843
+asbtestos	EFO_0001490	compound	CHEBI:46661
+aspirin	EFO_0001463	compound	CHEBI:15365
+azathioprine	EFO_0001491	compound	CHEBI:2948
+benzenetriols	EFO_0001665	compound	CHEBI:22707
+bis(2-chloroethyl) sulfide	EFO_0001492	compound	CHEBI:25434
+bisphenol A	EFO_0001493	compound	CHEBI:33216
+bleomycin A2	EFO_0001494	compound	CHEBI:3139
+bucladesine	EFO_0001495	compound	CHEBI:50095
+butyrate	EFO_0001496	compound	CHEBI:17968
+cadmium compounds	EFO_0001497	compound	CHEBI:22978
+camptothecin	EFO_0001498	compound	CHEBI:27656
+canrenoate	EFO_0001499	compound	CHEBI:50159
+carbon monoxide	EFO_0001500	compound	CHEBI:17245
+celecoxib	EFO_0001501	compound	CHEBI:41423
+chitin	EFO_0001502	compound	CHEBI:17029
+chlorpromazine	EFO_0001503	compound	CHEBI:3647
+chlorpyrifos	EFO_0001504	compound	CHEBI:34631
+chromium	EFO_0001505	compound	CHEBI:28073
+ciclosporin A	EFO_0001506	compound	CHEBI:4031
+cisplatin	EFO_0001507	compound	CHEBI:27899
+clofibrate	EFO_0001508	compound	CHEBI:3750
+clotrimazole	EFO_0001509	compound	CHEBI:3764
+clozapine	EFO_0001510	compound	CHEBI:3766
+cobalt dichloride	EFO_0001511	compound	CHEBI:35696
+colchicine	EFO_0001512	compound	CHEBI:23359
+copper(2+) sulfate	EFO_0001513	compound	CHEBI:23414
+creatine	EFO_0001514	compound	CHEBI:16919
+cyclosporin A	EFO_0001506	compound	CHEBI:4031
+cyfluthrin	EFO_0001515	compound	CHEBI:4034
+cysteine	EFO_0001516	compound	CHEBI:17561
+cytochalasin B	EFO_0001517	compound	CHEBI:23527
+desferrioxamine B	EFO_0001518	compound	CHEBI:4356
+dexamethasone	EFO_0001519	compound	CHEBI:41879
+diclofenac sodium	EFO_0001520	compound	CHEBI:4509
+diethylhexyl phthalate	EFO_0001521	compound	CHEBI:17747
+diethylstilbestrol	EFO_0001522	compound	CHEBI:41922
+dimethyl sulfoxide	EFO_0001523	compound	CHEBI:28262
+dinitrophenol	EFO_0001524	compound	CHEBI:39352
+D-mannitol	EFO_0001525	compound	CHEBI:16899
+dopamine	EFO_0001526	compound	CHEBI:18243
+doxorubicin	EFO_0001527	compound	CHEBI:28748
+doxycycline	EFO_0001528	compound	CHEBI:50845
+estradiol	EFO_0001529	compound	CHEBI:16469
+estrogen	EFO_0001530	compound	CHEBI:50114
+ethanol	EFO_0001531	compound	CHEBI:16236
+ethene	EFO_0001532	compound	CHEBI:18153
+ethyl nitrosourea	EFO_0001533	compound	CHEBI:23995
+fisetin	EFO_0001534	compound	CHEBI:42567
+flavone	EFO_0001535	compound	CHEBI:42491
+fludrocortisone	EFO_0001536	compound	CHEBI:50885
+flufenamic acid	EFO_0001537	compound	CHEBI:42638
+formaldehyde	EFO_0001538	compound	CHEBI:16842
+forskolin	EFO_0001539	compound	CHEBI:42471
+fulvestrant	EFO_0001540	compound	CHEBI:31638
+gefitinib	EFO_0001541	compound	CHEBI:49668
+genistein	EFO_0001542	compound	CHEBI:28088
+glucitol	EFO_0001543	compound	CHEBI:30911
+glucosamine	EFO_0001544	compound	CHEBI:5417
+glucose	EFO_0001545	compound	CHEBI:17234
+glutamine	EFO_0001546	compound	CHEBI:28300
+glutathione	EFO_0001547	compound	CHEBI:16856
+growth hormone	EFO_0001548	compound	CHEBI:37845
+haloperidol	EFO_0001549	compound	CHEBI:5613
+halothane	EFO_0001550	compound	CHEBI:5615
+HC toxin	EFO_0001551	compound	CHEBI:48028
+Hexadecanoic acid	EFO_0001552	compound	CHEBI:15756
+hydrogen peroxide	EFO_0001553	compound	CHEBI:16240
+hydroxyurea	EFO_0001554	compound	CHEBI:44423
+imatinib	EFO_0001555	compound	CHEBI:45783
+indole-3-acetic acid	EFO_0001556	compound	CHEBI:16411
+indomethacin	EFO_0001557	compound	CHEBI:49662
+isoflavone	EFO_0001558	compound	CHEBI:18220
+isoflurane	EFO_0001559	compound	CHEBI:6015
+jasmonic acid	EFO_0001560	compound	CHEBI:18292
+kainic acid	EFO_0001561	compound	CHEBI:31746
+lapatinib	EFO_0001562	compound	CHEBI:38636
+linoleic acids	EFO_0001563	compound	CHEBI:25048
+lipopolysaccharide	EFO_0001564	compound	CHEBI:16412
+lipoxin A4	EFO_0001565	compound	CHEBI:6498
+lisinopril	EFO_0001566	compound	CHEBI:43755
+lithium chloride	EFO_0001567	compound	CHEBI:48607
+mesalamine	EFO_0001569	compound	CHEBI:6775
+metformin	EFO_0001570	compound	CHEBI:6801
+methamphetamine	EFO_0001571	compound	CHEBI:6809
+methanol	EFO_0001672	compound	CHEBI:17790
+methotrexate	EFO_0001572	compound	CHEBI:44185
+methyl methanesulfonate	EFO_0001573	compound	CHEBI:25255
+mono-2-ethylhexyl phthalate	EFO_0001574	compound	CHEBI:17243
+motexafin gadolinium	EFO_0001575	compound	CHEBI:50161
+N-acetyl-L-cysteine	EFO_0001576	compound	CHEBI:28939
+N-benzyladenine	EFO_0001577	compound	CHEBI:29022
+nifedipine	EFO_0001578	compound	CHEBI:7565
+N-nitrosodimethylamine	EFO_0001579	compound	CHEBI:35807
+nocodazole	EFO_0001580	compound	CHEBI:34892
+non ionic surfactant	EFO_0001581	compound	CHEBI:38828
+non steroidal anti-inflammatory drug	EFO_0001582	compound	CHEBI:35475
+non-steroidal anti-inflammatory drug	EFO_0001582	compound	CHEBI:35475
+novobiocin	EFO_0001583	compound	CHEBI:28368
+ochratoxin A	EFO_0001584	compound	CHEBI:7719
+oligomycin A	EFO_0001585	compound	CHEBI:28285
+oligomycins	EFO_0001586	compound	CHEBI:25675
+olmesartan	EFO_0001587	compound	CHEBI:48416
+oxamic acid	EFO_0001588	compound	CHEBI:18058
+paracetamol	EFO_0001589	compound	CHEBI:46195
+pentamidine	EFO_0001590	compound	CHEBI:45081
+phenobarbital	EFO_0001591	compound	CHEBI:8069
+pioglitazone	EFO_0001592	compound	CHEBI:8228
+pirinixic acid	EFO_0001593	compound	CHEBI:32509
+ponasterone	EFO_0001594	compound	CHEBI:28135
+ponasterone A	EFO_0001594	compound	CHEBI:28135
+prednisolone	EFO_0001595	compound	CHEBI:8378
+pregnenolone 16alpha-carbonitrile	EFO_0001596	compound	CHEBI:35591
+prochlorperazine	EFO_0001597	compound	CHEBI:8435
+progesterone	EFO_0001598	compound	CHEBI:17026
+propofol	EFO_0001599	compound	CHEBI:44915
+quercetin	EFO_0001600	compound	CHEBI:16243
+raloxifene	EFO_0001601	compound	CHEBI:8772
+rapamycin	EFO_0001602	compound	CHEBI:9168
+retinoic acid	EFO_0001603	compound	CHEBI:26536
+rofecoxib	EFO_0001604	compound	CHEBI:8887
+rosiglitazone	EFO_0001605	compound	CHEBI:50122
+rotenone	EFO_0001606	compound	CHEBI:28201
+"S-[2,3-bis(palmitoyloxy)propyl]-Cys-Ser-Lys-Lys-Lys-Lys"	EFO_0001607	compound	CHEBI:46889
+salicylic acid	EFO_0001608	compound	CHEBI:16914
+sapphyrin	EFO_0001609	compound	CHEBI:36779
+selenium	EFO_0001610	compound	CHEBI:27568
+sodium chloride	EFO_0001611	compound	CHEBI:26710
+sodium pyruvate	EFO_0001612	compound	CHEBI:50144
+staurosporine	EFO_0001613	compound	CHEBI:15738
+steroid hormone	EFO_0001614	compound	CHEBI:26764
+streptozotocin	EFO_0001615	compound	CHEBI:9288
+sucrose	EFO_0001616	compound	CHEBI:17992
+sulforaphane	EFO_0001617	compound	CHEBI:47807
+sulindac	EFO_0001618	compound	CHEBI:9352
+sulphur dioxide	EFO_0001619	compound	CHEBI:18422
+surfactants	EFO_0001620	compound	CHEBI:35195
+tamoxifen	EFO_0001621	compound	CHEBI:41774
+taxol	EFO_0001622	compound	CHEBI:45863
+tetraethylenepentamine	EFO_0001623	compound	CHEBI:49798
+thiopurines	EFO_0001624	compound	CHEBI:35666
+thioridazine	EFO_0001625	compound	CHEBI:9566
+tolbutamide	EFO_0001626	compound	CHEBI:27999
+tomatidine	EFO_0001627	compound	CHEBI:9629
+tomatine	EFO_0001628	compound	CHEBI:9630
+toxin	EFO_0001629	compound	CHEBI:27026
+trichostatin A	EFO_0001630	compound	CHEBI:46024
+trifluoperazine	EFO_0001631	compound	CHEBI:45951
+troglitazone	EFO_0001632	compound	CHEBI:9753
+uniconazole-P	EFO_0001633	compound	CHEBI:38000
+valproic acid	EFO_0001634	compound	CHEBI:39867
+Vanadium	EFO_0001635	compound	CHEBI:27698
+Vitamin D3	EFO_0001636	compound	CHEBI:27300
+water	EFO_0001637	compound	CHEBI:15377
+Zinc	EFO_0001638	compound	CHEBI:27363
+#
+# 1. Should these be defined classes, in term of GO function?
+# androgen	EFO_0001484	compound	CHEBI:50113 (hormone) (binds to androgen receptor, i.e. bears GO:0050681 or has_role realized_as realization of GO:0050681)
+# estrogen	EFO_0001530	compound	CHEBI:50114 (binds to estrogen receptor, hormone, GO:0030331)
+#
+# 2. These are drug classes - really they shold be role-defined
+# antibiotic	EFO_0001485	compound	CHEBI:22582 (drug class)
+# antipsychotic drug	EFO_0001486	compound	CHEBI:35476 (drug class)
+# antirheumatic drug	EFO_0001487	compound	CHEBI:35842 (drug class)
+# non steroidal anti-inflammatory drug	EFO_0001582	compound	CHEBI:35475 (drug class)
+#
+# 3. These are mixtures/bulk
+# asbtestos	EFO_0001490	compound	CHEBI:46661 (bulk)
+# chitin	EFO_0001502	compound	CHEBI:17029 (bulk)
+#
+# 4. These are structurally defined classes of compounds - prob. ok but should make sure we assert as subclass any other imports.
+# benzenetriols	EFO_0001665	compound	CHEBI:22707 (class)
+# dinitrophenol	EFO_0001524	compound	CHEBI:39352  (class)
+# linoleic acids	EFO_0001563	compound	CHEBI:25048 (class)
+# thiopurines	EFO_0001624	compound	CHEBI:35666 (class)
+#
+# 5. Some questionable classes
+# cadmium compounds	EFO_0001497	compound	CHEBI:22978 (class - has_part cadminum?)
+# oligomycins	EFO_0001586	compound	CHEBI:25675 (parent of single class oligomycin A)
+# lipopolysaccharide	EFO_0001564	compound	CHEBI:16412 (class, very loose)
+
+# 6. no inchi, but molecular, so ok.
+# cytochalasin B	EFO_0001517	compound	CHEBI:23527 (preliminary, molecular according to wikipedia)
+# ethyl nitrosourea	EFO_0001533	compound	CHEBI:23995 (prelinary current has inchi)
+# glucosamine	EFO_0001544	compound	CHEBI:5417 (no inchi, but molecular)
+# lapatinib	EFO_0001562	compound	CHEBI:38636 (obsolete: now 49603 has inchi)
+# novobiocin	EFO_0001583	compound	CHEBI:28368 (not curated, has inchi according to wikipedia)
+# oligomycin A	EFO_0001585	compound	CHEBI:28285 (not curated, molecular http://www.fermentek.co.il/oligomycin_A.htm)
+#
+# 7. Roles
+# surfactants	EFO_0001620	compound	CHEBI:35195 (role)
+# growth hormone	EFO_0001548	compound	CHEBI:37845  (role)
+# non ionic surfactant	EFO_0001581	compound	CHEBI:38828 (role)
+# toxin	EFO_0001629	compound	CHEBI:27026 (role - note: super of antibiotic)
+#
+# 8. Role-defined class
+# steroid hormone	EFO_0001614	compound	CHEBI:26764 (role-base defined class)
+#
+# 9. Questions: 
+# Vitamin D3	EFO_0001636	compound	CHEBI:27300 (actually all vitamin d class - d3 is CHEBI:28940 which is wanted?)
+# glucose	EFO_0001545	compound	CHEBI:17234 (class should it be d-glucose CHEBI:17634 as this is the biologically active one?)
+# glucitol	EFO_0001543	compound	CHEBI:30911 (class really d-glucitol CHEBI:17924 as this is the biologically active one?)

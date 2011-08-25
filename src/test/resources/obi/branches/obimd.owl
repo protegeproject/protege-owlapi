@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://purl.obolibrary.org/obo/"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+   >
+  <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obimd.owl">
+    <owl:imports> <owl:Ontology  rdf:about="obim.owl"/></owl:imports>
+    <owl:imports> <owl:Ontology  rdf:about="disjoints.owl"/></owl:imports>
+  </owl:Ontology>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3, Build 406)  http://protege.stanford.edu -->

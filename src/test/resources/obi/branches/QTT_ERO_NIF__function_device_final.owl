@@ -1,0 +1,2618 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:p2="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl#"
+    xmlns:j.0="http://purl.org/obo/owl/PATO#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:obo="http://purl.obolibrary.org/obo/"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:p3="http://purl.obolibrary.org/obo/obi.owl#"
+    xmlns:p1="http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/IAO.owl#"
+    xmlns:j.1="http://purl.org/obo/owl/NCBITaxon#"
+    xmlns:j.2="http://www.obofoundry.org/ro/ro.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:j.3="http://purl.org/obo/owl/CARO#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:roproposed="http://purl.org/obo/owl/OBO_REL#"
+    xmlns:j.4="http://purl.org/obo/owl/PRO#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.5="http://purl.org/obo/owl/CHEBI#"
+  xml:base="http://www.owl-ontologies.com/test.owl">
+  <owl:Ontology rdf:about="http://purl.org/QTT/QTT.owl">
+    <owl:imports rdf:resource="http://obi.svn.sourceforge.net/viewvc/obi/trunk/src/ontology/branches/obi.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_135">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gas chromotography instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_149">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Isothermal titration calorimetry instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_160">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Micromanipulator with stand</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_8"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000935"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_188">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Scanning electron microscope</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000990"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_107">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >1D polyacrylamide gel electrophoresis instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_121">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chemical quantification instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_174">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >pH Sensor</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_134">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Freezing point depression osmometer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_9">
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A transduction function is a function that converts one signal type into another signal type.</obo:IAO_0000115>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://en.wikipedia.org/wiki/Transduction</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >transduction function</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_209">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Vapor pressure depression osmometers</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_148">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_4"/>
+        </owl:someValuesFrom>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Iontophoresis system</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_161">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microsyringe Pump</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_7"/>
+        </owl:someValuesFrom>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_120">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chemical compositional analysis instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_106">
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vibration isolation function  </rdfs:label>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >the process of isolating an object, such as a piece of equipment, from the source of vibrations</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_189">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Scissors </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_175">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pipette</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_30">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >voltage clamp device</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_109">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Affinity chromotography instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_8">
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >stabilization function</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://dictionary.reference.com/browse/stabilize</obo:IAO_0000119>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A stabilization function is a function that holds an entity steadfast or at an unfluctuating level or quantity.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_199">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Thermocouple</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_137">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Glucose Sensor </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_50">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microtome knife sharpener</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_147">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ion-exchange liquid chromotography instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_208">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ussing System </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_70">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >denaturing high-performance liquid chromatography instrument</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_186">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RFID Animal Identification </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_6"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_176">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Planar liquid chromotography instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_10">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vacuum transfer function</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Melissa Haendel</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Vacuum transfer function is a transfer function that displaces a material from one place to another using a vacuum to drive the movement.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_19">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >stereo microscope</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_7">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A pump function is a transport function where the transport requires work to move the entity, often against a gradient.</obo:IAO_0000115>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >pump function</rdfs:label>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.answers.com/topic/pump</obo:IAO_0000119>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_198">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Temperature Sensor </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_136">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Glass Capillary</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_146">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ion Selective Electrode</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_207">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ultrahigh voltage electron microscope</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_187">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ronguers</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_177">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Plantar Test/Tail Flick Meter</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_108">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >2D polyacrylamide gel electrophoresis instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_49">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microtome knife maker</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_164">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Muscle Testers </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_145">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_3"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intracellular Amplifier</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_131">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Extracellular Amplifier</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_3"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_150">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Knife</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_22">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >spinning-disk confocal microscope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_59">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ELISA microplate washer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_197">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TEER Measurement </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_6">
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Identification function is a function that allows specific identification of individual entities from one another.</obo:IAO_0000115>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Melissa Haendel</obo:IAO_0000117>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >identification function</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_32">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >densitometer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_170">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Oxygen Sensor</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_88">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000376"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000374"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microwave synthesis system</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_103">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000946"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >autoclave</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_62">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >capillary electrophoresis instrument</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_72">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >chip spotting device</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_111">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_3"/>
+        </owl:someValuesFrom>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Amplifier</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_184">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Retractor</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_125">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Constant-volume calorimetry instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_165">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Myobath Tissue Bath </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_166"/>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_21">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >laser scanning confocal microscope</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_130">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Epithelial Voltage Clamp </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_3"/>
+        </owl:someValuesFrom>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_151">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Liquid scintillation detection instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_144">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Intermediate voltage electron microscope</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_5">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >fixation function</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.biology-online.org/dictionary/Fixation</obo:IAO_0000119>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A fixation function is a function that holds or fastens an entity in a fixed position.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_31">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >coagulation analyzer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_196">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000369"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Surgical Microscope</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_171">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Paper chromotography instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_61">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >electrophoresis system</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_102">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vacuum oven</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_185">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Reverse-phase high-pressure liquid chromotography instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_110">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ag-AgCl Half-Cells </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_124">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Constant-pressure calorimetry instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_87">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000989"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >real-time PCR machine</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_71">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000376"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PET synthesizer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_47">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >micropipette puller</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_162">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_8"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000935"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Motorized Micromanipulator</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_133">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Forcep</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_34">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microhardness tester</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_20">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >confocal microscope</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_152">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Manual Micromanipulator</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_8"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000935"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_4">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >current ejection function</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+    <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PERSON: Melissa Haendel</obo:IAO_0000117>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A current ejection function is a function that delivers a current.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_143">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hydrogen Sulfide Sensor</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_195">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Surface Electrode</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_113">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Biaxial Tissue Analysis </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_9"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_105">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >analytical balance</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_60">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >protein separation apparatus</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_172">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Perfusion System </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_166"/>
+        </owl:someValuesFrom>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_182">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Reference Electrode</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_123">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chemical structural analysis instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_74">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >gel imaging system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_132">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Force Transducers </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_9"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_163">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000940"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Multiphoton microscope</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_33">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >diffractometer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_48">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microplate washer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_153">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Membrane osmometers</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_194">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_4"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stimulus isolation unit</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_3">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_2"/>
+    </rdfs:subClassOf>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A current amplification function is an amplification function that increases the amplitude of a current.</obo:IAO_0000115>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.answers.com/topic/current-amplification</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >current amplification function</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_142">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hydrogen Peroxide Sensor</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_104">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000387"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cryostat</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_122">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Chemical separation instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_173">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Peristaltic Pump</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_7"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_89">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bead array reader</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_112">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Animal Temp Control </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_99">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >radiation measurement device</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000368"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_183">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Respirometry instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_210">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ventilator</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_7"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_73">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >digital camera</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_193">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_4"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stimulator</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_202">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_8"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tissue Bath</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_75">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >immunoblot scanner</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_128">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Electrode</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_83">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >incubator shaker</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_16">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000048"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >liquid chromatography instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_65">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >pulsed-field gel electrophoresis system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_97">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >multichannel electronic pipette</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_212">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >von Frey Anesthesiometer </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_114">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Biosensing Analyzer </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_141">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_8"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hook</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_26">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_5"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cryofixation device</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_55">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vacuum manifold</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_154">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Metal Electrode</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_168">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Nitric Oxide Sensor</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_1">
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Capillary transfer function is a transfer function that displaces a material from one location to another via surface tension and the adhesivity or cohesivity of the material</obo:IAO_0000115>
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://dictionary.reference.com/browse/capillarity</obo:IAO_0000119>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >capillary transfer function</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_36">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >nucleic acid sequencer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_45">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >freeze substitution system</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_84">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >bioreactor</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_192">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_8"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Stereotaxic Instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_201">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Thin-layer chromotography instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_129">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Electrosurgery </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_15">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000049"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tandem mass spectrometer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_66">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >nucleic acid extraction/purification instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.owl-ontologies.com/Class_0">
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1#Entity"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >QTT class: analyte assays generated by mapping master using an OBI QTT</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_76">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >infrared image acquisition device</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_115">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Biosensing sensor</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_98">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >angiograph</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000368"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_211">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Vessel Clip</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_56">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >vitrification apparatus</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_2">
+    <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >http://www.biology-online.org/dictionary/Amplify</obo:IAO_0000119>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >amplification function</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An amplification function is a function to increase the number, effect, size, volume or amplitude of entity.</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_25">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >X-ray source</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000374"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_155">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Micro Drill </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_140">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >High voltage electron microscope</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_169">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Osmometer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_35">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microplate reader</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_191">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Specialty Wire </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_46">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microdissection instrument</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_18">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >digital microscope</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_100">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000136"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000401"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >hybridization oven</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_200">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Thermometer</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_126">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Differential scanning calorimetry instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_85">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000375"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >lyophilizer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_181">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_8"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Rackmounts </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_95">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >electronic repeater pipette</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_214">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >X-Ray crystallography instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_116">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Blood Pressure Monitor </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_77">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >radiography instrument</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_63">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >gel electrophoresis system</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_24">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >computer cluster</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000392"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_43">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >laser capture microdissection microscope</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_57">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400106"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >microcentrifuge</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_180">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Probe</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_38">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >protein sequencer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_190">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Size exclusion liquid chromotography instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_166">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >homeostasis function</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/snap#Function"/>
+    <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >the regulation of the environment of a biological entity (either in whole or in part) to maintain a stable, constant condition</obo:IAO_0000115>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_156">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microcalorimetry instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_127">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_6"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Ear Punch and Tag</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_17">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DNA synthesizer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400113"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_86">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_1"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >capillary blotter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_96">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >multichannel pipette</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_213">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Working Electrode</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_78">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >small-animal image acquisition device</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_101">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >paraffin oven</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000370"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_64">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >agarose gel electrophoresis system</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_117">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bone Screw</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_23">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >programmable array microscope</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_167">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Needle and Holder</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_58">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >liquid extraction robot</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400112"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_37">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >pH meter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_44">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400169"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >scanning force microscope</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_157">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microelectrode Beveler</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_93">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >top loading balance</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_79">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ultrasound machine</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_118">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_8"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Brain Matrics</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_12">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400065"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >two-photon laser/detector</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_178">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_7"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Pneumatic Pump</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_69">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >high performance liquid chromatography instrument</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_206">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000990"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transmission electron microscope</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_158">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_8"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microelectrode Holder</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_51">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >plate shaker</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_138">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Gravity-driven liquid chromotography instrument</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_41">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >multimode microplate reader</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_119">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Carbon Fiber Electrode</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_215">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Microdialysis tubing</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_94">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >micropipette</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_179">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Polyacrylamide gel electrophoresis instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_11">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >computer workstation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400107"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_80">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_10"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >cell harvester</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_205">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transducer Amplifier</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_3"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_159">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MicroFil </rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000383"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_52">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >rocker</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_39">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >surface plasmon resonance instrument</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_42">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >ELISA microplate reader</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_139">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_8"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Hemostat</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_29">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >patch clamp device</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_91">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >balance</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_204">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Transducer</rdfs:label>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_9"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_81">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >automatic tissue processor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000960"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_67">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DNA extraction/purification instrument</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_14">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400143"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >portable fluorometer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_53">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >spot cutter</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_90">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000397"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SPECT scanner</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_28">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000371"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >slide warmer</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_92">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >mechanical balance</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_68">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RNA extraction/purification instrument</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_82">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >automatic staining machine</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000961"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_203">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000372"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Tissue Slicers </rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_13">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >electron paramagnetic resonance spectrometer</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0400115"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_54">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >tissue embedding station</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000379"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_40">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >scintillation counter</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/QTT/QTT.owl#Class_27">
+    <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000968"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_5"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >perfusion station</rdfs:label>
+  </owl:Class>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000059">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000453"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0400100">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom rdf:resource="http://purl.org/QTT/QTT.owl#Class_7"/>
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000306"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.4, Build 579)  http://protege.stanford.edu -->

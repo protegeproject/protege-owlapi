@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog id="XML Catalog File (see http://www.oasis-open.org/committees/entity/spec-2001-08-06.html) - Created By Protégé 4" prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/obi/obi-owl-full.owl" uri="obi-owl-full.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/" uri="obi-edit.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi/external.owl" uri="external.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi/externalDerived.owl" uri="externalDerived.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi/external-byhand.owl" uri="external-byhand.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi.owl" uri="obi.owl"/>
+    <uri name="http://purl.org/obo/owl/ro_bfo_bridge1_1" uri="../external/ro_bfo_bridge11.owl"/>
+    <uri name="http://www.obofoundry.org/ro/ro.owl" uri="../external/ro.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/iao.owl" uri="../external/iao/iao.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/iao-main.owl" uri="../external/iao/iao-main.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/external.owl" uri="../external/iao/external.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/externalDerived.owl" uri="../external/iao/externalDerived.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/externalByHand.owl" uri="../external/iao/externalByHand.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/obsolete.owl" uri="../external/iao/obsolete.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/iao/dev/ontology-metadata.owl" uri="../external/iao/ontology-metadata.owl"/>
+    <uri name="http://www.ifomis.org/bfo/1.1" uri="../external/bfo11.owl"/>
+    <uri name="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl" uri="../external/protege-dc.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obi/dev/crux-staging.owl" uri="crux-staging.owl"/>
+</catalog>

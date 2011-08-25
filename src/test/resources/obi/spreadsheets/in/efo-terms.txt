@@ -1,0 +1,985 @@
+TERM	ACCESSION	ANNOTATION TYPE
+(+)-abscisic acid	EFO_0001464	compound
+(+)-alpha-tocopherol	EFO_0001465	compound
+"1-(2,4-dichlorobenzyl)-1H-indazole-3-carboxylic acid"	EFO_0001466	compound
+17alpha-estradiol	EFO_0001467	compound
+17beta-estradiol	EFO_0001468	compound
+1-naphthyl isothiocyanate	EFO_0001469	compound
+"2,3,7,8-tetrachlorodibenzodioxine"	EFO_0001470	compound
+267B1	EFO_0001080	cell line
+267B1 Ki-ras	EFO_0001081	cell line
+293T	EFO_0001082	cell line
+"3',5'-cyclic AMP"	EFO_0001471	compound
+3T3-L1	EFO_0001084	cell line
+4-hydroxy-2-nonenal	EFO_0001472	compound
+5-aza-2'-deoxycytidine	EFO_0001473	compound
+5-fluorouracil	EFO_0001474	compound
+600MPE	EFO_0001085	cell line
+6alpha-methylprednisolone	EFO_0001475	compound
+972h-	EFO_0000739	strain or line
+A549	EFO_0001086	cell line
+AACOCF3	EFO_0001476	compound
+abdominal cavity	EFO_0000213	disease state
+abdominal skin	EFO_0000214	organism part
+abscisic acid	EFO_0001477	compound
+accumbens nucleus	EFO_0000906	organism part
+acetylsalicylic acid	EFO_0001462	compound
+actinomycin D	EFO_0001478	compound
+acute lymphoblastic leukemia	EFO_0000219	disease state
+acute lymphocytic leukemia	EFO_0000220	disease state
+acute myeloid leukemia	EFO_0000222	disease state
+acute promyelocytic leukemia	EFO_0000224	disease state
+acute quadriplegic myopathy	EFO_0000225	disease state
+adenocarcinoma	EFO_0000228	disease state
+adenoma	EFO_0000232	disease state
+adipose tissue	EFO_0000234	organism part
+adrenal cortex	EFO_0000237	cell line
+adrenal cortex	EFO_0000237	organism part
+adrenal gland	EFO_0000238	organism part
+adrenal gland pheochromocytoma	EFO_0000239	disease state
+adult	EFO_0001272	cell type
+adult	EFO_0001272	dev stage
+aerial part	EFO_0001901	organism part
+age-related macular degeneration	EFO_0001365	disease state
+aldosterone	EFO_0001479	compound
+aldosterone-producing adenoma	EFO_0000232	disease state
+"all-cis-docosa-4,7,10,13,16,19-hexaenoic acid"	EFO_0001480	compound
+all-trans-retinoic acid	EFO_0001481	compound
+alpha-D-glucose	EFO_0001482	compound
+alveolar rhabdomyosarcoma	EFO_0000248	disease state
+Alzheimer's disease	EFO_0000249	disease state
+amitriptyline	EFO_0001483	compound
+amygdala	EFO_0000252	organism part
+amyotrophic lateral sclerosis	EFO_0000253	disease state
+androgen	EFO_0001484	compound
+animal ovary	EFO_0000973	organism part
+ankle	EFO_0001409	organism part
+antibiotic	EFO_0001485	compound
+antipsychotic drug	EFO_0001486	compound
+antirheumatic drug	EFO_0001487	compound
+aorta	EFO_0000265	organism part
+aortic stenosis	EFO_0000266	disease state
+apical meristem 	EFO_0000267	organism part
+appendix	EFO_0000849	organism part
+apratoxin A	EFO_0001488	compound
+arachidonic acid	EFO_0001489	compound
+arm	EFO_0001410	organism part
+asbtestos	EFO_0001490	compound
+aspirin	EFO_0001463	compound
+asthma	EFO_0000270	disease state
+astrocyte	EFO_0001996	cell type
+astrocytic tumor	EFO_0000271	disease state
+astrocytoma	EFO_0000272	disease state
+atrial fibrillation	EFO_0000275	disease state
+atrioventricular node	EFO_0000276	organism part
+atrium	EFO_0000277	organism part
+AU565	EFO_0001087	cell line
+autoimmune pancreatitis	EFO_0000278	disease state
+axilla	EFO_0001395	organism part
+azathioprine	EFO_0001491	compound
+B cell	EFO_0000101	cell type
+B-2 B cell	EFO_0000092	cell type
+back	EFO_0001405	organism part
+BALB/c	EFO_0000602	strain or line
+Barretts esophagus	EFO_0000280	disease state
+basal cell	EFO_0001997	cell type
+basal ganglion	EFO_0000904	organism part
+basal plate	EFO_0001904	organism part
+BEAS-2B	EFO_0001089	cell line
+benzenetriols	EFO_0001665	compound
+beta cell	EFO_0000285	cell type
+beta cell	EFO_0000285	organism part
+biceps femoris	EFO_0001418	organism part
+bipolar disorder	EFO_0000289	disease state
+bis(2-chloroethyl) sulfide	EFO_0001492	compound
+bisphenol A	EFO_0001493	compound
+BJABK3	EFO_0001090	cell line
+BL41K3	EFO_0001091	cell line
+bladder	EFO_0000290	organism part
+bladder carcinoma	EFO_0000292	disease state
+bladder mucosa	EFO_0000293	organism part
+blastula 128-cell	EFO_0001273	dev stage
+blastula 1k-cell	EFO_0001274	dev stage
+blastula 256-cell	EFO_0001276	dev stage
+blastula 30%-epiboly	EFO_0001277	dev stage
+blastula 512-cell	EFO_0001278	dev stage
+blastula dome	EFO_0001279	dev stage
+blastula high	EFO_0001280	dev stage
+blastula oblong	EFO_0001281	dev stage
+blastula sphere	EFO_0001283	dev stage
+blastula stage	EFO_0001282	cell type
+blastula stage	EFO_0001282	dev stage
+blastula stage	EFO_0001282	organism part
+bleomycin A2	EFO_0001494	compound
+blood	EFO_0000296	organism part
+blood plasma	EFO_0001905	organism part
+blood vessel endothelial cell	EFO_0000297	cell type
+bone	EFO_0000298	organism part
+bone marrow	EFO_0000868	organism part
+borderline leprosy	EFO_0001055	disease state
+B-precursor acute lymphoblastic leukemia	EFO_0000093	disease state
+brain structure	EFO_0000302	organism part
+breast adenocarcinoma	EFO_0000304	disease state
+breast carcinoma	EFO_0000305	disease state
+bronchial epithelium	EFO_0000307	organism part
+bronchus	EFO_0000932	organism part
+brown fat	EFO_0000812	organism part
+BT20	EFO_0001092	cell line
+BT474	EFO_0001093	cell line
+BT483	EFO_0001095	cell line
+BT549	EFO_0001096	cell line
+bucladesine	EFO_0001495	compound
+Burkitt's lymphoma	EFO_0000309	disease state
+butyrate	EFO_0001496	compound
+BY4741	EFO_0000099	strain or line
+BY5251	EFO_0000100	strain or line
+C2C12	EFO_0001098	cell line
+C57BL/10	EFO_0000604	strain or line
+C57BL/6	EFO_0000605	strain or line
+Caco-2	EFO_0001099	cell line
+cadmium compounds	EFO_0001497	compound
+CAMA1	EFO_0001100	cell line
+camptothecin	EFO_0001498	compound
+canrenoate	EFO_0001499	compound
+carbon monoxide	EFO_0001500	compound
+cardiac atrium	EFO_0000314	organism part
+cardiac myocyte	EFO_0000316	cell type
+cardiomyopathy	EFO_0000318	disease state
+cardiovascular system	EFO_0000791	organism part
+carotid artery	EFO_0000818	organism part
+cataract	EFO_0001059	disease state
+caudal fin	EFO_0001909	organism part
+caudate nucleus	EFO_0000907	organism part
+caudate putamen	EFO_0001912	organism part
+CC531	EFO_0001101	cell line
+celecoxib	EFO_0001501	compound
+celiac disease	EFO_0001060	disease state
+central nervous system	EFO_0000908	organism part
+cerebellum	EFO_0000327	organism part
+cerebral cortex	EFO_0000328	organism part
+cerebrospinal fluid	EFO_0000329	organism part
+cervical adenocarcinoma	EFO_0001416	disease state
+cervical carcinoma	EFO_0001061	disease state
+cervix epithelium	EFO_0001913	organism part
+CFT-2	EFO_0001102	cell line
+childhood acute myeloid leukemia	EFO_0000330	disease state
+chitin	EFO_0001502	compound
+chlorpromazine	EFO_0001503	compound
+chlorpyrifos	EFO_0001504	compound
+chondrocyte	EFO_0001374	cell type
+choroid plexus	EFO_0001915	organism part
+chromium	EFO_0001505	compound
+chronic lymphocytic leukemia	EFO_0000169	disease state
+chronic myelogenous leukemia	EFO_0000339	disease state
+chronic myelogenous leukemia	EFO_0000	disease state
+chronic myeloid leukemia	EFO_0000340	disease state
+chronic obstructive pulmonary disease	EFO_0000341	disease state
+chronic pancreatitis	EFO_0000342	disease state
+chronic_myeloid_leukemia	EFO_0000340	disease state
+ciclosporin A	EFO_0001506	compound
+cingulate cortex	EFO_0000343	organism part
+cirrhosis of liver	EFO_0001422	disease state
+cisplatin	EFO_0001507	compound
+clear cell sarcoma of the kidney	EFO_0000350	disease state
+cleavage 16-cell	EFO_0001284	dev stage
+cleavage 2-cell	EFO_0001285	dev stage
+cleavage 32-cell	EFO_0001286	dev stage
+cleavage 4-cell	EFO_0001287	dev stage
+cleavage 64-cell	EFO_0001288	dev stage
+cleavage 8-cell	EFO_0001289	dev stage
+clofibrate	EFO_0001508	compound
+clotrimazole	EFO_0001509	compound
+clozapine	EFO_0001510	compound
+cobalt dichloride	EFO_0001511	compound
+cochlea	EFO_0000357	organism part
+cochlear hair cell	EFO_0000358	cell type
+Cockayne syndrome	EFO_0000359	disease state
+colchicine	EFO_0001512	compound
+colon	EFO_0000361	organism part
+colon adenocarcinoma	EFO_0000362	disease state
+colon carcinoma	EFO_0000363	disease state
+colon mucinous adenocarcinoma	EFO_0000364	disease state
+colorectal adenocarcinoma	EFO_0000365	disease state
+colorectal carcinoma	EFO_0000755	disease state
+colorectal carcinoma	EFO_0000775	disease state
+columnar neuron	EFO_0000366	cell type
+congestive cardiomyopathy	EFO_0000372	disease state
+conjunctiva	EFO_0000374	organism part
+conjunctival epithelium	EFO_0001916	organism part
+control	EFO_0001461	compound
+control	EFO_0001461	disease state
+copper(2+) sulfate	EFO_0001513	compound
+cornea	EFO_0000377	organism part
+corneal epithelium	EFO_0001917	organism part
+corneal limbus	EFO_0001403	organism part
+corpus callosum	EFO_0000381	organism part
+corpus striatum	EFO_0000381	organism part
+corpus uteri	EFO_0000382	organism part
+cortex	EFO_0000383	organism part
+creatine	EFO_0001514	compound
+Crohn's disease	EFO_0000384	disease state
+CS57511	EFO_0000002	strain or line
+CS57521	EFO_0000006	strain or line
+CS57549	EFO_0000012	strain or line
+CS57551	EFO_0000013	strain or line
+CS57560	EFO_0000015	strain or line
+CS57569	EFO_0000017	strain or line
+CS57581	EFO_0000021	strain or line
+CS57586	EFO_0000023	strain or line
+CS57601	EFO_0000029	strain or line
+CS57606	EFO_0000031	strain or line
+CS57610	EFO_0000032	strain or line
+CS57616	EFO_0000034	strain or line
+CS57619	EFO_0000036	strain or line
+CS57622	EFO_0000039	strain or line
+CS57627	EFO_0000043	strain or line
+CS57637	EFO_0000048	strain or line
+CS57705	EFO_0000066	strain or line
+CS57706	EFO_0000067	strain or line
+CS57710	EFO_0000069	strain or line
+CS57715	EFO_0000071	strain or line
+CS57716	EFO_0000072	strain or line
+CS57731	EFO_0000077	strain or line
+CS57732	EFO_0000078	strain or line
+CS57737	EFO_0000081	strain or line
+CS57758	EFO_0000089	strain or line
+CS57777	EFO_0000114	strain or line
+CS57778	EFO_0000115	strain or line
+CS57807	EFO_0000123	strain or line
+CS57810	EFO_0000124	strain or line
+CS57816	EFO_0000128	strain or line
+CS57825	EFO_0000133	strain or line
+CS57826	EFO_0000134	strain or line
+CS57834	EFO_0000137	strain or line
+CS57835	EFO_0000138	strain or line
+CS57843	EFO_0000142	strain or line
+CS57848	EFO_0000144	strain or line
+CS57854	EFO_0000146	strain or line
+CS57870	EFO_0000150	strain or line
+CS57884	EFO_0000157	strain or line
+CS57886	EFO_0000158	strain or line
+CS57923	EFO_0000165	strain or line
+CS57924	EFO_0000166	strain or line
+CSBwt-rescued fibroblasts	EFO_0001103	cell line
+cyclosporin A	EFO_0001506	compound
+cyfluthrin	EFO_0001515	compound
+cysteine	EFO_0001516	compound
+cystic fibrosis	EFO_0000390	disease state
+cytochalasin B	EFO_0001517	compound
+cytomegalovirus	EFO_0001062	disease state
+Daudi Burkitts lymphoma	EFO_0000172	disease state
+deafness	EFO_0001063	disease state
+deltoid	EFO_0001412	organism part
+dendritic cell	EFO_0000396	cell type
+dentate gyrus	EFO_0001366	organism part
+dermatomyositis	EFO_0000398	disease state
+dermis	EFO_0000953	organism part
+descending colon	EFO_0000845	organism part
+desferrioxamine B	EFO_0001518	compound
+dexamethasone	EFO_0001519	compound
+diabetes	EFO_0000400	disease state
+diabetes mellitus	EFO_0000400	disease state
+diabetic nephropathy	EFO_0000401	disease state
+diaphragm	EFO_0000937	organism part
+diclofenac sodium	EFO_0001520	compound
+diencephalon	EFO_0000911	organism part
+diethylhexyl phthalate	EFO_0001521	compound
+diethylstilbestrol	EFO_0001522	compound
+digit	EFO_0000881	organism part
+dimethyl sulfoxide	EFO_0001523	compound
+dinitrophenol	EFO_0001524	compound
+D-mannitol	EFO_0001525	compound
+dopamine	EFO_0001526	compound
+dorsal raphe	EFO_0001919	organism part
+dorsal root ganglion	EFO_0000900	organism part
+dorsal skin	EFO_0001907	organism part
+Down syndrome	EFO_0001064	disease state
+doxorubicin	EFO_0001527	compound
+doxycycline	EFO_0001528	compound
+DP thymocyte	EFO_0000171	cell line
+DP thymocyte	EFO_0000171	cell type
+Drosophila C virus	EFO_0000779	disease state
+Duchenne muscular dystrophy	EFO_0000429	disease state
+ductal carcinoma in situ	EFO_0000432	disease state
+duodenum	EFO_0000851	organism part
+ear	EFO_0000826	organism part
+ectoderm	EFO_0000414	organism part
+embryo	EFO_0001367	cell type
+embryo	EFO_0001367	dev stage
+embryo	EFO_0001367	organism part
+embryonal rhabdomyosarcoma	EFO_0000437	disease state
+embryonic gonadal ridge	EFO_0001414	organism part
+embryonic stem cell	EFO_0000462	cell type
+embryonic stem cell	EFO_0000462	organism part
+emphysema	EFO_0000464	disease state
+encephalomyelitis	EFO_0001423	disease state
+endometrioid carcinoma	EFO_0000466	disease state
+endometriosis	EFO_0001065	disease state
+endometrium	EFO_0000980	organism part
+endothelial cell	EFO_0000467	cell type
+endothelial cell	EFO_0000467	organism part
+entorhinal cortex	EFO_0001920	organism part
+epiblast cell	EFO_0000471	cell type
+epidermis	EFO_0000954	organism part
+epididymis	EFO_0000982	organism part
+epididymus	EFO_0000982	organism part
+epilepsy	EFO_0000474	disease state
+epithelial cell	EFO_0000475	cell type
+epithelial cell of lung	EFO_0000476	cell type
+erythrocyte	EFO_0000477	cell type
+esophageal adenocarcinoma	EFO_0000478	disease state
+essential thrombocythemia	EFO_0000479	disease state
+estradiol	EFO_0001529	compound
+estrogen	EFO_0001530	compound
+ethanol	EFO_0001531	compound
+ethene	EFO_0001532	compound
+ethyl nitrosourea	EFO_0001533	compound
+Ewing family tumor	EFO_0000173	disease state
+Ewing's sarcoma	EFO_0000174	disease state
+experimental autoimmune encephalomyelitis	EFO_0001066	disease state
+extra-adrenal sympathetic paraganglioma	EFO_0000489	disease state
+extraocular muscle	EFO_0001921	organism part
+eye	EFO_0000827	organism part
+familial amyotrophic lateral sclerosis	EFO_0001356	disease state
+familial combined hyperlipidemia	EFO_0000492	disease state
+female	EFO_0001265	sex
+female accessory gland	EFO_0001922	organism part
+femur	EFO_0001396	organism part
+fertilized egg stage	EFO_0001322	dev stage
+fertilized egg stage	EFO_0001322	organism part
+fetal growth restriction	EFO_0000495	disease state
+fetus	EFO_0001323	cell type
+fetus	EFO_0001323	dev stage
+fetus	EFO_0001323	organism part
+fibroblast	EFO_0000496	cell type
+Fischer 344	EFO_0000176	strain or line
+fisetin	EFO_0001534	compound
+flavone	EFO_0001535	compound
+floor of mouth	EFO_0001923	organism part
+flower	EFO_0001024	organism part
+flower bud	EFO_0001924	organism part
+fludrocortisone	EFO_0001536	compound
+flufenamic acid	EFO_0001537	compound
+folate deficiency	EFO_0001070	disease state
+follicle cell	EFO_0000498	cell type
+forebrain	EFO_0000909	organism part
+forelimb	EFO_0000882	organism part
+foreskin	EFO_0001664	organism part
+formaldehyde	EFO_0001538	compound
+forskolin	EFO_0001539	compound
+frontal lobe	EFO_0000913	organism part
+fulvestrant	EFO_0001540	compound
+GABAergic neuron	EFO_0000177	cell type
+ganglion	EFO_0000899	organism part
+ganglioneuroblastoma	EFO_0000502	disease state
+ganglioneuroma	EFO_0000500	disease state
+gastric adenocarcinoma	EFO_0000503	disease state
+gastric carcinoma	EFO_0000178	disease state
+gastrocnemius	EFO_0001413	organism part
+gastrula 50%-epiboly	EFO_0001291	dev stage
+gastrula 75%-epiboly	EFO_0001292	cell type
+gastrula 75%-epiboly	EFO_0001292	dev stage
+gastrula 90%-epiboly	EFO_0001293	cell type
+gastrula 90%-epiboly	EFO_0001293	dev stage
+gastrula bud	EFO_0001294	cell type
+gastrula bud	EFO_0001294	dev stage
+gastrula germ-ring	EFO_0001295	dev stage
+gastrula shield	EFO_0001297	cell type
+gastrula shield	EFO_0001297	dev stage
+gefitinib	EFO_0001541	compound
+genistein	EFO_0001542	compound
+glaucoma	EFO_0000516	disease state
+GLI56	EFO_0001104	cell line
+GLI60	EFO_0001105	cell line
+GLI72	EFO_0001106	cell line
+glial cell	EFO_0000517	cell line
+glial cell	EFO_0000517	cell type
+glial cell (sensu Vertebrata)	EFO_0000518	cell type
+glioblastoma	EFO_0000519	disease state
+glioma	EFO_0000520	disease state
+globus pallidus	EFO_0000905	organism part
+glucitol	EFO_0001543	compound
+glucosamine	EFO_0001544	compound
+glucose	EFO_0001545	compound
+glutamatergic neuron	EFO_0000521	cell type
+glutamine	EFO_0001546	compound
+glutathione	EFO_0001547	compound
+GM06985	EFO_0001107	cell line
+GM06993	EFO_0001108	cell line
+GM06994	EFO_0001109	cell line
+GM07000	EFO_0001110	cell line
+GM07022	EFO_0001111	cell line
+GM07034	EFO_0001112	cell line
+GM07055	EFO_0001113	cell line
+GM07056	EFO_0001114	cell line
+GM07345	EFO_0001115	cell line
+GM07357	EFO_0001116	cell line
+GM11829	EFO_0001117	cell line
+GM11830	EFO_0001118	cell line
+GM11831	EFO_0001119	cell line
+GM11832	EFO_0001120	cell line
+GM11839	EFO_0001121	cell line
+GM11881	EFO_0001122	cell line
+GM11882	EFO_0001123	cell line
+GM11992	EFO_0001124	cell line
+GM11993	EFO_0001125	cell line
+GM11994	EFO_0001126	cell line
+GM11995	EFO_0001127	cell line
+GM12003	EFO_0001128	cell line
+GM12004	EFO_0001129	cell line
+GM12005	EFO_0001130	cell line
+GM12006	EFO_0001131	cell line
+GM12043	EFO_0001132	cell line
+GM12044	EFO_0001133	cell line
+GM12056	EFO_0001134	cell line
+GM12057	EFO_0001135	cell line
+GM12144	EFO_0001136	cell line
+GM12145	EFO_0001137	cell line
+GM12146	EFO_0001138	cell line
+GM12154	EFO_0001139	cell line
+GM12155	EFO_0001140	cell line
+GM12156	EFO_0001141	cell line
+GM12234	EFO_0001142	cell line
+GM12236	EFO_0001143	cell line
+GM12239	EFO_0001144	cell line
+GM12248	EFO_0001145	cell line
+GM12249	EFO_0001146	cell line
+GM12716	EFO_0001147	cell line
+GM12717	EFO_0001148	cell line
+GM12750	EFO_0001149	cell line
+GM12751	EFO_0001150	cell line
+GM12760	EFO_0001151	cell line
+GM12761	EFO_0001152	cell line
+GM12762	EFO_0001153	cell line
+GM12763	EFO_0001154	cell line
+GM12812	EFO_0001155	cell line
+GM12813	EFO_0001156	cell line
+GM12814	EFO_0001157	cell line
+GM12815	EFO_0001158	cell line
+GM12872	EFO_0001159	cell line
+GM12873	EFO_0001160	cell line
+GM12874	EFO_0001161	cell line
+GM12875	EFO_0001162	cell line
+GM12891	EFO_0001163	cell line
+GM12892	EFO_0001164	cell line
+granulocyte	EFO_0000522	cell type
+growth hormone	EFO_0001548	compound
+gum	EFO_0001925	organism part
+gynoecium	EFO_0001926	organism part
+H209	EFO_0001165	cell line
+H720	EFO_0001166	cell line
+haloperidol	EFO_0001549	compound
+halothane	EFO_0001550	compound
+hatching pec-fin	EFO_0001299	dev stage
+HBL100	EFO_0001167	cell line
+HC toxin	EFO_0001551	compound
+HCC1007	EFO_0001168	cell line
+HCC1143	EFO_0001169	cell line
+HCC1187	EFO_0001170	cell line
+HCC1428	EFO_0001171	cell line
+HCC1500	EFO_0001172	cell line
+HCC1569	EFO_0001173	cell line
+HCC1937	EFO_0001174	cell line
+HCC1954	EFO_0001175	cell line
+HCC202	EFO_0001176	cell line
+HCC2157	EFO_0001177	cell line
+HCC2185	EFO_0001178	cell line
+HCC3153	EFO_0001179	cell line
+HCC38	EFO_0001180	cell line
+HCC70	EFO_0001181	cell line
+head	EFO_0000964	organism part
+head and neck squamous cell carcinoma	EFO_0000181	disease state
+head capsule	EFO_0001927	organism part
+heart	EFO_0000815	organism part
+HEK293	EFO_0001182	cell line
+HEK-293H	EFO_0001183	cell line
+HEK293T	EFO_0001184	cell line
+HeLa	EFO_0001185	cell line
+hematopoietic stem cell	EFO_0000527	cell type
+HepaRG	EFO_0001186	cell line
+hepatocellular carcinoma	EFO_0000182	disease state
+hepatocyte	EFO_0000528	cell type
+HepG2	EFO_0001187	cell line
+hereditary spastic paraplegia	EFO_0000529	disease state
+hermaphrodite	EFO_0001267	sex
+Hexadecanoic acid	EFO_0001552	compound
+hindbrain	EFO_0000923	organism part
+hindlimb	EFO_0000883	organism part
+hindlimb muscle	EFO_0001928	organism part
+hip	EFO_0001929	organism part
+hippocampus	EFO_0000530	organism part
+HIV	EFO_0000764	disease state
+HIV-1	EFO_0000180	disease state
+HMEC	EFO_0001188	cell line
+HMEC S1	EFO_0001189	cell line
+HMEC184	EFO_0001190	cell line
+HMT3522S1	EFO_0001191	cell line
+HS578T	EFO_0001192	cell line
+HT-29	EFO_0001193	cell line
+human papilloma virus	EFO_0001668	disease state
+humerus	EFO_0001398	organism part
+Huntington's disease	EFO_0000533	disease state
+hydrogen peroxide	EFO_0001553	compound
+hydroxyurea	EFO_0001554	compound
+hyperglycaemia	EFO_0000535	disease state
+hyperplasia	EFO_0000536	disease state
+hypertension	EFO_0000537	disease state
+hypertrophic cardiomyopathy	EFO_0000538	disease state
+hypocotyl	EFO_0001931	organism part
+hypopharynx	EFO_0001932	organism part
+hypopituitarism	EFO_0001380	disease state
+hypothalamus	EFO_0000107	organism part
+IB3-1	EFO_0001194	cell line
+idiopathic cardiomyopathy	EFO_0000767	disease state
+idiopathic pulmonary fibrosis	EFO_0000768	disease state
+ileum	EFO_0001334	organism part
+imatinib	EFO_0001555	compound
+immature B cell	EFO_0000539	cell type
+IMR-32	EFO_0001195	cell line
+IMR-90	EFO_0001196	cell line
+indole-3-acetic acid	EFO_0001556	compound
+indomethacin	EFO_0001557	compound
+infection	EFO_0000544	disease state
+inferior parietal lobule	EFO_0001951	organism part
+inflorescence	EFO_0001029	organism part
+influenza	EFO_0001669	disease state
+inguinal region	EFO_0001397	organism part
+injury	EFO_0000546	disease state
+inner cell mass	EFO_0000547	cell type
+inner ear	EFO_0001363	organism part
+intercostal muscle	EFO_0001368	organism part
+internal carotid artery	EFO_0001952	organism part
+interneuron	EFO_0000550	cell type
+interventricular septum	EFO_0001956	organism part
+intervertebral disc	EFO_0001370	organism part
+intestine	EFO_0000834	organism part
+invasive ductal and lobular carcinoma	EFO_0000552	disease state
+invasive ductal carcinoma	EFO_0000186	disease state
+invasive lobular carcinoma	EFO_0000553	disease state
+irritable bowel syndrome	EFO_0000555	disease state
+ischaemia	EFO_0000556	disease state
+ischemia	EFO_0000556	disease state
+ischemic cardiomyopathy	EFO_0001425	disease state
+islet of Langerhans	EFO_0000856	organism part
+isoflavone	EFO_0001558	compound
+isoflurane	EFO_0001559	compound
+jasmonic acid	EFO_0001560	compound
+jejunum	EFO_0001333	organism part
+juvenile days 30-44	EFO_0001301	cell type
+juvenile days 30-44	EFO_0001301	dev stage
+juvenile days 45-89	EFO_0001302	dev stage
+juvenile stage	EFO_0001300	cell type
+juvenile stage	EFO_0001300	dev stage
+kainic acid	EFO_0001561	compound
+Kaposis sarcoma	EFO_0000558	disease state
+Kaposi's sarcoma cell	EFO_0000187	cell type
+keratinocyte	EFO_0000560	cell type
+keratinocyte	EFO_0000560	organism part
+kidney	EFO_0000929	organism part
+Kin-S49	EFO_0001197	cell line
+L3055	EFO_0001198	cell line
+lacrimal gland	EFO_0001389	organism part
+lapatinib	EFO_0001562	compound
+large intestine	EFO_0000840	organism part
+larval day 14-20	EFO_0001307	cell type
+larval day 14-20	EFO_0001307	dev stage
+larval day 21-29	EFO_0001308	dev stage
+larval day 4	EFO_0001304	cell type
+larval day 4	EFO_0001304	dev stage
+larval day 5	EFO_0001305	cell type
+larval day 5	EFO_0001305	dev stage
+larval day 6	EFO_0001306	dev stage
+larval day 7-13	EFO_0001309	dev stage
+larval stage	EFO_0001303	cell type
+larval stage	EFO_0001303	dev stage
+larynx	EFO_0000838	organism part
+lateral geniculate nucleus	EFO_0001988	organism part
+lateral ventricle	EFO_0001961	organism part
+leaf	EFO_0000993	organism part
+leg	EFO_0001411	organism part
+lepromatous leprosy	EFO_0001057	disease state
+leukocyte	EFO_0000566	cell type
+leukocyte	EFO_0000566	organism part
+Leydig cell	EFO_0000567	cell type
+linoleic acids	EFO_0001563	compound
+lipopolysaccharide	EFO_0001564	compound
+lipoxin A4	EFO_0001565	compound
+lisinopril	EFO_0001566	compound
+lithium chloride	EFO_0001567	compound
+liver	EFO_0000887	organism part
+locus coeruleus	EFO_0001963	organism part
+lung	EFO_0000934	organism part
+lung adenocarcinoma	EFO_0000571	disease state
+lung carcinoma	EFO_0001071	disease state
+LY2	EFO_0001199	cell line
+lymph node	EFO_0000872	organism part
+lymphoblast	EFO_0000572	cell type
+lymphoblastic leukemia MOLT-4	EFO_0000190	disease state
+lymphocyte	EFO_0000573	cell type
+lymphoma	EFO_0000574	disease state
+macrophage	EFO_0000575	cell type
+malaria	EFO_0001068	disease state
+male	EFO_0001266	sex
+male accessory gland	EFO_0001964	organism part
+male germ cell	EFO_0000576	cell type
+malignant pleural mesothelioma	EFO_0000770	disease state
+Malpighian tubule	EFO_0000243	organism part
+mammary gland	EFO_0000854	organism part
+mandible	EFO_0001965	organism part
+masseter muscle	EFO_0001424	organism part
+mating type a	EFO_0001275	sex
+mating type alpha	EFO_0001270	sex
+mating_type_h_minus	EFO_0001269	sex
+mature B cell	EFO_0000578	cell type
+MCF 10A	EFO_0001200	cell line
+MCF12A	EFO_0001202	cell line
+MCF7	EFO_0001203	cell line
+MDAMB134VI	EFO_0001205	cell line
+MDAMB157	EFO_0001206	cell line
+MDAMB-157	EFO_0001207	cell line
+MDAMB175VII	EFO_0001208	cell line
+MDAMB231	EFO_0001209	cell line
+MDAMB361	EFO_0001211	cell line
+MDAMB415	EFO_0001212	cell line
+MDAMB435	EFO_0001213	cell line
+MDAMB436	EFO_0001214	cell line
+MDAMB453	EFO_0001215	cell line
+MDAMB468	EFO_0001216	cell line
+MDAMB-468	EFO_0001216	cell line
+medial collateral ligament	EFO_0001967	organism part
+medulla oblongata	EFO_0000924	organism part
+medulla of thymus	EFO_0001969	organism part
+megakaryocyte	EFO_0000582	cell type
+megakaryocyte progenitor cell	EFO_0000583	cell type
+melanoma	EFO_0000756	disease state
+MELAS syndrome	EFO_0000192	disease state
+memory impairment	EFO_0001072	disease state
+memory-impairment	EFO_0001072	disease state
+mesalamine	EFO_0001569	compound
+mesangial phagocyte	EFO_0000585	cell type
+mesenchymal stem cell	EFO_0000586	cell type
+mesenchymal stem cell	EFO_0000586	organism part
+mesoderm	EFO_0001981	organism part
+mesodermal cell	EFO_0000587	cell type
+mesonephros	EFO_0000928	organism part
+mesothelial cell	EFO_0001419	cell type
+Met5A	EFO_0001218	cell line
+metabolic syndrome	EFO_0000195	disease state
+metformin	EFO_0001570	compound
+methamphetamine	EFO_0001571	compound
+methanol	EFO_0001672	compound
+methotrexate	EFO_0001572	compound
+methyl methanesulfonate	EFO_0001573	compound
+microglial cell	EFO_0000590	cell type
+midbrain	EFO_0000919	organism part
+midgut	EFO_0001950	organism part
+mixed_sex	EFO_0001271	sex
+MM1	EFO_0001219	cell line
+MOLT-4	EFO_0001220	cell line
+mono-2-ethylhexyl phthalate	EFO_0001574	compound
+monoclonal gammopathy	EFO_0000203	disease state
+monocyte	EFO_0000593	cell type
+mononuclear cell	EFO_0000594	cell type
+morbid obesity	EFO_0001074	disease state
+motexafin gadolinium	EFO_0001575	compound
+mouth	EFO_0000825	organism part
+mucoid ductal carcinoma	EFO_0000197	disease state
+multiple myeloma	EFO_0001378	disease state
+multipotent stem cell	EFO_0000608	cell type
+muscle	EFO_0001949	organism part
+muscle cell	EFO_0000609	cell type
+muscular dystrophy	EFO_0000757	disease state
+mushroom body	EFO_0000925	organism part
+mycocardium	EFO_0000819	organism part
+myelodysplastic syndrome	EFO_0000198	disease state
+myeloid cell	EFO_0000610	cell type
+myoblast	EFO_0000611	cell type
+myocardial infarction	EFO_0000612	disease state
+myocardium	EFO_0000819	organism part
+myometrium	EFO_0001970	organism part
+N-acetyl-L-cysteine	EFO_0001576	compound
+natural killer cell	EFO_0000615	cell type
+N-benzyladenine	EFO_0001577	compound
+NCI-H929	EFO_0001221	cell line
+neck	EFO_0000967	organism part
+neonate	EFO_0001372	cell type
+neonate	EFO_0001372	dev stage
+nerve cell	EFO_0000617	cell type
+neural crest cell	EFO_0000619	cell type
+neuroblast (sensu Vertebrata)	EFO_0000620	cell type
+neuroblastoma	EFO_0000621	disease state
+neuron	EFO_0000623	cell type
+neuron	EFO_0000623	organism part
+neuronal stem cell	EFO_0000624	cell type
+nevus	EFO_0000625	disease state
+nifedipine	EFO_0001578	compound
+NIH3T3	EFO_0001222	cell line
+NIH3T3-L1	EFO_0001223	cell line
+N-nitrosodimethylamine	EFO_0001579	compound
+nocodazole	EFO_0001580	compound
+non ionic surfactant	EFO_0001581	compound
+non steroidal anti-inflammatory drug	EFO_0001582	compound
+non-steroidal anti-inflammatory drug	EFO_0001582	compound
+normal	EFO_0000761	cell type
+normal	EFO_0000761	compound
+normal	EFO_0000761	disease state
+nose	EFO_0000828	organism part
+novobiocin	EFO_0001583	compound
+nucleus accumbens	EFO_0000906	organism part
+nucleus of stria terminalis	EFO_0001971	organism part
+obesity	EFO_0001073	disease state
+occipital lobe	EFO_0000915	organism part
+ochratoxin A	EFO_0001584	compound
+oesophagus	EFO_0000835	organism part
+olfactory epithelium	EFO_0001972	cell type
+olfactory epithelium	EFO_0001972	organism part
+olfactory lobe	EFO_0000108	organism part
+oligoastrocytoma	EFO_0000630	disease state
+oligodendroglioma	EFO_0000632	disease state
+oligomycin A	EFO_0001585	compound
+oligomycins	EFO_0001586	compound
+olmesartan	EFO_0001587	compound
+optic disc	EFO_0001974	organism part
+oropharynx	EFO_0001976	organism part
+osteoblast	EFO_0001375	cell type
+osteosarcoma	EFO_0000637	disease state
+ovarian carcinoma	EFO_0001075	disease state
+ovary	EFO_0000973	organism part
+oviduct	EFO_0000974	organism part
+oxamic acid	EFO_0001588	compound
+PAC2	EFO_0001224	cell line
+palatine tonsil	EFO_0001977	organism part
+pancreas	EFO_0000855	organism part
+papillary renal cell carcinoma	EFO_0000640	disease state
+papillary thyroid carcinoma	EFO_0000641	disease state
+paracetamol	EFO_0001589	compound
+parietal cell	EFO_0000642	cell type
+parietal lobe	EFO_0000914	organism part
+PC12	EFO_0001225	cell line
+penis	EFO_0000987	organism part
+pentamidine	EFO_0001590	compound
+perirhinal cortex	EFO_0001978	organism part
+Peyer's patch	EFO_0001381	organism part
+pharyngula high-pec	EFO_0001311	dev stage
+pharyngula prim-15	EFO_0001312	cell type
+pharyngula prim-15	EFO_0001312	dev stage
+pharyngula prim-25	EFO_0001313	dev stage
+pharyngula prim-5	EFO_0001314	cell type
+pharyngula prim-5	EFO_0001314	dev stage
+phenobarbital	EFO_0001591	compound
+pineal gland	EFO_0000865	organism part
+pioglitazone	EFO_0001592	compound
+pirinixic acid	EFO_0001593	compound
+pituitary	EFO_0000857	organism part
+placebo	EFO_0001674	compound
+placenta	EFO_0001407	organism part
+plasma cell	EFO_0000654	cell type
+plasma cell leukemia	EFO_0000200	disease state
+plasmacytoid dendritic cell	EFO_0000655	cell type
+platelet	EFO_0000656	cell type
+pleura	EFO_0001980	organism part
+polycystic ovary syndrome	EFO_0000660	disease state
+polymorphonuclear leukocyte	EFO_0000661	cell type
+ponasterone	EFO_0001594	compound
+ponasterone A	EFO_0001594	compound
+pons	EFO_0001394	organism part
+post-traumatic stress disorder	EFO_0001358	disease state
+pre-B cell	EFO_0000667	cell type
+precentral gyrus	EFO_0001373	organism part
+prednisolone	EFO_0001595	compound
+preeclampsia	EFO_0000668	disease state
+pregnenolone 16alpha-carbonitrile	EFO_0001596	compound
+primordial germ cell	EFO_0000670	cell type
+prochlorperazine	EFO_0001597	compound
+progesterone	EFO_0001598	compound
+promyelocytic leukemia	EFO_0000202	disease state
+propofol	EFO_0001599	compound
+prostate	EFO_0000858	organism part
+prostate carcinoma	EFO_0001663	disease state
+Pseudomonas aeruginosa CF5 infection	EFO_0001077	disease state
+Pseudomonas aeruginosa PA14 infection	EFO_0001078	disease state
+psoriasis	EFO_0000676	disease state
+pterygium	EFO_0000678	organism part
+puberty	EFO_0001382	cell type
+puberty	EFO_0001382	dev stage
+pulmonary arterial hypertension	EFO_0001362	disease state
+pulmonary artery	EFO_0001399	organism part
+quadricep muscle	EFO_0001938	organism part
+quercetin	EFO_0001600	compound
+R11	EFO_0001225	cell line
+R18	EFO_0001226	cell line
+R28	EFO_0001227	cell line
+R43	EFO_0001228	cell line
+R46	EFO_0001229	cell line
+R8	EFO_0001230	cell line
+Raji Burkitts lymphoma	EFO_0000203	disease state
+raloxifene	EFO_0001601	compound
+rapamycin	EFO_0001602	compound
+RAW264.7	EFO_0001231	cell line
+rectum	EFO_0000848	organism part
+regulatory T cell	EFO_0000680	cell type
+renal clear cell carcinoma	EFO_0000682	disease state
+retina	EFO_0000832	organism part
+retinoic acid	EFO_0001603	compound
+Rett syndrome	EFO_0001079	disease state
+rheumatoid arthritis	EFO_0000685	disease state
+RKO	EFO_0001232	cell line
+rofecoxib	EFO_0001604	compound
+root	EFO_0000989	organism part
+rosiglitazone	EFO_0001605	compound
+rotenone	EFO_0001606	compound
+"S-[2,3-bis(palmitoyloxy)propyl]-Cys-Ser-Lys-Lys-Lys-Lys"	EFO_0001607	compound
+S2	EFO_0001233	cell line
+S49	EFO_0001234	cell line
+salicylic acid	EFO_0001608	compound
+salivary gland	EFO_0000859	organism part
+sapphyrin	EFO_0001609	compound
+scapula	EFO_0001400	organism part
+Schwann cell	EFO_0002000	cell type
+sciatic nerve	EFO_0001417	organism part
+scott syndrome	EFO_0000204	disease state
+segmentation 10-13 somites	EFO_0001318	dev stage
+segmentation 1-4 somites	EFO_0001316	dev stage
+segmentation 14-19 somites	EFO_0001319	cell type
+segmentation 14-19 somites	EFO_0001319	dev stage
+segmentation 20-25 somites	EFO_0001320	dev stage
+segmentation 26+ somites	EFO_0001321	dev stage
+segmentation 5-9 somites	EFO_0001317	cell type
+segmentation 5-9 somites	EFO_0001317	dev stage
+selenium	EFO_0001610	compound
+seminiferous tubules	EFO_0001404	organism part
+sepsis	EFO_0001420	disease state
+severe acute respiratory syndrome	EFO_0000694	disease state
+shoot	EFO_0000992	organism part
+shoot apex	EFO_0001947	organism part
+sickle cell disease	EFO_0000697	disease state
+sigmoid colon	EFO_0000846	organism part
+simian immunodeficiency virus	EFO_0001675	disease state
+SKBR3	EFO_0001236	cell line
+skeletal muscle	EFO_0000888	organism part
+SKGT4	EFO_0001237	cell line
+skin	EFO_0000962	cell type
+skin	EFO_0000962	organism part
+small cell lung carcinoma	EFO_0000702	disease state
+small intestine	EFO_0000841	organism part
+smooth muscle	EFO_0000889	organism part
+smooth muscle cell	EFO_0000703	cell type
+sodium chloride	EFO_0001611	compound
+sodium pyruvate	EFO_0001612	compound
+soleus muscle	EFO_0001946	organism part
+somatic cell	EFO_0000704	cell type
+somatosensory cortex	EFO_0001391	organism part
+sperm	EFO_0000983	cell type
+spinal cord	EFO_0000110	organism part
+spleen	EFO_0000869	organism part
+spondyloarthropathy	EFO_0000706	disease state
+sporadic amyotrophic lateral sclerosis	EFO_0001357	disease state
+squamous cell carcinoma	EFO_0000707	disease state
+squamous cell lung carcinoma	EFO_0000708	disease state
+stamen	EFO_0001050	organism part
+staurosporine	EFO_0001613	compound
+stem	EFO_0001040	organism part
+stem cell	EFO_0000709	cell type
+steroid hormone	EFO_0001614	compound
+stomach	EFO_0000837	organism part
+streptozotocin	EFO_0001615	compound
+stria vascularis	EFO_0001644	organism part
+submandibular gland	EFO_0001387	organism part
+substantia nigra	EFO_0000922	organism part
+subthalamic nucleus	EFO_0001392	organism part
+sucrose	EFO_0001616	compound
+sulforaphane	EFO_0001617	compound
+sulindac	EFO_0001618	compound
+sulphur dioxide	EFO_0001619	compound
+SUM1315MO2	EFO_0001239	cell line
+SUM149PT	EFO_0001240	cell line
+SUM159PT	EFO_0001241	cell line
+SUM185PE	EFO_0001242	cell line
+SUM190PT	EFO_0001243	cell line
+SUM225CWN	EFO_0001244	cell line
+SUM44PE	EFO_0001245	cell line
+SUM52PE	EFO_0001246	cell line
+superior cervical ganglion	EFO_0001945	organism part
+superior temporal gyrus	EFO_0001944	organism part
+surfactants	EFO_0001620	compound
+synovial membrane	EFO_0001393	organism part
+synovial sarcoma	EFO_0001376	disease state
+T cell	EFO_0000208	cell type
+T cell acute lymphoblastic leukemia	EFO_0000209	disease state
+T lymphocyte	EFO_0000210	cell type
+T47D	EFO_0001247	cell line
+tail	EFO_0000963	organism part
+tamoxifen	EFO_0001621	compound
+taxol	EFO_0001622	compound
+T-cell lymphoblastic lymphoma	EFO_0000207	disease state
+telencephalon	EFO_0000912	organism part
+temporal lobe	EFO_0000917	organism part
+TERV	EFO_0001249	cell line
+TERV-AntiSenseB56	EFO_0001250	cell line
+TERV-ST	EFO_0001251	cell line
+TERV-ST110	EFO_0001252	cell line
+testis	EFO_0000984	organism part
+tetraethylenepentamine	EFO_0001623	compound
+thalamus	EFO_0000910	organism part
+thigh	EFO_0001943	organism part
+thiopurines	EFO_0001624	compound
+thioridazine	EFO_0001625	compound
+THP-1	EFO_0001253	cell line
+thymus	EFO_0000860	organism part
+thyroid	EFO_0000861	organism part
+tibialis anterior muscle	EFO_0001385	organism part
+tolbutamide	EFO_0001626	compound
+tomatidine	EFO_0001627	compound
+tomatine	EFO_0001628	compound
+tongue	EFO_0000833	organism part
+tonsil	EFO_0001401	organism part
+toxin	EFO_0001629	compound
+trachea	EFO_0000935	organism part
+trichostatin A	EFO_0001630	compound
+trifluoperazine	EFO_0001631	compound
+trigeminal ganglion	EFO_0000903	organism part
+trigeminal nerve	EFO_0001402	organism part
+troglitazone	EFO_0001632	compound
+tumor	EFO_0000728	organism part
+type I diabetes mellitus	EFO_0001359	disease state
+type II diabetes mellitus	EFO_0001360	disease state
+type II diabetes mellitus	EFO_0001359	disease state
+U266	EFO_0001254	cell line
+U373	EFO_0001255	cell line
+U87	EFO_0001256	cell line
+U937	EFO_0001257	cell line
+UACC812	EFO_0001258	cell line
+UBOC1	EFO_0001259	cell line
+ulcerative colitis	EFO_0000729	disease state
+umbilical cord	EFO_0001415	organism part
+umbilical cord blood	EFO_0001942	organism part
+umbilical vein	EFO_0001940	organism part
+undifferentiated sarcoma	EFO_0000730	disease state
+uniconazole-P	EFO_0001633	compound
+uninfected	EFO_0001460	disease state
+urine	EFO_0001939	organism part
+uterus	EFO_0000975	organism part
+uvula	EFO_0001386	organism part
+vagina	EFO_0000976	organism part
+valproic acid	EFO_0001634	compound
+Vanadium	EFO_0001635	compound
+vastus lateralis	EFO_0001937	organism part
+vehicle	EFO_0000732	compound
+ventral striatum	EFO_0001936	organism part
+ventral tegmental area	EFO_0001935	organism part
+ventricle	EFO_0000317	organism part
+visual cortex	EFO_0000916	organism part
+vitamin B12 deficiency	EFO_0000734	disease state
+Vitamin D3	EFO_0001636	compound
+vomeronasal organ	EFO_0001934	organism part
+vulva	EFO_0000978	organism part
+water	EFO_0001637	compound
+well-differentiated_sarcoma	EFO_0000737	disease state
+white fat	EFO_0000813	organism part
+WI38	EFO_0001260	cell line
+Wilms tumor	EFO_0000212	disease state
+ZF4	EFO_0001261	cell line
+Zinc	EFO_0001638	compound
+ZR751	EFO_0001262	cell line
+ZR7530	EFO_0001263	cell line
+ZR75B	EFO_0001264	cell line

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:obi_role="http://purl.obolibrary.org/obo/obi/Role.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:obi_extd="http://purl.obolibrary.org/obo/obi/externalDerived.owl#"
+    xmlns:obi_quality="http://purl.obolibrary.org/obo/obi/Quality.owl#"
+    xmlns:protege-dc="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:obi_owlfull="http://purl.obolibrary.org/obo/obi/obi-owl-full.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:obi_instr="http://purl.obolibrary.org/obo/obi/InstrumentAndPart.owl#"
+    xmlns:obi_plan="http://purl.obolibrary.org/obo/obi/PlanAndPlannedProcess.owl#"
+    xmlns:obi_biomat="http://purl.obolibrary.org/obo/obi/Biomaterial.owl#"
+    xmlns:obi_denrie="http://purl.obolibrary.org/obo/obi/DigitalEntityPlus.owl#"
+    xmlns:obi_annot="http://purl.obolibrary.org/obo/obi/AnnotationProperty.owl#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:obi_obsolete="http://purl.obolibrary.org/obo/obi/Obsolete.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:bfo="http://www.ifomis.org/bfo/1.1#"
+    xmlns:pato="http://purl.org/obo/owl/PATO#"
+    xmlns:cell="http://purl.org/obo/owl/CL#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:ro="http://www.obofoundry.org/ro/ro.owl#"
+    xmlns:obi_ext="http://purl.obolibrary.org/obo/obi/external.owl#"
+    xmlns:robfo="http://purl.org/obo/owl/ro_bfo_bridge/1.1#"
+    xmlns:obi_data_trans="http://purl.obolibrary.org/obo/obi/DataTransformation.owl#"
+    xmlns:obi_rel="http://purl.obolibrary.org/obo/obi/Relations.owl#"
+    xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+    xmlns:rotoo="http://purl.org/obo/owl/ro#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+   xmlns="http://purl.obolibrary.org/obo/"
+    xmlns:obi_func="http://purl.obolibrary.org/obo/obi/OBI-Function.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
+  xml:base="http://purl.obolibrary.org/obo/obi/quality-assurance.owl">
+  <owl:Ontology rdf:about="">
+    <owl:versionInfo xml:lang="en">$Revision: 1950 $</owl:versionInfo>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1#Entity">
+    <owl:disjointWith rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+  </owl:Class>
+</rdf:RDF>
