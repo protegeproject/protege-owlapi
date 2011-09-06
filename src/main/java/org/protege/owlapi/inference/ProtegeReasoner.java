@@ -1,31 +1,23 @@
 package org.protege.owlapi.inference;
 
-import java.util.Collection;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
-import org.protege.owlapi.inference.orphan.Relation;
-import org.protege.owlapi.inference.orphan.TerminalElementFinder;
+import org.protege.owlapi.inference.cls.ClassHierarchyReasoner;
 import org.semanticweb.owlapi.model.AxiomType;
 import org.semanticweb.owlapi.model.OWLAxiom;
-import org.semanticweb.owlapi.model.OWLAxiomChange;
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassExpression;
-import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDataProperty;
 import org.semanticweb.owlapi.model.OWLDataPropertyExpression;
-import org.semanticweb.owlapi.model.OWLEntity;
 import org.semanticweb.owlapi.model.OWLLiteral;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
-import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyChange;
-import org.semanticweb.owlapi.model.OWLOntologyChangeListener;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
-import org.semanticweb.owlapi.model.RemoveAxiom;
 import org.semanticweb.owlapi.reasoner.AxiomNotInProfileException;
 import org.semanticweb.owlapi.reasoner.BufferingMode;
 import org.semanticweb.owlapi.reasoner.ClassExpressionNotInProfileException;
@@ -36,6 +28,7 @@ import org.semanticweb.owlapi.reasoner.IndividualNodeSetPolicy;
 import org.semanticweb.owlapi.reasoner.InferenceType;
 import org.semanticweb.owlapi.reasoner.Node;
 import org.semanticweb.owlapi.reasoner.NodeSet;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.ReasonerInterruptedException;
 import org.semanticweb.owlapi.reasoner.TimeOutException;
 import org.semanticweb.owlapi.reasoner.UnsupportedEntailmentTypeException;
@@ -46,101 +39,37 @@ import org.semanticweb.owlapi.util.Version;
 
 /**
  * This class is intended to capture some very simple inferences used by Prot&#x00E9g&#x00E9 and other
- * tools.  In particular, this reasoner does the cheesey pizza inference and will find individuals that 
- * are not members of any particular class and infer that they are members of owl:Thing.
- * 
+ * tools.  Be warned, this is not a true OWLReasoner; it differs from a true OWLReasoner in that
+ * <ul>
+ * <li>it is incomplete - it only performs certain inferences.</li>
+ * <li>it works with an arbitrary set of ontologies that are not necessarily the 
+ *     imports closure of some single ontology.</li>
+ * </ul>
+ * <p/>
+ * This reasoner is an incremental reasoner and will perform the following inferences:
+ * <ul>
+ * <li> the cheesey pizza inference where it is deduced that a cheesey pizza is a pizza because it is 
+ *      equivalent to "Pizza &#x2227 &#x2203 hasTopping. CheeseTopping".</li>
+ * <li> orphan finding for the class hierarchy.</li>
+ * <li> transitive closure processing for the class and property hierarchies.</li>
+ * <li> inverse property processing for object property values and for domains and ranges</li>
+ * <li> transitive closure processing for the set of all individuals in a class.
+ * </ul>
+ * <p/>
+ * A goal of this reasoner is that there will be a one-time linear time overhead of any particular inference
+ * type and after this price is paid the cost of continuing the inference is constant time.
  */
-public class ProtegeQuasiReasoner implements OWLQuasiReasoner {
+public class ProtegeReasoner implements OWLReasoner {
     private OWLOntologyManager owlOntologyManager;
     
     private Set<OWLOntology> ontologies;
     
-    private OWLClass root;
-
-    private ParentClassExtractor parentClassExtractor;
-
-    private ChildClassExtractor childClassExtractor;
-
-    private OWLOntologyChangeListener listener;
-
-    private TerminalElementFinder<OWLClass> rootFinder;
+    private ClassHierarchyReasoner classHierarchyReasoner;
     
     
-    public ProtegeQuasiReasoner(OWLOntologyManager manager) {
-        this.owlOntologyManager = manager;
-        OWLDataFactory factory = manager.getOWLDataFactory();
-        root = factory.getOWLThing();
-        ontologies = new HashSet<OWLOntology>();
-        
-        rootFinder = new TerminalElementFinder<OWLClass>(new Relation<OWLClass>() {
-            public Collection<OWLClass> getR(OWLClass cls) {
-                Collection<OWLClass> parents = getSuperClasses(cls, true).getFlattened();
-                parents.remove(root);
-                return parents;
-            }
-        });
-
-
-        parentClassExtractor = new ParentClassExtractor();
-        childClassExtractor = new ChildClassExtractor();
-        parentClassExtractor = new ParentClassExtractor();
-        childClassExtractor = new ChildClassExtractor();
-        listener = new OWLOntologyChangeListener() {
-            public void ontologiesChanged(List<? extends OWLOntologyChange> changes) {
-                handleChanges(changes);
-            }
-        };
-        owlOntologyManager.addOntologyChangeListener(listener);
-    }
-    
-    
-    private void handleChanges(List<? extends OWLOntologyChange> changes) {
-        Set<OWLClass> oldTerminalElements = new HashSet<OWLClass>(rootFinder.getTerminalElements());
-        Set<OWLClass> changedClasses = new HashSet<OWLClass>();
-        changedClasses.add(root);
-        for (OWLOntologyChange change : changes) {
-            // only listen for changes on the appropriate ontologies
-            if (ontologies.contains(change.getOntology())){
-                if (change.isAxiomChange()) {
-                    updateImplicitRoots(change);
-                    for (OWLEntity entity : ((OWLAxiomChange) change).getEntities()) {
-                        if (entity instanceof OWLClass && !entity.equals(root)) {
-                            changedClasses.add((OWLClass) entity);
-                        }
-                    }
-                }
-            }
-        }
-    }
-        
-    private void updateImplicitRoots(OWLOntologyChange change) {
-        boolean remove = change instanceof RemoveAxiom;
-        OWLAxiom axiom = change.getAxiom();
-        Set<OWLClass> possibleTerminalElements = new HashSet<OWLClass>();
-        Set<OWLClass> notInOntologies = new HashSet<OWLClass>();
-        for (OWLEntity entity : axiom.getSignature()) {
-            if (!(entity instanceof OWLClass) || entity.equals(root)) {
-                continue;
-            }
-            OWLClass cls = (OWLClass) entity;
-            if (remove && !containsReference(cls)) {
-                notInOntologies.add(cls);
-                continue;
-            }
-            possibleTerminalElements.add(cls);
-        }
-        possibleTerminalElements.addAll(rootFinder.getTerminalElements());
-        possibleTerminalElements.removeAll(notInOntologies);
-        rootFinder.findTerminalElements(possibleTerminalElements);
-    }
-    
-    private boolean containsReference(OWLClass object) {
-        for (OWLOntology ont : ontologies) {
-            if (ont.containsClassInSignature(object.getIRI())) {
-                return true;
-            }
-        }
-        return false;
+    public ProtegeReasoner(OWLOntologyManager manager, Set<OWLOntology> ontologies) {
+        owlOntologyManager = manager;
+        ontologies = new TreeSet<OWLOntology>(ontologies);
     }
     
     
@@ -160,26 +89,27 @@ public class ProtegeQuasiReasoner implements OWLQuasiReasoner {
     
     public void precomputeInferences(InferenceType... inferenceTypes) throws ReasonerInterruptedException, TimeOutException, InconsistentOntologyException {
         for  (InferenceType type : inferenceTypes) {
-            if (type == InferenceType.CLASS_HIERARCHY) {
-                rootFinder.clear();
-                for (OWLOntology ont : ontologies) {
-                    Set<OWLClass> ref = ont.getClassesInSignature();
-                    rootFinder.appendTerminalElements(ref);
+            switch (type) {
+            case CLASS_HIERARCHY:
+                if (classHierarchyReasoner == null) {
+                    classHierarchyReasoner = new ClassHierarchyReasoner(owlOntologyManager, ontologies);
                 }
-                rootFinder.finish();
+                break;
             }
         }
     }
 
 
     public void dispose() {
-        owlOntologyManager.removeOntologyChangeListener(listener);
+        if (classHierarchyReasoner != null) {
+            classHierarchyReasoner.dispose();
+            classHierarchyReasoner = null;
+        }
     }
 
     
     public void interrupt() {
-        // TODO Auto-generated method stub
-        
+
     }
 
 
@@ -210,20 +140,20 @@ public class ProtegeQuasiReasoner implements OWLQuasiReasoner {
 
     
     public NodeSet<OWLClass> getSuperClasses(OWLClassExpression ce, boolean direct) throws InconsistentOntologyException, ClassExpressionNotInProfileException, FreshEntitiesException, ReasonerInterruptedException, TimeOutException {
-        // TODO Auto-generated method stub
-        return null;
+        precomputeInferences(InferenceType.CLASS_HIERARCHY);
+        return classHierarchyReasoner.getSuperClasses(ce, direct);
     }
 
     
     public NodeSet<OWLClass> getSubClasses(OWLClassExpression ce, boolean direct) {
-        // TODO Auto-generated method stub
-        return null;
+        precomputeInferences(InferenceType.CLASS_HIERARCHY);
+        return classHierarchyReasoner.getSubClasses(ce, direct);
     }
 
     
     public Node<OWLClass> getEquivalentClasses(OWLClassExpression ce) throws InconsistentOntologyException, ClassExpressionNotInProfileException, FreshEntitiesException, ReasonerInterruptedException, TimeOutException {
-        // TODO Auto-generated method stub
-        return null;
+        precomputeInferences(InferenceType.CLASS_HIERARCHY);
+        return classHierarchyReasoner.getEquivalentClasses(ce);
     }
 
     

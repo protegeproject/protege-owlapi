@@ -1,4 +1,4 @@
-package org.protege.owlapi.inference;
+package org.protege.owlapi.inference.cls;
 
 import org.semanticweb.owlapi.model.OWLClass;
 import org.semanticweb.owlapi.model.OWLClassExpression;

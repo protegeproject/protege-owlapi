@@ -81,5 +81,6 @@ Export-Package: org.protege.owlapi.apibinding,
  org.protege.owlapi.inconsistent,
  org.protege.owlapi.inconsistent.trivialModel,
  org.protege.owlapi.inference,
+ org.protege.owlapi.inference.cls,
  org.protege.owlapi.inference.orphan,
  org.protege.owlapi.model
