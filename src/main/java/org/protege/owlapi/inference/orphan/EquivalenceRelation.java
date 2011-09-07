@@ -1,10 +1,13 @@
 package org.protege.owlapi.inference.orphan;
 
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
+import java.util.TreeSet;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -17,106 +20,54 @@ import org.apache.log4j.Logger;
  * @author tredmond
  *
  */
-public class EquivalenceRelation<X> {
-    private Map<X, EquivalenceClass> equivalenceMap = new HashMap<X, EquivalenceClass>();
+public class EquivalenceRelation<X extends Comparable<? super X>> {
+    private Map<X, Set<X>> equivalenceMap = new HashMap<X, Set<X>>();
     
     public boolean equivalent(X x, X y) {
-        return getEquivalenceRepresentative(x).equals(getEquivalenceRepresentative(y));
+        Set<X> equivalentToX = equivalenceMap.get(x);
+        return x.equals(y) || (equivalentToX != null && equivalentToX.contains(y));
     }
     
     
     public void merge(Collection<X> toBeMerged) {
-        EquivalenceClass merged = new EquivalenceClass();
+        if (toBeMerged.size() <= 1) {
+            return;
+        }
+        Set<X> equivalenceClass = new TreeSet<X>();
         for (X x : toBeMerged) {
-            EquivalenceClass existingEq = equivalenceMap.put(x, merged);
-            if (existingEq != null) {
-                existingEq = existingEq.getMostMerged();
-                if (!existingEq.equals(merged)) {
-                    existingEq.mergedInto = merged;
-                }
+            Set<X> existingEquivalences = equivalenceMap.put(x, equivalenceClass);
+            if (existingEquivalences != null) {
+                equivalenceClass.addAll(existingEquivalences);
+            }
+            else {
+                equivalenceClass.add(x);
             }
         }
     }
     
     public Set<X> getEquivalenceClass(X x) {
-        Set<X> equivalents = new HashSet<X>();
-        EquivalenceClass equiv = getEquivalenceRepresentative(x);
-        for (X y : equivalenceMap.keySet()) {
-            EquivalenceClass other = getEquivalenceRepresentative(y);
-            if (equiv.equals(other)) {
-                equivalents.add(y);
-            }
-        }
-        return equivalents;
-    }
-    
-    public void clear() {
-        equivalenceMap.clear();
+        Set<X> equivalents = equivalenceMap.get(x);
+        return equivalents != null ? new TreeSet<X>(equivalents) : Collections.singleton(x);
     }
     
     public void logEquivalences(Logger log, Level level) {
         if (log.isEnabledFor(level)) {
-            try {
-                for (Map.Entry<X, EquivalenceClass> entry : equivalenceMap.entrySet()) {
-                    log.log(level, "" + entry.getKey() + " is in equivalence class " + entry.getValue());
+            log.log(level, "---------------Logging equivalences---------------");
+            Set<X> displayed = new HashSet<X>();
+            for (Entry<X, Set<X>> entry : equivalenceMap.entrySet()) {
+                X x = entry.getKey();
+                Set<X> equivalences = entry.getValue();
+                if (!displayed.contains(x)) {
+                    log.log(level, "The following are equivalent: " + equivalences);
+                    displayed.addAll(equivalences);
                 }
             }
-            catch (Throwable t) {
-                log.info("Could not log equivalence relations", t);
-            }
+            log.log(level, "---------------Equivalences Logged---------------");
         }
     }
     
-    
-    private EquivalenceClass getEquivalenceRepresentative(X x) {
-        EquivalenceClass equiv = equivalenceMap.get(x);
-        if (equiv == null) {
-            equiv = new EquivalenceClass();
-            equivalenceMap.put(x, equiv);
-            return equiv;
-        }
-        EquivalenceClass mostMergedEquiv = equiv.getMostMerged();
-        if (!mostMergedEquiv.equals(equiv)) {
-            equivalenceMap.put(x, mostMergedEquiv);
-        }
-        return mostMergedEquiv;
-    }
-    
-    
-    
-    private static class EquivalenceClass {
-        private static int equivalenceClassCounter = 0;
-        private int equivalenceClass;
-        private EquivalenceClass mergedInto;
-        
-        public EquivalenceClass() {
-            equivalenceClass = equivalenceClassCounter++;
-        }
-        
-        public EquivalenceClass getMergedInto() {
-            return mergedInto;
-        }
-        
-        public EquivalenceClass getMostMerged() {
-            EquivalenceClass mostMerged = this;
-            while (mostMerged.getMergedInto() != null) {
-                mostMerged = mostMerged.getMergedInto();
-            }
-            return mostMerged;
-        }
-        
-        public boolean equals(Object o) {
-            if (!(o instanceof EquivalenceClass)) return false;
-            EquivalenceClass me = getMostMerged();
-            EquivalenceClass other = (EquivalenceClass) o;
-            other = other.getMostMerged();
-            return me.equivalenceClass == other.equivalenceClass;
-        }
-        
-        public String toString() {
-            return "EqClass[" + equivalenceClass + "]";
-        }
-        
+    public void clear() {
+        equivalenceMap.clear();
     }
 
 }
