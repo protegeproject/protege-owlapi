@@ -60,7 +60,7 @@
         <dependency>
             <groupId>owlapi</groupId>
             <artifactId>owlapi</artifactId>
-            <version>3.2.2.svn1799_2011_04_07_1400</version>
+            <version>3.2.3_svn1830_2011_09_27_1016</version>
         </dependency>
     </dependencies>
 
