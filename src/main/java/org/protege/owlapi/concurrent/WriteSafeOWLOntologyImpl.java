@@ -405,6 +405,17 @@ public class WriteSafeOWLOntologyImpl implements OWLMutableOntology, WriteSafeOW
         }
     }
 
+    @Override
+    public Set<OWLAnonymousIndividual> getAnonymousIndividuals() {
+        readLock.lock();
+        try {
+            return delegate.getAnonymousIndividuals();
+        }
+        finally {
+            readLock.unlock();
+        }
+    }
+    
     public Set<OWLAsymmetricObjectPropertyAxiom> getAsymmetricObjectPropertyAxioms(OWLObjectPropertyExpression property) {
         readLock.lock();
         try {

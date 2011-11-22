@@ -90,6 +90,10 @@ public class WriteSafeOWLOntologyFactory implements OWLOntologyFactory {
         delegate.setOWLOntologyManager(owlOntologyManager);
     }
 
+    public OWLOntologyManager getOWLOntologyManager() {
+    	return delegate.getOWLOntologyManager();
+    }
+    
     /* new OWL api interface -- will be restored with the latest owl api. */
     public OWLOntology loadOWLOntology(OWLOntologyDocumentSource documentSource,
     		                           OWLOntologyCreationHandler handler,
