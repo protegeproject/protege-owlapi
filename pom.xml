@@ -58,9 +58,9 @@
           <version>1.2.16</version>
         </dependency>
         <dependency>
-            <groupId>owlapi</groupId>
-            <artifactId>owlapi</artifactId>
-            <version>3.2.3_svn1830_2011_09_27_1016</version>
+          <groupId>owlapi</groupId>
+          <artifactId>owlapi</artifactId>
+          <version>3.2.4_svn1891_2011_11_27_0953</version>
         </dependency>
     </dependencies>
 
