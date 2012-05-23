@@ -22,8 +22,9 @@ import uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl;
 
 
 
-public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl {
-    private boolean useWriteSafety = false;
+public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl implements WriteSafeOWLOntologyManager {
+	private static final long serialVersionUID = -6371104970223669912L;
+	private boolean useWriteSafety = false;
     private boolean useSwingThread = false;
     private List<OWLOntologyFactory> ontologyFactories = new ArrayList<OWLOntologyFactory>();
     private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
