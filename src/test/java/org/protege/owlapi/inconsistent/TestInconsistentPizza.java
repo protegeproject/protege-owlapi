@@ -27,7 +27,7 @@ public class TestInconsistentPizza {
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLDataFactory factory = manager.getOWLDataFactory();
 		OWLOntology pizza = manager.loadOntologyFromOntologyDocument(new File("src/test/resources/pizza01.owl"));
-        Class<?> hermitClass = Class.forName("org.semanticweb.HermiT.Reasoner$ReasonerFactory");
+        Class<?> hermitClass = Class.forName("uk.ac.manchester.cs.jfact.JFactFactory");
         OWLReasonerFactory hermitFactory = (OWLReasonerFactory) hermitClass.newInstance();
         Phase01 heuristic = new Phase01();
         heuristic.run(pizza, hermitFactory);
