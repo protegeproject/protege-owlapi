@@ -3,3 +3,12 @@ target/
 
 # maven-dependency-plugin
 /*.jar
+
+# Eclipse
+.classpath
+.project
+.settings/
+META-INF/
+
+
+
