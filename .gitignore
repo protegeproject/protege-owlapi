@@ -1,6 +1,6 @@
 # Maven
 target/
-
+build
 # maven-dependency-plugin
 /*.jar
 
@@ -9,6 +9,9 @@ target/
 .project
 .settings/
 META-INF/
-
+#intellij
+.idea
+*.iml
+*.ipr
 
 
