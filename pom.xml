@@ -35,13 +35,13 @@
 	
 	<mailingLists>
 		<mailingList>
-			<name>p4-feedback</name>
-			<subscribe>https://mailman.stanford.edu/mailman/listinfo/p4-feedback</subscribe>
-			<unsubscribe>https://mailman.stanford.edu/mailman/listinfo/p4-feedback</unsubscribe>
-			<post>p4-feedback@lists.stanford.edu</post>
-			<archive>https://mailman.stanford.edu/pipermail/p4-feedback/</archive>
+			<name>protege-dev</name>
+			<subscribe>https://mailman.stanford.edu/mailman/listinfo/protege-dev</subscribe>
+			<unsubscribe>https://mailman.stanford.edu/mailman/listinfo/protege-dev</unsubscribe>
+			<post>protege-dev@lists.stanford.edu</post>
+			<archive>https://mailman.stanford.edu/pipermail/protege-dev/</archive>
 			<otherArchives>
-				<otherArchive>http://protege-ontology-editor-knowledge-acquisition-system.136.n4.nabble.com/Protege-OWL-4-x-Support-f21363.html</otherArchive>
+				<otherArchive>http://protege-project.136.n4.nabble.com/Protege-Developer-f4659816.html</otherArchive>
 			</otherArchives>
 		</mailingList>
 	</mailingLists>
@@ -122,7 +122,6 @@
                         </goals>
                     </execution>
                 </executions>
-
             </plugin>
 
             <!-- Execution of unit tests generates output for reporting plugin -->
