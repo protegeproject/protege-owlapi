@@ -65,7 +65,7 @@
 		<dependency>
 			<groupId>net.sourceforge.owlapi</groupId>
 			<artifactId>owlapi-distribution</artifactId>
-			<version>3.4.3</version>
+			<version>3.4.10</version>
 		</dependency>
 				
         <dependency>
@@ -112,16 +112,17 @@
 						<Bundle-Vendor>The Protege Development Team</Bundle-Vendor>
 						<Export-Package>org.protege.owlapi.*</Export-Package>
 					</instructions>
-					<executions>
-						<execution>
-							<id>bundle-manifest</id>
-							<phase>install</phase>
-							<goals>    
-								<goal>manifest</goal>
-							</goals>   
-						</execution>
-					</executions>
 				</configuration>
+                <executions>
+                    <execution>
+                        <id>bundle-manifest</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>manifest</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
             </plugin>
 
             <!-- Execution of unit tests generates output for reporting plugin -->
