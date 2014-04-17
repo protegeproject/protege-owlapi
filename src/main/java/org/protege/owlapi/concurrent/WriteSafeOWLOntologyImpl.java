@@ -79,7 +79,9 @@ import org.semanticweb.owlapi.model.OWLTransitiveObjectPropertyAxiom;
 import org.semanticweb.owlapi.model.UnknownOWLOntologyException;
 
 public class WriteSafeOWLOntologyImpl implements OWLMutableOntology, WriteSafeOWLOntology {
-    private OWLMutableOntology delegate;
+
+	private static final long serialVersionUID = -5483935495647547265L;
+	private OWLMutableOntology delegate;
     private ReadLock  readLock;
     private WriteLock writeLock;
 

@@ -13,7 +13,9 @@ import uk.ac.manchester.cs.owl.owlapi.OWLDataFactoryImpl;
 
 
 public class SynchronizedOWLDataFactoryImpl extends OWLDataFactoryImpl {
-    private static SynchronizedOWLDataFactoryImpl instance;
+
+	private static final long serialVersionUID = 8648229272581933014L;
+	private static SynchronizedOWLDataFactoryImpl instance;
        
     public static OWLDataFactory getInstance() {
         if (instance == null) {

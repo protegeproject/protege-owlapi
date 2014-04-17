@@ -14,7 +14,9 @@ import org.semanticweb.owlapi.model.OWLOntologyLoaderConfiguration;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 
 public class WriteSafeOWLOntologyFactory implements OWLOntologyFactory {
-    private OWLOntologyFactory delegate;
+
+	private static final long serialVersionUID = -6903012125420580958L;
+	private OWLOntologyFactory delegate;
     private ReentrantReadWriteLock lock;
     
     public WriteSafeOWLOntologyFactory(OWLOntologyFactory delegate, ReentrantReadWriteLock lock) {
