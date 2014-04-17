@@ -95,6 +95,15 @@ public class ProtegeReasoner implements OWLReasoner {
                     classHierarchyReasoner = new ClassHierarchyReasoner(owlOntologyManager, ontologies);
                 }
                 break;
+            case CLASS_ASSERTIONS:
+            case DATA_PROPERTY_ASSERTIONS:
+            case DATA_PROPERTY_HIERARCHY:
+            case DIFFERENT_INDIVIDUALS:
+            case DISJOINT_CLASSES:
+            case OBJECT_PROPERTY_ASSERTIONS:
+            case OBJECT_PROPERTY_HIERARCHY:
+            case SAME_INDIVIDUAL:
+            	//$CASES-OMITTED$
             }
         }
     }
