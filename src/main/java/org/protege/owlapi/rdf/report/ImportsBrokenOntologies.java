@@ -2,7 +2,6 @@ package org.protege.owlapi.rdf.report;
 
 import java.util.Collection;
 
-import org.protege.owlapi.rdf.ProblemReport;
 import org.semanticweb.owlapi.model.OWLOntology;
 
 public class ImportsBrokenOntologies extends AbstractProblemReport {
