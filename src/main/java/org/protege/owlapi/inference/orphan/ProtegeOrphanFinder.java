@@ -18,6 +18,7 @@ import org.semanticweb.owlapi.model.OWLOntologyChangeListener;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLSubClassOfAxiom;
 import org.semanticweb.owlapi.model.RemoveAxiom;
+import org.semanticweb.owlapi.model.parameters.Imports;
 import org.semanticweb.owlapi.util.OWLAxiomVisitorAdapter;
 
 public class ProtegeOrphanFinder  {
@@ -33,6 +34,7 @@ public class ProtegeOrphanFinder  {
         root = manager.getOWLDataFactory().getOWLThing();
         parentClassExtractor = new ParentClassExtractor();
         rootFinder = new TerminalElementFinder<OWLClass>(new Relation<OWLClass>() {
+            @Override
             public Collection<OWLClass> getR(OWLClass cls) {
                 Collection<OWLClass> parents = getParents(cls);
                 parents.remove(root);
@@ -47,7 +49,8 @@ public class ProtegeOrphanFinder  {
     
     public void initializeListener() {
         manager.addOntologyChangeListener(new OWLOntologyChangeListener() {
-           public void ontologiesChanged(List<? extends OWLOntologyChange> changes) throws OWLException {
+           @Override
+        public void ontologiesChanged(List<? extends OWLOntologyChange> changes) throws OWLException {
                for (OWLOntologyChange change : changes) {
                    if (change.getOntology() != null && ontologies.contains(change.getOntology())) {
                        updateImplicitRoots(change);
@@ -116,7 +119,7 @@ public class ProtegeOrphanFinder  {
     
     public boolean containsReference(OWLClass object) {
         for (OWLOntology ont : ontologies) {
-            if (ont.containsClassInSignature(object.getIRI())) {
+            if (ont.containsClassInSignature(object.getIRI(), Imports.EXCLUDED)) {
                 return true;
             }
         }
@@ -145,11 +148,13 @@ public class ProtegeOrphanFinder  {
         }
 
 
+        @Override
         public void visit(OWLSubClassOfAxiom axiom) {
             axiom.getSuperClass().accept(extractor);
         }
 
 
+        @Override
         public void visit(OWLEquivalentClassesAxiom axiom) {
             for (OWLClassExpression desc : axiom.getClassExpressions()) {
                 if (desc.equals(current)) {

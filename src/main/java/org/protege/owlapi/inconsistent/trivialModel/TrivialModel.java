@@ -17,6 +17,7 @@ import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
+import org.semanticweb.owlapi.model.parameters.Imports;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 
@@ -43,9 +44,11 @@ public class TrivialModel {
 	
 	private void initializeIndividuals() {
 		allIndividuals = new HashSet<OWLIndividual>();
-		allIndividuals.addAll(ontology.getIndividualsInSignature(true));
+        allIndividuals.addAll(ontology
+                .getIndividualsInSignature(Imports.INCLUDED));
 		for (OWLOntology inClosure : ontology.getImportsClosure()) {
-			allIndividuals.addAll(inClosure.getReferencedAnonymousIndividuals());
+            allIndividuals.addAll(inClosure
+                    .getReferencedAnonymousIndividuals(Imports.EXCLUDED));
 		}
 		if (allIndividuals.isEmpty()) {
 			OWLDataFactory factory = ontology.getOWLOntologyManager().getOWLDataFactory();
