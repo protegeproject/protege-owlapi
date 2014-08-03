@@ -60,6 +60,7 @@ public class ProtegeOWLManager {
         ProtegeOWLOntologyManager ontologyManager = new ProtegeOWLOntologyManager(dataFactory);
         OWLOntologyManager m = OWLManager.createOWLOntologyManager();
         ontologyManager.getOntologyStorers().add(m.getOntologyStorers());
+        ontologyManager.getOntologyParsers().add(m.getOntologyParsers());
 
         ontologyManager.addIRIMapper(new NonMappingOntologyIRIMapper());
         
