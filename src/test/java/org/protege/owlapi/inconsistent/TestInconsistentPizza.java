@@ -1,11 +1,9 @@
 package org.protege.owlapi.inconsistent;
 
-import static org.testng.Assert.assertTrue;
-import static org.testng.Assert.fail;
-
 import java.io.File;
 import java.util.Set;
 
+import org.junit.Test;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
@@ -17,7 +15,10 @@ import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
-import org.testng.annotations.Test;
+
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
+
 
 public class TestInconsistentPizza {
 	public static final String PIZZA_NS = "http://www.co-ode.org/ontologies/pizza/pizza.owl";

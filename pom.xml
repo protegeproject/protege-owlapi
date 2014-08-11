@@ -73,15 +73,14 @@
           <artifactId>jfact</artifactId>
           <version>1.2.2</version>
         </dependency>
-        
-		<dependency>
-			<groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>5.10</version>
-            <classifier>jdk15</classifier>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
             <scope>test</scope>
         </dependency>
-        
+
         <dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -129,25 +128,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.13</version>
-                <configuration>
-                    <!-- We set skip to true so the unit tests can be explicitly defined in XML file reference below -->
-                    <skip>true</skip>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>unit-tests</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                        <configuration>
-                            <skip>false</skip>
-                            <suiteXmlFiles>
-                                <suiteXmlFile>src/test/resources/unit-tests.xml</suiteXmlFile>
-                            </suiteXmlFiles>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
