@@ -85,9 +85,10 @@ import org.semanticweb.owlapi.model.OWLSubObjectPropertyOfAxiom;
 import org.semanticweb.owlapi.model.OWLSymmetricObjectPropertyAxiom;
 import org.semanticweb.owlapi.model.OWLTransitiveObjectPropertyAxiom;
 import org.semanticweb.owlapi.model.UnknownOWLOntologyException;
+import org.semanticweb.owlapi.model.parameters.AxiomAnnotations;
 import org.semanticweb.owlapi.model.parameters.ChangeApplied;
 import org.semanticweb.owlapi.model.parameters.Imports;
-import org.semanticweb.owlapi.model.parameters.Search;
+import org.semanticweb.owlapi.model.parameters.Navigation;
 import org.semanticweb.owlapi.util.OWLAxiomSearchFilter;
 
 public class WriteSafeOWLOntologyImpl implements OWLMutableOntology, WriteSafeOWLOntology {
@@ -1465,7 +1466,7 @@ public class WriteSafeOWLOntologyImpl implements OWLMutableOntology, WriteSafeOW
 
     @Override
     public boolean containsAxiom(OWLAxiom axiom, Imports includeImportsClosure,
-            Search ignoreAnnotations) {
+            AxiomAnnotations ignoreAnnotations) {
         readLock.lock();
         try {
             return delegate.containsAxiom(axiom, includeImportsClosure,
@@ -1646,6 +1647,16 @@ public class WriteSafeOWLOntologyImpl implements OWLMutableOntology, WriteSafeOW
     }
 
     @Override
+    public Set<OWLAnnotationProperty> getAnnotationPropertiesInSignature() {
+        readLock.lock();
+        try {
+            return delegate.getAnnotationPropertiesInSignature();
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
     public Set<IRI> getPunnedIRIs(Imports includeImportsClosure) {
         readLock.lock();
         try {
@@ -1668,7 +1679,8 @@ public class WriteSafeOWLOntologyImpl implements OWLMutableOntology, WriteSafeOW
 
     @Override
     public <T extends OWLAxiom> Set<T> getAxioms(Class<T> type,
-            OWLObject entity, Imports includeImports, Search forSubPosition) {
+ OWLObject entity, Imports includeImports,
+                    Navigation forSubPosition) {
         readLock.lock();
         try {
             return delegate.getAxioms(type, entity, includeImports,
@@ -1704,7 +1716,7 @@ public class WriteSafeOWLOntologyImpl implements OWLMutableOntology, WriteSafeOW
     @Override
     public <T extends OWLAxiom> Set<T> getAxioms(Class<T> type,
             Class<? extends OWLObject> explicitClass, OWLObject entity,
-            Imports includeImports, Search forSubPosition) {
+            Imports includeImports, Navigation forSubPosition) {
         readLock.lock();
         try {
             return delegate.getAxioms(type, explicitClass, entity,
@@ -1731,6 +1743,414 @@ public class WriteSafeOWLOntologyImpl implements OWLMutableOntology, WriteSafeOW
             return delegate.addAxioms(axioms);
         } finally {
             writeLock.unlock();
+        }
+    }
+
+    @Override
+    public int getAxiomCount(boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getAxiomCount(includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLLogicalAxiom> getLogicalAxioms(boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getLogicalAxioms(includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public int getLogicalAxiomCount(boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getLogicalAxiomCount(includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public <T extends OWLAxiom> Set<T> getAxioms(AxiomType<T> axiomType,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getAxioms(axiomType, includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public <T extends OWLAxiom> int getAxiomCount(AxiomType<T> axiomType,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getAxiomCount(axiomType, includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsAxiom(OWLAxiom axiom, boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.containsAxiom(axiom, includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsAxiomIgnoreAnnotations(OWLAxiom axiom,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.containsAxiomIgnoreAnnotations(axiom,
+                    includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLAxiom> getAxiomsIgnoreAnnotations(OWLAxiom axiom,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getAxiomsIgnoreAnnotations(axiom,
+                    includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLAxiom> getReferencingAxioms(OWLPrimitive owlEntity,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getReferencingAxioms(owlEntity,
+                    includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsAxiomIgnoreAnnotations(OWLAxiom axiom) {
+        readLock.lock();
+        try {
+            return delegate.containsAxiomIgnoreAnnotations(axiom);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLAxiom> getAxiomsIgnoreAnnotations(OWLAxiom axiom) {
+        readLock.lock();
+        try {
+            return delegate.getAxiomsIgnoreAnnotations(axiom);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLAxiom> getReferencingAxioms(OWLPrimitive owlEntity) {
+        readLock.lock();
+        try {
+            return delegate.getReferencingAxioms(owlEntity);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsDatatypeInSignature(IRI owlDatatypeIRI) {
+        readLock.lock();
+        try {
+            return delegate.containsDatatypeInSignature(owlDatatypeIRI);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsEntityInSignature(IRI entityIRI) {
+        readLock.lock();
+        try {
+            return delegate.containsEntityInSignature(entityIRI);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsClassInSignature(IRI owlClassIRI) {
+        readLock.lock();
+        try {
+            return delegate.containsClassInSignature(owlClassIRI);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsObjectPropertyInSignature(IRI owlObjectPropertyIRI) {
+        readLock.lock();
+        try {
+            return delegate
+                    .containsObjectPropertyInSignature(owlObjectPropertyIRI);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsDataPropertyInSignature(IRI owlDataPropertyIRI) {
+        readLock.lock();
+        try {
+            return delegate.containsDataPropertyInSignature(owlDataPropertyIRI);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsAnnotationPropertyInSignature(
+            IRI owlAnnotationPropertyIRI) {
+        readLock.lock();
+        try {
+            return delegate
+                    .containsAnnotationPropertyInSignature(owlAnnotationPropertyIRI);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsIndividualInSignature(IRI owlIndividualIRI) {
+        readLock.lock();
+        try {
+            return delegate.containsIndividualInSignature(owlIndividualIRI);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsReference(OWLEntity entity) {
+        readLock.lock();
+        try {
+            return delegate.containsReference(entity);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLClass> getClassesInSignature(boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getClassesInSignature(includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLObjectProperty> getObjectPropertiesInSignature(
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate
+                    .getObjectPropertiesInSignature(includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLDataProperty> getDataPropertiesInSignature(
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getDataPropertiesInSignature(includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLNamedIndividual> getIndividualsInSignature(
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getIndividualsInSignature(includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLAnonymousIndividual> getReferencedAnonymousIndividuals(
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate
+                    .getReferencedAnonymousIndividuals(includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLDatatype> getDatatypesInSignature(
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getDatatypesInSignature(includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLAnnotationProperty> getAnnotationPropertiesInSignature(
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate
+                    .getAnnotationPropertiesInSignature(includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsEntityInSignature(OWLEntity owlEntity,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.containsEntityInSignature(owlEntity,
+                    includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsEntityInSignature(IRI entityIRI,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.containsEntityInSignature(entityIRI,
+                    includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsClassInSignature(IRI owlClassIRI,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.containsClassInSignature(owlClassIRI,
+                    includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsObjectPropertyInSignature(IRI owlObjectPropertyIRI,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.containsObjectPropertyInSignature(
+                    owlObjectPropertyIRI, includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsDataPropertyInSignature(IRI owlDataPropertyIRI,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.containsDataPropertyInSignature(owlDataPropertyIRI,
+                    includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsAnnotationPropertyInSignature(
+            IRI owlAnnotationPropertyIRI, boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.containsAnnotationPropertyInSignature(
+                    owlAnnotationPropertyIRI, includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsDatatypeInSignature(IRI owlDatatypeIRI,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.containsDatatypeInSignature(owlDatatypeIRI,
+                    includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsIndividualInSignature(IRI owlIndividualIRI,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.containsIndividualInSignature(owlIndividualIRI,
+                    includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public Set<OWLEntity> getEntitiesInSignature(IRI iri,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.getEntitiesInSignature(iri, includeImportsClosure);
+        } finally {
+            readLock.unlock();
+        }
+    }
+
+    @Override
+    public boolean containsReference(OWLEntity entity,
+            boolean includeImportsClosure) {
+        readLock.lock();
+        try {
+            return delegate.containsReference(entity, includeImportsClosure);
+        } finally {
+            readLock.unlock();
         }
     } 
     

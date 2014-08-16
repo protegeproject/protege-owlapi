@@ -29,8 +29,8 @@ import org.semanticweb.owlapi.model.OWLEntity;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.parameters.AxiomAnnotations;
 import org.semanticweb.owlapi.model.parameters.Imports;
-import org.semanticweb.owlapi.model.parameters.Search;
 
 public class Validator {
 	private static Logger LOGGER = Logger.getLogger(Validator.class);
@@ -109,7 +109,7 @@ public class Validator {
 			}
 			OWLAxiom declaration = factory.getOWLDeclarationAxiom(e);
             if (!ontology.containsAxiom(declaration, Imports.INCLUDED,
-                    Search.CONSIDER_ANNOTATIONS)) {
+                    AxiomAnnotations.CONSIDER_AXIOM_ANNOTATIONS)) {
 				entitiesWithoutDeclarations.add(e);
 			}
 		}
@@ -125,11 +125,13 @@ public class Validator {
 			OWLAxiom annotationDeclaration = factory.getOWLDeclarationAxiom(annotationProperty);
 			OWLAxiom classDeclaration = factory.getOWLDeclarationAxiom(factory.getOWLClass(axiom.getDomain()));
             if (!ontology.containsAxiom(annotationDeclaration,
-                    Imports.INCLUDED, Search.CONSIDER_ANNOTATIONS)
+                    Imports.INCLUDED,
+                    AxiomAnnotations.CONSIDER_AXIOM_ANNOTATIONS)
                     && ontology.containsObjectPropertyInSignature(
                             annotationProperty.getIRI(), Imports.INCLUDED)
                     && !ontology.containsAxiom(classDeclaration,
-                            Imports.INCLUDED, Search.CONSIDER_ANNOTATIONS)) {
+                            Imports.INCLUDED,
+                            AxiomAnnotations.CONSIDER_AXIOM_ANNOTATIONS)) {
 				addProblemReport(new MisreadAnnotationDomainAxiom(ontology, axiom), problems);
 			}
 		}
@@ -142,11 +144,13 @@ public class Validator {
 			OWLAxiom annotationDeclaration = factory.getOWLDeclarationAxiom(annotationProperty);
 			OWLAxiom classDeclaration = factory.getOWLDeclarationAxiom(factory.getOWLClass(axiom.getRange()));
             if (!ontology.containsAxiom(annotationDeclaration,
-                    Imports.INCLUDED, Search.CONSIDER_ANNOTATIONS)
+                    Imports.INCLUDED,
+                    AxiomAnnotations.CONSIDER_AXIOM_ANNOTATIONS)
                     && ontology.containsObjectPropertyInSignature(
                             annotationProperty.getIRI(), Imports.INCLUDED)
                     && !ontology.containsAxiom(classDeclaration,
-                            Imports.INCLUDED, Search.CONSIDER_ANNOTATIONS)) {
+                            Imports.INCLUDED,
+                            AxiomAnnotations.CONSIDER_AXIOM_ANNOTATIONS)) {
 				addProblemReport(new MisreadAnnotationRangeAxiom(ontology, axiom), problems);
 			}
 		}
