@@ -64,8 +64,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>net.sourceforge.owlapi</groupId>
-			<artifactId>owlapi-compatibilitydistribution</artifactId>
-			<version>4.0.0-RC3</version>
+			<artifactId>owlapi-distribution</artifactId>
+			<version>4.0.0</version>
 		</dependency>
 				
         <dependency>
