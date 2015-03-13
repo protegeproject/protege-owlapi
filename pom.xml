@@ -10,7 +10,7 @@
 
     <groupId>edu.stanford.protege</groupId>
     <artifactId>protege-owlapi-extensions</artifactId>
-    <version>3.2.7</version>
+    <version>3.2.8-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
     <name>Protege OWL API Extensions</name>
