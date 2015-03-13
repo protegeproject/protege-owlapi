@@ -24,7 +24,6 @@ package org.protege.owlapi.apibinding;/*
 
 import org.coode.owlapi.functionalrenderer.OWLFunctionalSyntaxOntologyStorer;
 import org.coode.owlapi.latex.LatexOntologyStorer;
-import org.coode.owlapi.obo.renderer.OBOFlatFileOntologyStorer;
 import org.coode.owlapi.owlxml.renderer.OWLXMLOntologyStorer;
 import org.coode.owlapi.rdf.rdfxml.RDFXMLOntologyStorer;
 import org.coode.owlapi.turtle.TurtleOntologyStorer;
@@ -32,6 +31,7 @@ import org.protege.owlapi.concurrent.SynchronizedOWLDataFactoryImpl;
 import org.protege.owlapi.model.ProtegeOWLOntologyManager;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLDataFactory;
+import org.semanticweb.owlapi.oboformat.OBOFormatStorer;
 import org.semanticweb.owlapi.util.NonMappingOntologyIRIMapper;
 
 import uk.ac.manchester.cs.owl.owlapi.EmptyInMemOWLOntologyFactory;
@@ -71,7 +71,7 @@ public class ProtegeOWLManager {
         ontologyManager.addOntologyStorer(new OWLXMLOntologyStorer());
         ontologyManager.addOntologyStorer(new OWLFunctionalSyntaxOntologyStorer());
         ontologyManager.addOntologyStorer(new ManchesterOWLSyntaxOntologyStorer());
-        ontologyManager.addOntologyStorer(new OBOFlatFileOntologyStorer());
+        ontologyManager.addOntologyStorer(new OBOFormatStorer());
         ontologyManager.addOntologyStorer(new KRSS2OWLSyntaxOntologyStorer());
         ontologyManager.addOntologyStorer(new TurtleOntologyStorer());
         ontologyManager.addOntologyStorer(new LatexOntologyStorer());
