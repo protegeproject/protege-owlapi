@@ -4,7 +4,7 @@ import java.util.Collection;
 
 /**
  * This interface simply represents a relation
- *     R: X -> X.
+ *     R: X -&gt; X.
  * 
  * @author tredmond
  *
