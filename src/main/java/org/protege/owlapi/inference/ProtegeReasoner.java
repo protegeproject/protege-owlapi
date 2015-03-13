@@ -1,61 +1,37 @@
 package org.protege.owlapi.inference;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Set;
-import java.util.TreeSet;
-
 import org.protege.owlapi.inference.cls.ClassHierarchyReasoner;
-import org.semanticweb.owlapi.model.AxiomType;
-import org.semanticweb.owlapi.model.OWLAxiom;
-import org.semanticweb.owlapi.model.OWLClass;
-import org.semanticweb.owlapi.model.OWLClassExpression;
-import org.semanticweb.owlapi.model.OWLDataProperty;
-import org.semanticweb.owlapi.model.OWLDataPropertyExpression;
-import org.semanticweb.owlapi.model.OWLLiteral;
-import org.semanticweb.owlapi.model.OWLNamedIndividual;
-import org.semanticweb.owlapi.model.OWLObjectPropertyExpression;
-import org.semanticweb.owlapi.model.OWLOntology;
-import org.semanticweb.owlapi.model.OWLOntologyChange;
-import org.semanticweb.owlapi.model.OWLOntologyManager;
-import org.semanticweb.owlapi.reasoner.AxiomNotInProfileException;
-import org.semanticweb.owlapi.reasoner.BufferingMode;
-import org.semanticweb.owlapi.reasoner.ClassExpressionNotInProfileException;
-import org.semanticweb.owlapi.reasoner.FreshEntitiesException;
-import org.semanticweb.owlapi.reasoner.FreshEntityPolicy;
-import org.semanticweb.owlapi.reasoner.InconsistentOntologyException;
-import org.semanticweb.owlapi.reasoner.IndividualNodeSetPolicy;
-import org.semanticweb.owlapi.reasoner.InferenceType;
-import org.semanticweb.owlapi.reasoner.Node;
-import org.semanticweb.owlapi.reasoner.NodeSet;
-import org.semanticweb.owlapi.reasoner.OWLReasoner;
-import org.semanticweb.owlapi.reasoner.ReasonerInterruptedException;
-import org.semanticweb.owlapi.reasoner.TimeOutException;
-import org.semanticweb.owlapi.reasoner.UnsupportedEntailmentTypeException;
+import org.semanticweb.owlapi.model.*;
+import org.semanticweb.owlapi.reasoner.*;
 import org.semanticweb.owlapi.reasoner.impl.OWLClassNode;
 import org.semanticweb.owlapi.reasoner.impl.OWLDataPropertyNode;
 import org.semanticweb.owlapi.reasoner.impl.OWLObjectPropertyNode;
 import org.semanticweb.owlapi.util.Version;
 
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
+import java.util.TreeSet;
+
 /**
- * This class is intended to capture some very simple inferences used by Prot&#x00E9g&#x00E9 and other
+ * This class is intended to capture some very simple inferences used by Prot&#x00E9;g&#x00E9; and other
  * tools.  Be warned, this is not a true OWLReasoner; it differs from a true OWLReasoner in that
  * <ul>
- * <li>it is incomplete - it only performs certain inferences.</li>
+ * <li>it is incomplete - it only performs certain inferences.
  * <li>it works with an arbitrary set of ontologies that are not necessarily the 
- *     imports closure of some single ontology.</li>
+ *     imports closure of some single ontology.
  * </ul>
- * <p/>
+ * <p>
  * This reasoner is an incremental reasoner and will perform the following inferences:
  * <ul>
  * <li> the cheesey pizza inference where it is deduced that a cheesey pizza is a pizza because it is 
- *      equivalent to "Pizza &#x2227 &#x2203 hasTopping. CheeseTopping".</li>
- * <li> orphan finding for the class hierarchy.</li>
- * <li> transitive closure processing for the class and property hierarchies.</li>
- * <li> inverse property processing for object property values and for domains and ranges</li>
+ *      equivalent to "Pizza &#x2227; &#x2203; hasTopping. CheeseTopping".
+ * <li> orphan finding for the class hierarchy.
+ * <li> transitive closure processing for the class and property hierarchies.
+ * <li> inverse property processing for object property values and for domains and ranges
  * <li> transitive closure processing for the set of all individuals in a class.
  * </ul>
- * <p/>
+ * <p>
  * A goal of this reasoner is that there will be a one-time linear time overhead of any particular inference
  * type and after this price is paid the cost of continuing the inference is constant time.
  */
@@ -69,7 +45,7 @@ public class ProtegeReasoner implements OWLReasoner {
     
     public ProtegeReasoner(OWLOntologyManager manager, Set<OWLOntology> ontologies) {
         owlOntologyManager = manager;
-        ontologies = new TreeSet<OWLOntology>(ontologies);
+        this.ontologies = new TreeSet<>(ontologies);
     }
     
     
