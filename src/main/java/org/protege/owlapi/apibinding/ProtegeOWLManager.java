@@ -22,22 +22,13 @@ package org.protege.owlapi.apibinding;/*
  */
 
 
-import org.coode.owlapi.functionalrenderer.OWLFunctionalSyntaxOntologyStorer;
-import org.coode.owlapi.latex.LatexOntologyStorer;
-import org.coode.owlapi.owlxml.renderer.OWLXMLOntologyStorer;
-import org.coode.owlapi.rdf.rdfxml.RDFXMLOntologyStorer;
-import org.coode.owlapi.turtle.TurtleOntologyStorer;
 import org.protege.owlapi.concurrent.SynchronizedOWLDataFactoryImpl;
 import org.protege.owlapi.model.ProtegeOWLOntologyManager;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.OWLDataFactory;
-import org.semanticweb.owlapi.oboformat.OBOFormatStorer;
+import org.semanticweb.owlapi.model.OWLOntologyFactory;
+import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.util.NonMappingOntologyIRIMapper;
-
-import uk.ac.manchester.cs.owl.owlapi.EmptyInMemOWLOntologyFactory;
-import uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.ManchesterOWLSyntaxOntologyStorer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2OWLSyntaxOntologyStorer;
 
 public class ProtegeOWLManager {
 
@@ -67,20 +58,17 @@ public class ProtegeOWLManager {
     public static ProtegeOWLOntologyManager createOWLOntologyManager(OWLDataFactory dataFactory) {
         // Create the ontology manager and add ontology factories, mappers and storers
         ProtegeOWLOntologyManager ontologyManager = new ProtegeOWLOntologyManager(dataFactory);
-        ontologyManager.addOntologyStorer(new RDFXMLOntologyStorer());
-        ontologyManager.addOntologyStorer(new OWLXMLOntologyStorer());
-        ontologyManager.addOntologyStorer(new OWLFunctionalSyntaxOntologyStorer());
-        ontologyManager.addOntologyStorer(new ManchesterOWLSyntaxOntologyStorer());
-        ontologyManager.addOntologyStorer(new OBOFormatStorer());
-        ontologyManager.addOntologyStorer(new KRSS2OWLSyntaxOntologyStorer());
-        ontologyManager.addOntologyStorer(new TurtleOntologyStorer());
-        ontologyManager.addOntologyStorer(new LatexOntologyStorer());
+        OWLOntologyManager m = OWLManager.createOWLOntologyManager();
+        ontologyManager.getOntologyStorers().add(m.getOntologyStorers());
+        ontologyManager.getOntologyParsers().add(m.getOntologyParsers());
 
         ontologyManager.addIRIMapper(new NonMappingOntologyIRIMapper());
         
-        ontologyManager.clearOntologyFactories();
-        ontologyManager.addOntologyFactory(new EmptyInMemOWLOntologyFactory());
-        ontologyManager.addOntologyFactory(new ParsableOWLOntologyFactory());
+        ontologyManager.getOntologyFactories().clear();
+        for (OWLOntologyFactory f : m.getOntologyFactories()) {
+            ontologyManager.getOntologyFactories().add(
+                    ontologyManager.wrapFactory(f));
+        }
         
         return ontologyManager;
     }
