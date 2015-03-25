@@ -18,6 +18,7 @@ import org.semanticweb.owlapi.model.OWLOntologyChange;
 import org.semanticweb.owlapi.model.OWLOntologyChangeListener;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.RemoveAxiom;
+import org.semanticweb.owlapi.model.parameters.Imports;
 import org.semanticweb.owlapi.reasoner.ClassExpressionNotInProfileException;
 import org.semanticweb.owlapi.reasoner.FreshEntitiesException;
 import org.semanticweb.owlapi.reasoner.InconsistentOntologyException;
@@ -26,6 +27,7 @@ import org.semanticweb.owlapi.reasoner.NodeSet;
 import org.semanticweb.owlapi.reasoner.ReasonerInterruptedException;
 import org.semanticweb.owlapi.reasoner.TimeOutException;
 import org.semanticweb.owlapi.reasoner.impl.OWLClassNodeSet;
+import org.semanticweb.owlapi.search.EntitySearcher;
 
 public class ClassHierarchyReasoner {
     private OWLOntologyManager owlOntologyManager;
@@ -43,12 +45,13 @@ public class ClassHierarchyReasoner {
     private TerminalElementFinder<OWLClass> rootFinder;
     
     public ClassHierarchyReasoner(OWLOntologyManager manager, Set<OWLOntology> ontologies) {
-        this.owlOntologyManager = manager;
+        owlOntologyManager = manager;
         OWLDataFactory factory = manager.getOWLDataFactory();
         root = factory.getOWLThing();
         ontologies = new HashSet<OWLOntology>();
         
         rootFinder = new TerminalElementFinder<OWLClass>(new Relation<OWLClass>() {
+            @Override
             public Collection<OWLClass> getR(OWLClass cls) {
                 Collection<OWLClass> parents = getSuperClasses(cls, true).getFlattened();
                 parents.remove(root);
@@ -59,6 +62,7 @@ public class ClassHierarchyReasoner {
         namedClassExtractor = new NamedClassExtractor();
         childClassExtractor = new ChildClassExtractor();
         listener = new OWLOntologyChangeListener() {
+            @Override
             public void ontologiesChanged(List<? extends OWLOntologyChange> changes) {
                 handleChanges(changes);
             }
@@ -102,7 +106,7 @@ public class ClassHierarchyReasoner {
     
     private boolean containsReference(OWLClass object) {
         for (OWLOntology ont : ontologies) {
-            if (ont.containsClassInSignature(object.getIRI())) {
+            if (ont.containsClassInSignature(object.getIRI(), Imports.EXCLUDED)) {
                 return true;
             }
         }
@@ -126,10 +130,12 @@ public class ClassHierarchyReasoner {
             OWLClass cls = ce.asOWLClass();
             Set<OWLClass> parents = new TreeSet<OWLClass>();
             namedClassExtractor.reset();
-            for (OWLClassExpression superClassExpression : cls.getSuperClasses(ontologies)) {
+            for (OWLClassExpression superClassExpression : EntitySearcher
+                    .getSuperClasses(cls, ontologies)) {
                 superClassExpression.accept(namedClassExtractor);
             }
-            for (OWLClassExpression equivalentClassExpression : cls.getEquivalentClasses(ontologies)) {
+            for (OWLClassExpression equivalentClassExpression : EntitySearcher
+                    .getEquivalentClasses(cls, ontologies)) {
                 if (equivalentClassExpression.isAnonymous()) {
                     equivalentClassExpression.accept(namedClassExtractor);
                 }
