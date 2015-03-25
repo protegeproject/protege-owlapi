@@ -9,8 +9,8 @@ import java.util.TreeSet;
 
 import org.protege.owlapi.rdf.report.MisreadAnnotationDomainAxiom;
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.formats.FunctionalSyntaxDocumentFormat;
 import org.semanticweb.owlapi.io.FileDocumentSource;
-import org.semanticweb.owlapi.io.OWLFunctionalSyntaxOntologyFormat;
 import org.semanticweb.owlapi.io.OWLOntologyDocumentSource;
 import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
@@ -48,7 +48,9 @@ public class LoadObi {
     	ontology = extract(ontology);
     	reasoner = getReasoner(ontology);
     	testMissingInference(ontology, reasoner);
-    	ontology.getOWLOntologyManager().saveOntology(ontology, new OWLFunctionalSyntaxOntologyFormat(), IRI.create(new File(TEST_LOCATION)));
+        ontology.getOWLOntologyManager().saveOntology(ontology,
+                new FunctionalSyntaxDocumentFormat(),
+                IRI.create(new File(TEST_LOCATION)));
     }
     
     public static OWLOntology loadObi() throws OWLOntologyCreationException {

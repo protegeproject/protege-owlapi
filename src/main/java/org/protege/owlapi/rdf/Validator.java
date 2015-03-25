@@ -5,10 +5,10 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
-import java.util.Map.Entry;
 
 import org.apache.log4j.Logger;
 import org.protege.owlapi.rdf.report.ImportsBrokenOntologies;
@@ -29,6 +29,8 @@ import org.semanticweb.owlapi.model.OWLEntity;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.parameters.AxiomAnnotations;
+import org.semanticweb.owlapi.model.parameters.Imports;
 
 public class Validator {
 	private static Logger LOGGER = Logger.getLogger(Validator.class);
@@ -106,7 +108,8 @@ public class Validator {
 				continue;
 			}
 			OWLAxiom declaration = factory.getOWLDeclarationAxiom(e);
-			if (!ontology.containsAxiom(declaration, true)) {
+            if (!ontology.containsAxiom(declaration, Imports.INCLUDED,
+                    AxiomAnnotations.CONSIDER_AXIOM_ANNOTATIONS)) {
 				entitiesWithoutDeclarations.add(e);
 			}
 		}
@@ -121,9 +124,14 @@ public class Validator {
 			OWLAnnotationProperty annotationProperty = axiom.getProperty();
 			OWLAxiom annotationDeclaration = factory.getOWLDeclarationAxiom(annotationProperty);
 			OWLAxiom classDeclaration = factory.getOWLDeclarationAxiom(factory.getOWLClass(axiom.getDomain()));
-			if (!ontology.containsAxiom(annotationDeclaration, true)
-					&& ontology.containsObjectPropertyInSignature(annotationProperty.getIRI(), true) 
-					&& !ontology.containsAxiom(classDeclaration, true)) {
+            if (!ontology.containsAxiom(annotationDeclaration,
+                    Imports.INCLUDED,
+                    AxiomAnnotations.CONSIDER_AXIOM_ANNOTATIONS)
+                    && ontology.containsObjectPropertyInSignature(
+                            annotationProperty.getIRI(), Imports.INCLUDED)
+                    && !ontology.containsAxiom(classDeclaration,
+                            Imports.INCLUDED,
+                            AxiomAnnotations.CONSIDER_AXIOM_ANNOTATIONS)) {
 				addProblemReport(new MisreadAnnotationDomainAxiom(ontology, axiom), problems);
 			}
 		}
@@ -135,9 +143,14 @@ public class Validator {
 			OWLAnnotationProperty annotationProperty = axiom.getProperty();
 			OWLAxiom annotationDeclaration = factory.getOWLDeclarationAxiom(annotationProperty);
 			OWLAxiom classDeclaration = factory.getOWLDeclarationAxiom(factory.getOWLClass(axiom.getRange()));
-			if (!ontology.containsAxiom(annotationDeclaration, true)
-					&& ontology.containsObjectPropertyInSignature(annotationProperty.getIRI(), true) 
-					&& !ontology.containsAxiom(classDeclaration, true)) {
+            if (!ontology.containsAxiom(annotationDeclaration,
+                    Imports.INCLUDED,
+                    AxiomAnnotations.CONSIDER_AXIOM_ANNOTATIONS)
+                    && ontology.containsObjectPropertyInSignature(
+                            annotationProperty.getIRI(), Imports.INCLUDED)
+                    && !ontology.containsAxiom(classDeclaration,
+                            Imports.INCLUDED,
+                            AxiomAnnotations.CONSIDER_AXIOM_ANNOTATIONS)) {
 				addProblemReport(new MisreadAnnotationRangeAxiom(ontology, axiom), problems);
 			}
 		}
@@ -146,16 +159,19 @@ public class Validator {
 	@SuppressWarnings("rawtypes")
 	private void checkForPropertyPuns(OWLOntology ontology, Map<OWLOntology, List<ProblemReport>> problems) {
 		Set<IRI> punnedIris = new TreeSet<IRI>();
-		for (OWLAnnotationProperty p : ontology.getAnnotationPropertiesInSignature()) {
-			if (ontology.containsObjectPropertyInSignature(p.getIRI())) {
+        for (OWLAnnotationProperty p : ontology
+                .getAnnotationPropertiesInSignature(Imports.EXCLUDED)) {
+            if (ontology.containsObjectPropertyInSignature(p.getIRI(),
+                    Imports.EXCLUDED)) {
 				punnedIris.add(p.getIRI());
-			}
-			else if (ontology.containsDataPropertyInSignature(p.getIRI())) {
+			} else if (ontology.containsDataPropertyInSignature(p.getIRI(),
+                    Imports.EXCLUDED)) {
 				punnedIris.add(p.getIRI());
 			}
 		}
 		for (OWLObjectProperty p : ontology.getObjectPropertiesInSignature()) {
-			if (ontology.containsDataPropertyInSignature(p.getIRI())) {
+            if (ontology.containsDataPropertyInSignature(p.getIRI(),
+                    Imports.EXCLUDED)) {
 				punnedIris.add(p.getIRI());
 			}
 		}
@@ -163,13 +179,16 @@ public class Validator {
 			Map<IRI, Collection<EntityType>> propertyPunMap = new TreeMap<IRI, Collection<EntityType>>();
 			for (IRI iri : punnedIris) {
 				Collection<EntityType> types = new ArrayList<EntityType>();
-				if (ontology.containsAnnotationPropertyInSignature(iri)) {
+                if (ontology.containsAnnotationPropertyInSignature(iri,
+                        Imports.EXCLUDED)) {
 					types.add(EntityType.ANNOTATION_PROPERTY);
 				}
-				if (ontology.containsObjectPropertyInSignature(iri)) {
+                if (ontology.containsObjectPropertyInSignature(iri,
+                        Imports.EXCLUDED)) {
 					types.add(EntityType.OBJECT_PROPERTY);
 				}
-				else if (ontology.containsDataPropertyInSignature(iri)) {
+ else if (ontology.containsDataPropertyInSignature(iri,
+                        Imports.EXCLUDED)) {
 					types.add(EntityType.DATA_PROPERTY);
 				}
 				propertyPunMap.put(iri, types);
