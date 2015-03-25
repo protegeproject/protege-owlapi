@@ -9,19 +9,19 @@ import java.util.Map;
 import org.protege.owlapi.inconsistent.trivialModel.AxiomInterpreter;
 import org.protege.owlapi.inconsistent.trivialModel.TrivialModel;
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.formats.OWLXMLDocumentFormat;
 import org.semanticweb.owlapi.io.FileDocumentTarget;
-import org.semanticweb.owlapi.io.OWLXMLOntologyFormat;
 import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.AddImport;
 import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLAxiom;
 import org.semanticweb.owlapi.model.OWLDataFactory;
+import org.semanticweb.owlapi.model.OWLDocumentFormat;
 import org.semanticweb.owlapi.model.OWLEntity;
 import org.semanticweb.owlapi.model.OWLImportsDeclaration;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyChange;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
-import org.semanticweb.owlapi.model.OWLOntologyFormat;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
@@ -128,8 +128,9 @@ public class OntologySplitter {
 			}
 		}
 		dir.mkdir();
-		OWLXMLOntologyFormat format = new OWLXMLOntologyFormat();
-		OWLOntologyFormat originalFormat = originalOntology.getOWLOntologyManager().getOntologyFormat(originalOntology);
+        OWLXMLDocumentFormat format = new OWLXMLDocumentFormat();
+        OWLDocumentFormat originalFormat = originalOntology
+                .getOWLOntologyManager().getOntologyFormat(originalOntology);
 		if (originalFormat.isPrefixOWLOntologyFormat()) {
 			format.copyPrefixesFrom(originalFormat.asPrefixOWLOntologyFormat());
 		}
