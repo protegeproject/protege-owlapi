@@ -13,7 +13,6 @@ import java.util.zip.InflaterInputStream;
 import java.util.zip.ZipInputStream;
 
 import org.apache.log4j.Logger;
-import org.semanticweb.owlapi.io.IOProperties;
 
 
 /**
@@ -32,21 +31,30 @@ public class IOUtils {
     private static final int CONTENT_DISPOSITION_FILE_NAME_PATTERN_GROUP = 1;
 
     /**
-     * A convenience method that obtains an input stream from a URI.
-     * This method sets up the correct request type and wraps the input
-     * stream within a buffered input stream
-     * @param documentURI The URI from which the input stream should be returned
+     * A convenience method that obtains an input stream from a URI. This method
+     * sets up the correct request type and wraps the input stream within a
+     * buffered input stream
+     * 
+     * @param documentURI
+     *        The URI from which the input stream should be returned
+     * @param httpCompression
+     *        http compression used or not
+     * @param timeout
+     *        in milliseconds
      * @return The input stream obtained from the URI
-     * @throws IOException if there was an <code>IOException</code> in obtaining the input stream from the URI.
+     * @throws IOException
+     *         if there was an <code>IOException</code> in obtaining the input
+     *         stream from the URI.
      */
-    public static InputStream getInputStream(URI documentURI) throws IOException {
+    public static InputStream getInputStream(URI documentURI,
+            boolean httpCompression, int timeout) throws IOException {
         String requestType = getRequestTypes();
         URLConnection conn = documentURI.toURL().openConnection();
         conn.addRequestProperty("Accept", requestType);
-        if (IOProperties.getInstance().isConnectionAcceptHTTPCompression()) {
+        if (httpCompression) {
             conn.setRequestProperty("Accept-Encoding", "gzip, deflate");
         }
-        conn.setConnectTimeout(IOProperties.getInstance().getConnectionTimeout());
+        conn.setConnectTimeout(timeout);
         String contentEncoding = conn.getContentEncoding();
         InputStream is = getInputStreamFromContentEncoding(conn, contentEncoding);
         if (isZipName(documentURI, conn)) {

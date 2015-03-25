@@ -17,6 +17,7 @@ import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyChange;
 import org.semanticweb.owlapi.model.OWLOntologyFactory;
+import org.semanticweb.owlapi.model.parameters.ChangeApplied;
 
 import uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl;
 
@@ -29,6 +30,12 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl implements
     private List<OWLOntologyFactory> ontologyFactories = new ArrayList<OWLOntologyFactory>();
     private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 
+    public OWLOntologyFactory wrapFactory(OWLOntologyFactory factory) {
+        if (useWriteSafety && !(factory instanceof WriteSafeOWLOntologyFactory)) {
+            return new WriteSafeOWLOntologyFactory(factory, lock);
+        }
+        return factory;
+    }
     
     public ProtegeOWLOntologyManager(OWLDataFactory factory) {
         super(factory);
@@ -50,14 +57,17 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl implements
         this.useSwingThread = useSwingThread;
     }
     
+    @Override
     public ReentrantReadWriteLock getReadWriteLock() {
         return lock;
     }
     
+    @Override
     public ReadLock getReadLock() {
         return lock.readLock();
     }
 
+    @Override
     public WriteLock getWriteLock() {
         return lock.writeLock();
     }
@@ -69,38 +79,32 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl implements
         return new ArrayList<OWLOntologyFactory>(ontologyFactories);
     }
 
-    @Override
+    @Deprecated
     public void addOntologyFactory(OWLOntologyFactory factory) {
         factory = wrapFactory(factory);
-        super.addOntologyFactory(factory);
+        super.getOntologyFactories().add(factory);
         ontologyFactories.add(0, factory);
     }
-    
-    @Override
+
+    @Deprecated
     public void removeOntologyFactory(OWLOntologyFactory factory) {
         factory = wrapFactory(factory); // otherwise .equals won't work in both directions
-        super.removeOntologyFactory(factory);
+        super.getOntologyFactories().remove(factory);
         ontologyFactories.remove(factory);
     }
-    
-    private OWLOntologyFactory wrapFactory(OWLOntologyFactory factory) {
-        if (useWriteSafety && !(factory instanceof WriteSafeOWLOntologyFactory)) {
-            factory = new WriteSafeOWLOntologyFactory(factory, lock);
-        }
-        return factory;
-    }
-    
+
+    @Deprecated
     public void clearOntologyFactories() {
         for (OWLOntologyFactory factory : new ArrayList<OWLOntologyFactory>(ontologyFactories)) {
             removeOntologyFactory(factory);
         }
     }
-    
+
     /*
      * Change locking stuff
      */
     
-    private List<OWLOntologyChange> addAxiomsSuper(OWLOntology ont, Set<? extends OWLAxiom> axioms) {
+    protected List<OWLOntologyChange> addAxiomsSuper(OWLOntology ont, Set<? extends OWLAxiom> axioms) {
         return super.addAxioms(ont, axioms);
     }
     
@@ -108,13 +112,14 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl implements
     public List<OWLOntologyChange> addAxioms(final OWLOntology ont, final Set<? extends OWLAxiom> axioms) {
         return callWithWriteLockUnchecked(new Callable<List<OWLOntologyChange>>() {
                     
+                @Override
                 public List<OWLOntologyChange> call() {
                     return addAxiomsSuper(ont, axioms);
                 }
             });
     }
     
-    private List<OWLOntologyChange> removeAxiomsSuper(OWLOntology ont, Set<? extends OWLAxiom> axioms) {
+    protected List<OWLOntologyChange> removeAxiomsSuper(OWLOntology ont, Set<? extends OWLAxiom> axioms) {
         return super.removeAxioms(ont, axioms);
     }
     
@@ -122,33 +127,37 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl implements
     public List<OWLOntologyChange> removeAxioms(final OWLOntology ont, final Set<? extends OWLAxiom> axioms) {
         return callWithWriteLockUnchecked(new Callable<List<OWLOntologyChange>>() {
                     
+                @Override
                 public List<OWLOntologyChange> call() {
                     return removeAxiomsSuper(ont, axioms);
                 }
             });
     }
     
-    private List<OWLOntologyChange> applyChangeSuper(OWLOntologyChange change) {
+    protected ChangeApplied applyChangeSuper(OWLOntologyChange change) {
         return super.applyChange(change);
     }
     
     @Override
-    public List<OWLOntologyChange> applyChange(final OWLOntologyChange change) {
-        return callWithWriteLockUnchecked(new Callable<List<OWLOntologyChange>>() {
+    public ChangeApplied applyChange(final OWLOntologyChange change) {
+        return callWithWriteLockUnchecked(new Callable<ChangeApplied>() {
                     
-                public List<OWLOntologyChange> call() {
+            @Override
+            public ChangeApplied call() {
                     return applyChangeSuper(change);
                 }
             });
     }
     
-    private List<OWLOntologyChange> applyChangesSuper(List<? extends OWLOntologyChange> changes) {
+    protected List<OWLOntologyChange> applyChangesSuper(List<? extends OWLOntologyChange> changes) {
         return super.applyChanges(changes);
     }
     
+    @Override
     public List<OWLOntologyChange> applyChanges(final List<? extends OWLOntologyChange> changes) {
         return callWithWriteLockUnchecked(new Callable<List<OWLOntologyChange>>() {
                     
+                @Override
                 public List<OWLOntologyChange> call() {
                     return applyChangesSuper(changes);
                 }
@@ -159,6 +168,7 @@ public class ProtegeOWLOntologyManager extends OWLOntologyManagerImpl implements
         if (useSwingThread && !SwingUtilities.isEventDispatchThread()) {
             final SaveResultsRunnable<X> run = new SaveResultsRunnable<X>(call);
             SwingUtilities.invokeAndWait(new Runnable() {
+                @Override
                 public void run() {
                     lock.writeLock().lock();
                     try {
