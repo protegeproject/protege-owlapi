@@ -68,18 +68,6 @@
             <version>[3.5.2,3.6)</version>
         </dependency>
 
-        <dependency>
-            <groupId>net.sourceforge.owlapi</groupId>
-            <artifactId>jfact</artifactId>
-            <version>[1.2,2)</version>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>edu.stanford.protege</groupId>
-                    <artifactId>org.protege.editor.owl</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
 
         <dependency>
             <groupId>junit</groupId>
