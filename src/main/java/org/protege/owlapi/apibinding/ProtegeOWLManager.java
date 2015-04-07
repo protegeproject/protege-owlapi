@@ -22,22 +22,27 @@ package org.protege.owlapi.apibinding;/*
  */
 
 
-import org.coode.owlapi.functionalrenderer.OWLFunctionalSyntaxOntologyStorer;
-import org.coode.owlapi.latex.LatexOntologyStorer;
-import org.coode.owlapi.owlxml.renderer.OWLXMLOntologyStorer;
-import org.coode.owlapi.rdf.rdfxml.RDFXMLOntologyStorer;
-import org.coode.owlapi.turtle.TurtleOntologyStorer;
 import org.protege.owlapi.concurrent.SynchronizedOWLDataFactoryImpl;
 import org.protege.owlapi.model.ProtegeOWLOntologyManager;
 import org.semanticweb.owlapi.apibinding.OWLManager;
+import org.semanticweb.owlapi.functional.renderer.FunctionalSyntaxStorerFactory;
+import org.semanticweb.owlapi.krss2.renderer.KRSS2OWLSyntaxStorerFactory;
+import org.semanticweb.owlapi.latex.renderer.LatexStorerFactory;
+import org.semanticweb.owlapi.manchestersyntax.renderer.ManchesterSyntaxStorerFactory;
 import org.semanticweb.owlapi.model.OWLDataFactory;
-import org.semanticweb.owlapi.oboformat.OBOFormatStorer;
+import org.semanticweb.owlapi.model.OWLOntologyFactory;
+import org.semanticweb.owlapi.oboformat.OBOFormatStorerFactory;
+import org.semanticweb.owlapi.owlxml.renderer.OWLXMLStorerFactory;
+import org.semanticweb.owlapi.rdf.rdfxml.renderer.RDFXMLStorerFactory;
+import org.semanticweb.owlapi.rdf.turtle.renderer.TurtleStorerFactory;
 import org.semanticweb.owlapi.util.NonMappingOntologyIRIMapper;
 
 import uk.ac.manchester.cs.owl.owlapi.EmptyInMemOWLOntologyFactory;
+import uk.ac.manchester.cs.owl.owlapi.OWLOntologyBuilderImpl;
 import uk.ac.manchester.cs.owl.owlapi.ParsableOWLOntologyFactory;
-import uk.ac.manchester.cs.owl.owlapi.mansyntaxrenderer.ManchesterOWLSyntaxOntologyStorer;
-import de.uulm.ecs.ai.owlapi.krssrenderer.KRSS2OWLSyntaxOntologyStorer;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class ProtegeOWLManager {
 
@@ -67,21 +72,20 @@ public class ProtegeOWLManager {
     public static ProtegeOWLOntologyManager createOWLOntologyManager(OWLDataFactory dataFactory) {
         // Create the ontology manager and add ontology factories, mappers and storers
         ProtegeOWLOntologyManager ontologyManager = new ProtegeOWLOntologyManager(dataFactory);
-        ontologyManager.addOntologyStorer(new RDFXMLOntologyStorer());
-        ontologyManager.addOntologyStorer(new OWLXMLOntologyStorer());
-        ontologyManager.addOntologyStorer(new OWLFunctionalSyntaxOntologyStorer());
-        ontologyManager.addOntologyStorer(new ManchesterOWLSyntaxOntologyStorer());
-        ontologyManager.addOntologyStorer(new OBOFormatStorer());
-        ontologyManager.addOntologyStorer(new KRSS2OWLSyntaxOntologyStorer());
-        ontologyManager.addOntologyStorer(new TurtleOntologyStorer());
-        ontologyManager.addOntologyStorer(new LatexOntologyStorer());
+        ontologyManager.addOntologyStorer(new RDFXMLStorerFactory());
+        ontologyManager.addOntologyStorer(new OWLXMLStorerFactory());
+        ontologyManager.addOntologyStorer(new FunctionalSyntaxStorerFactory());
+        ontologyManager.addOntologyStorer(new ManchesterSyntaxStorerFactory());
+        ontologyManager.addOntologyStorer(new OBOFormatStorerFactory());
+        ontologyManager.addOntologyStorer(new KRSS2OWLSyntaxStorerFactory());
+        ontologyManager.addOntologyStorer(new TurtleStorerFactory());
+        ontologyManager.addOntologyStorer(new LatexStorerFactory());
 
         ontologyManager.addIRIMapper(new NonMappingOntologyIRIMapper());
-        
-        ontologyManager.clearOntologyFactories();
-        ontologyManager.addOntologyFactory(new EmptyInMemOWLOntologyFactory());
-        ontologyManager.addOntologyFactory(new ParsableOWLOntologyFactory());
-        
+
+        Set<OWLOntologyFactory> ontologyFactories = new LinkedHashSet<>();
+        ontologyFactories.add( new EmptyInMemOWLOntologyFactory(new OWLOntologyBuilderImpl()));
+        ontologyFactories.add( new ParsableOWLOntologyFactory(new OWLOntologyBuilderImpl()));
         return ontologyManager;
     }
 

@@ -13,7 +13,6 @@ import java.util.zip.InflaterInputStream;
 import java.util.zip.ZipInputStream;
 
 import org.apache.log4j.Logger;
-import org.semanticweb.owlapi.io.IOProperties;
 
 
 /**
@@ -39,14 +38,14 @@ public class IOUtils {
      * @return The input stream obtained from the URI
      * @throws IOException if there was an <code>IOException</code> in obtaining the input stream from the URI.
      */
-    public static InputStream getInputStream(URI documentURI) throws IOException {
+    public static InputStream getInputStream(URI documentURI, boolean connectionAcceptHTTPCompression, int connectionTimeout) throws IOException {
         String requestType = getRequestTypes();
         URLConnection conn = documentURI.toURL().openConnection();
         conn.addRequestProperty("Accept", requestType);
-        if (IOProperties.getInstance().isConnectionAcceptHTTPCompression()) {
+        if (connectionAcceptHTTPCompression) {
             conn.setRequestProperty("Accept-Encoding", "gzip, deflate");
         }
-        conn.setConnectTimeout(IOProperties.getInstance().getConnectionTimeout());
+        conn.setConnectTimeout(connectionTimeout);
         String contentEncoding = conn.getContentEncoding();
         InputStream is = getInputStreamFromContentEncoding(conn, contentEncoding);
         if (isZipName(documentURI, conn)) {
