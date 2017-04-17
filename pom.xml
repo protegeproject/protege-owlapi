@@ -154,7 +154,7 @@
     <profiles>
         <!-- Sign artifacts and generate -sources and -javadoc JAR files.  Required for Sonatype OSSRH sync to Maven Central. -->
         <profile>
-            <id>prepare-release</id>
+            <id>release</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
             </activation>
