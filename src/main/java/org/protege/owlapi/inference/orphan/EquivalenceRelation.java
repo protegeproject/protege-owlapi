@@ -1,5 +1,8 @@
 package org.protege.owlapi.inference.orphan;
 
+import org.slf4j.Logger;
+import org.slf4j.event.Level;
+
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
@@ -8,9 +11,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
 import java.util.TreeSet;
-
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
 
 /**
  * Lightweight implementation of an equivalence relation which is optimized for 
@@ -50,19 +50,19 @@ public class EquivalenceRelation<X extends Comparable<? super X>> {
         return equivalents != null ? new TreeSet<X>(equivalents) : Collections.singleton(x);
     }
     
-    public void logEquivalences(Logger log, Level level) {
-        if (log.isEnabledFor(level)) {
-            log.log(level, "---------------Logging equivalences---------------");
+    public void logEquivalences(Logger log) {
+        if (log.isDebugEnabled()) {
+            log.debug("---------------Logging equivalences---------------");
             Set<X> displayed = new HashSet<X>();
             for (Entry<X, Set<X>> entry : equivalenceMap.entrySet()) {
                 X x = entry.getKey();
                 Set<X> equivalences = entry.getValue();
                 if (!displayed.contains(x)) {
-                    log.log(level, "The following are equivalent: " + equivalences);
+                    log.debug("The following are equivalent: " + equivalences);
                     displayed.addAll(equivalences);
                 }
             }
-            log.log(level, "---------------Equivalences Logged---------------");
+            log.debug("---------------Equivalences Logged---------------");
         }
     }
     

@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * This class encapsulates a relation, <i>r: X &rarr; X</i>.  Its purpose is to calculate the set of terminal 
@@ -72,7 +72,7 @@ import org.apache.log4j.Logger;
  *
  */
 public class TerminalElementFinder<X extends Comparable<? super X>> {
-    private static Logger log = Logger.getLogger(TerminalElementFinder.class);
+    private static Logger log = LoggerFactory.getLogger(TerminalElementFinder.class);
 
     private Relation<X> r;
     private Set<X> terminalElements = new HashSet<X>();
@@ -108,7 +108,7 @@ public class TerminalElementFinder<X extends Comparable<? super X>> {
             buildEquivalenceMapping(candidate, null);
             if (log.isDebugEnabled()) {
                 log.debug("Call to build equivs completed at " + candidate);
-                equivalence.logEquivalences(log, Level.DEBUG);
+                equivalence.logEquivalences(log);
             }
         }
         equivalenceAlreadyCalculated.clear();
@@ -130,7 +130,7 @@ public class TerminalElementFinder<X extends Comparable<? super X>> {
             equivalence.merge(p.getLoop(x));
             if (log.isDebugEnabled()) {
                 log.debug("Found loop");
-                logLoop(p, x, Level.DEBUG);
+                logLoop(p, x);
             }
             return;
         }
@@ -144,12 +144,12 @@ public class TerminalElementFinder<X extends Comparable<? super X>> {
         for  (X y : relatedToX) {
             if (log.isDebugEnabled()) {
                 log.debug("calling build equivs at " + y + " with path ");
-                logPath(newPath, Level.DEBUG);
+                logPath(newPath);
             }
             buildEquivalenceMapping(y,  newPath);
             if (log.isDebugEnabled()) {
                 log.debug("Call to build equivs completed at " + y);
-                equivalence.logEquivalences(log, Level.DEBUG);
+                equivalence.logEquivalences(log);
             }
         }
         boolean terminal = true;
@@ -184,23 +184,23 @@ public class TerminalElementFinder<X extends Comparable<? super X>> {
         findTerminalElements(candidates);
     }
     
-    private void logPath(Path<X> p, Level level) {
-        if (log.isEnabledFor(level)) {
-            log.log(level, "Path Trace");
+    private void logPath(Path<X> p) {
+        if (log.isDebugEnabled()) {
+            log.debug("Path Trace");
             for  (Path<X> point = p; point != null; point = point.getNext()) {
-                log.log(level, "Pathelement = " + point.getObject());
+                log.debug("Pathelement = " + point.getObject());
             }
         }
     }
     
-    private void logLoop(Path<X> p, X x, Level level) {
-        if (log.isEnabledFor(level)) {
-            log.log(level, "Loop:" );
-            log.log(level, "Pathelement = " + x);
+    private void logLoop(Path<X> p, X x) {
+        if (log.isDebugEnabled()) {
+            log.debug("Loop:" );
+            log.debug("Pathelement = " + x);
             for  (Path<X> point = p; !point.getObject().equals(x); point = point.getNext()) {
-                log.log(level, "Pathelement = " + point.getObject());
+                log.debug("Pathelement = " + point.getObject());
             }
-            log.log(level, "Pathelement = " + x);
+            log.debug("Pathelement = " + x);
         }
     }
 }

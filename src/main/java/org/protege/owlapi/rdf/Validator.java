@@ -10,7 +10,6 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.Map.Entry;
 
-import org.apache.log4j.Logger;
 import org.protege.owlapi.rdf.report.ImportsBrokenOntologies;
 import org.protege.owlapi.rdf.report.MisreadAnnotationDomainAxiom;
 import org.protege.owlapi.rdf.report.MisreadAnnotationRangeAxiom;
@@ -29,9 +28,11 @@ import org.semanticweb.owlapi.model.OWLEntity;
 import org.semanticweb.owlapi.model.OWLNamedIndividual;
 import org.semanticweb.owlapi.model.OWLObjectProperty;
 import org.semanticweb.owlapi.model.OWLOntology;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Validator {
-	private static Logger LOGGER = Logger.getLogger(Validator.class);
+	private static Logger LOGGER = LoggerFactory.getLogger(Validator.class);
 
 	public String generateFullReport(OWLOntology ontology) {
 		return generateFullReport(analyze(ontology));
