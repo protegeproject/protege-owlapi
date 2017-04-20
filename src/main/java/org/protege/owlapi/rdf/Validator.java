@@ -44,13 +44,10 @@ public class Validator {
     	for (Entry<OWLOntology, List<ProblemReport>> entry : problems.entrySet()) {
     		OWLOntology badOntology = entry.getKey();
     		List<ProblemReport> reports = entry.getValue();
-    		sb.append("<h2>");
-    		sb.append(badOntology.getOntologyID().getOntologyIRI().toString());
-    		sb.append("</h2>\n");
+    		sb.append(String.format("<h2>%s</h2>\n", badOntology.getOntologyID().getOntologyIRI().toString()));
     		sb.append("This ontology has the following problems:\n<p>\n");
     		for (ProblemReport report : reports) {
-    			sb.append("\t" + report.getDetailedDescription() +"\n\n");
-    			sb.append("<p>\n");
+    			sb.append(String.format("\t%s\n\n<p>\n", report.getDetailedDescription()));
     		}
     	}
     	sb.append("</body>\n</html>\n");
